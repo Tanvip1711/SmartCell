@@ -1,0 +1,4 @@
+image_name,polarity,candidate_id,area,x,y,width,height,aspect_ratio,circularity
+img_001.png,inverted,1,7930.0,350,422,162,90,1.8,0.421
+img_001.png,inverted,2,1345.0,190,287,41,47,1.146,0.794
+img_002.png,inverted,1,5427.0,0,372,116,140,1.207,0.279
