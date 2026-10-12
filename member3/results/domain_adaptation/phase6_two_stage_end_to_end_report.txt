@@ -1,0 +1,53 @@
+================================================================================================
+SMARTCELL PHASE 6: END-TO-END TWO-STAGE PIPELINE EVALUATION (INCLUDING DETECTION MISSES)
+================================================================================================
+Stage 1 Hardware: NVIDIA GeForce RTX 2050 (PyTorch 2.14.1+cu130, device=0, Peak VRAM: 29.61 MB)
+Stage 2 Hardware: CPU (D:\smartcell\venv, TensorFlow 2.21.0 native Windows)
+
+1. STAGE 1 (YOLOv8n) CELL LOCALIZATION & MISS ACCOUNTING ACROSS 25 TEST IMAGES (5 PATIENTS):
+   Ground-Truth RBCs:          4794 (Uninfected: 4418, Parasitized: 376; Excluded GT WBCs: 6)
+   Matched Ground-Truth RBCs:  4695 / 4794 (97.93%)
+     - Matched Uninfected:     4333 / 4418 (98.08%) | Missed: 85
+     - Matched Parasitized:    362 / 376 (96.28%) | Missed: 14 (Counted as E2E FN!)
+   Spurious / Unmatched Boxes: 133 (Included in E2E FP accounting)
+
+2. END-TO-END TWO-STAGE PERFORMANCE (PENALIZING STAGE 1 MISSES AS FALSE NEGATIVES):
+------------------------------------------------------------------------------------------------
+Strategy                                   | E2E Prec | E2E Sens |  E2E F1 | Spec(M) |  TP   FP FN_CNN FN_Miss FN_Tot | Img MAE Pat MAE
+------------------------------------------------------------------------------------------------
+Strategy A: Existing CNN (Raw Crops)       |   50.42% |   96.28% |  0.6618 |  92.27% | 362  356      0      14     14 |   7.36%   7.30%
+Strategy B: Existing CNN (Elliptical-Masked Crops) |   78.54% |   94.41% |  0.8575 |  98.11% | 355   97      7      14     21 |   1.81%   1.77%
+Strategy C: Fine-Tuned CNN (Raw Crops)     |   82.89% |   91.49% |  0.8698 |  98.64% | 344   71     18      14     32 |   1.12%   1.12%
+Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops) |   78.54% |   94.41% |  0.8575 |  98.11% | 355   97      7      14     21 |   1.81%   1.77%
+------------------------------------------------------------------------------------------------
+
+3. END-TO-END PER-PATIENT PARASITEMIA ESTIMATION ACROSS THE 5 HELD-OUT TEST PATIENTS:
+
+  [Strategy A: Existing CNN (Raw Crops)]
+    Patient 156C55P16thinF       | GT Par:   3/ 896 ( 0.33%) | Est Par:  42/ 904 ( 4.65%, Err:  4.31%) | TP=  3 FP= 39 FN_CNN= 0 FN_Miss= 0 | E2E Sens=100.0%
+    Patient 209C68P29N_ThinF     | GT Par: 349/ 992 (35.18%) | Est Par: 493/ 966 (51.04%, Err: 15.85%) | TP=337 FP=156 FN_CNN= 0 FN_Miss=12 | E2E Sens= 96.6%
+    Patient 212C71P32_ThinF      | GT Par:  10/1169 ( 0.86%) | Est Par:  66/1155 ( 5.71%, Err:  4.86%) | TP=  8 FP= 58 FN_CNN= 0 FN_Miss= 2 | E2E Sens= 80.0%
+    Patient 372C187P148NThinF    | GT Par:  14/ 794 ( 1.76%) | Est Par:  65/ 811 ( 8.01%, Err:  6.25%) | TP= 14 FP= 51 FN_CNN= 0 FN_Miss= 0 | E2E Sens=100.0%
+    Patient 377C238NThinF        | GT Par:   0/ 943 ( 0.00%) | Est Par:  52/ 992 ( 5.24%, Err:  5.24%) | TP=  0 FP= 52 FN_CNN= 0 FN_Miss= 0 | E2E Sens=  0.0%
+
+  [Strategy B: Existing CNN (Elliptical-Masked Crops)]
+    Patient 156C55P16thinF       | GT Par:   3/ 896 ( 0.33%) | Est Par:   9/ 904 ( 1.00%, Err:  0.66%) | TP=  3 FP=  6 FN_CNN= 0 FN_Miss= 0 | E2E Sens=100.0%
+    Patient 209C68P29N_ThinF     | GT Par: 349/ 992 (35.18%) | Est Par: 381/ 966 (39.44%, Err:  4.26%) | TP=334 FP= 47 FN_CNN= 3 FN_Miss=12 | E2E Sens= 95.7%
+    Patient 212C71P32_ThinF      | GT Par:  10/1169 ( 0.86%) | Est Par:  39/1155 ( 3.38%, Err:  2.52%) | TP=  8 FP= 31 FN_CNN= 0 FN_Miss= 2 | E2E Sens= 80.0%
+    Patient 372C187P148NThinF    | GT Par:  14/ 794 ( 1.76%) | Est Par:  12/ 811 ( 1.48%, Err:  0.28%) | TP= 10 FP=  2 FN_CNN= 4 FN_Miss= 0 | E2E Sens= 71.4%
+    Patient 377C238NThinF        | GT Par:   0/ 943 ( 0.00%) | Est Par:  11/ 992 ( 1.11%, Err:  1.11%) | TP=  0 FP= 11 FN_CNN= 0 FN_Miss= 0 | E2E Sens=  0.0%
+
+  [Strategy C: Fine-Tuned CNN (Raw Crops)]
+    Patient 156C55P16thinF       | GT Par:   3/ 896 ( 0.33%) | Est Par:   6/ 904 ( 0.66%, Err:  0.33%) | TP=  3 FP=  3 FN_CNN= 0 FN_Miss= 0 | E2E Sens=100.0%
+    Patient 209C68P29N_ThinF     | GT Par: 349/ 992 (35.18%) | Est Par: 362/ 966 (37.47%, Err:  2.29%) | TP=324 FP= 38 FN_CNN=13 FN_Miss=12 | E2E Sens= 92.8%
+    Patient 212C71P32_ThinF      | GT Par:  10/1169 ( 0.86%) | Est Par:  30/1155 ( 2.60%, Err:  1.74%) | TP=  8 FP= 22 FN_CNN= 0 FN_Miss= 2 | E2E Sens= 80.0%
+    Patient 372C187P148NThinF    | GT Par:  14/ 794 ( 1.76%) | Est Par:  10/ 811 ( 1.23%, Err:  0.53%) | TP=  9 FP=  1 FN_CNN= 5 FN_Miss= 0 | E2E Sens= 64.3%
+    Patient 377C238NThinF        | GT Par:   0/ 943 ( 0.00%) | Est Par:   7/ 992 ( 0.71%, Err:  0.71%) | TP=  0 FP=  7 FN_CNN= 0 FN_Miss= 0 | E2E Sens=  0.0%
+
+  [Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops)]
+    Patient 156C55P16thinF       | GT Par:   3/ 896 ( 0.33%) | Est Par:   9/ 904 ( 1.00%, Err:  0.66%) | TP=  3 FP=  6 FN_CNN= 0 FN_Miss= 0 | E2E Sens=100.0%
+    Patient 209C68P29N_ThinF     | GT Par: 349/ 992 (35.18%) | Est Par: 381/ 966 (39.44%, Err:  4.26%) | TP=334 FP= 47 FN_CNN= 3 FN_Miss=12 | E2E Sens= 95.7%
+    Patient 212C71P32_ThinF      | GT Par:  10/1169 ( 0.86%) | Est Par:  39/1155 ( 3.38%, Err:  2.52%) | TP=  8 FP= 31 FN_CNN= 0 FN_Miss= 2 | E2E Sens= 80.0%
+    Patient 372C187P148NThinF    | GT Par:  14/ 794 ( 1.76%) | Est Par:  12/ 811 ( 1.48%, Err:  0.28%) | TP= 10 FP=  2 FN_CNN= 4 FN_Miss= 0 | E2E Sens= 71.4%
+    Patient 377C238NThinF        | GT Par:   0/ 943 ( 0.00%) | Est Par:  11/ 992 ( 1.11%, Err:  1.11%) | TP=  0 FP= 11 FN_CNN= 0 FN_Miss= 0 | E2E Sens=  0.0%
+================================================================================================

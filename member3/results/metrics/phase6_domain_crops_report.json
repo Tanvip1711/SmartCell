@@ -1,0 +1,692 @@
+{
+  "phase": "Phase 6 \u2014 Domain-Matched Full-Smear RBC Crop Dataset Preparation",
+  "source_yolo_dataset": "D:\\smartcell\\yolo_malaria",
+  "output_crops_dataset_dir": "D:\\smartcell\\results\\domain_adaptation\\crops_dataset",
+  "manifest_csv_path": "D:\\smartcell\\results\\domain_adaptation\\crops_dataset\\domain_crops_manifest.csv",
+  "parameters": {
+    "pad_px": 4,
+    "min_box_size_px": 16,
+    "duplicate_suppression_iou_threshold": 0.8,
+    "ambiguous_overlap_flag_iou_threshold": 0.2,
+    "crop_modes_saved": [
+      "raw",
+      "masked"
+    ],
+    "class_mapping": {
+      "0": "Uninfected",
+      "1": "Parasitized"
+    },
+    "wbc_handling": "Excluded from binary malaria classification dataset (logged separately)"
+  },
+  "patient_leakage_verification": {
+    "train_patients_count": 23,
+    "val_patients_count": 5,
+    "test_patients_count": 5,
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0,
+    "verified_zero_leakage": true
+  },
+  "splits": {
+    "train": {
+      "images_count": 115,
+      "patients_count": 23,
+      "total_raw_annotations": 24154,
+      "valid_rbc_crops_extracted": 24112,
+      "Uninfected": 23485,
+      "Parasitized": 627,
+      "excluded_wbc_count": 37,
+      "invalid_box_count": 0,
+      "duplicate_boxes_suppressed": 5,
+      "ambiguous_same_class_overlaps_flagged": 589,
+      "ambiguous_cross_class_overlaps_flagged": 54,
+      "patients_list": [
+        "142C38P3thinF_original",
+        "146C47P8thin_Original_Motic",
+        "150C49P10thinF",
+        "158C57P18thinF",
+        "208C67P28N_ThinF",
+        "211C70P31_ThinF",
+        "221C79P40ThinF",
+        "228C86P47ThinF",
+        "231C89P50ThinF",
+        "244C7NthinF",
+        "247C99P60ThinF",
+        "270C122P83ThinF",
+        "274C126P87ThinF",
+        "282C134P95ThinF",
+        "302C210ThinF",
+        "305C212ThinF",
+        "306C213ThinF",
+        "309C216ThinF",
+        "318C226ThinF",
+        "327C235ThinF",
+        "343C160P121ThinF",
+        "354C169P130ThinF",
+        "362C177P138NThinF"
+      ]
+    },
+    "val": {
+      "images_count": 25,
+      "patients_count": 5,
+      "total_raw_annotations": 5310,
+      "valid_rbc_crops_extracted": 5302,
+      "Uninfected": 5163,
+      "Parasitized": 139,
+      "excluded_wbc_count": 8,
+      "invalid_box_count": 0,
+      "duplicate_boxes_suppressed": 0,
+      "ambiguous_same_class_overlaps_flagged": 94,
+      "ambiguous_cross_class_overlaps_flagged": 2,
+      "patients_list": [
+        "153C52P13thinF",
+        "236C94P55ThinF",
+        "263C115P76ThinF",
+        "276C128P89ThinF",
+        "323C231ThinF"
+      ]
+    },
+    "test": {
+      "images_count": 25,
+      "patients_count": 5,
+      "total_raw_annotations": 4800,
+      "valid_rbc_crops_extracted": 4794,
+      "Uninfected": 4418,
+      "Parasitized": 376,
+      "excluded_wbc_count": 6,
+      "invalid_box_count": 0,
+      "duplicate_boxes_suppressed": 0,
+      "ambiguous_same_class_overlaps_flagged": 114,
+      "ambiguous_cross_class_overlaps_flagged": 12,
+      "patients_list": [
+        "156C55P16thinF",
+        "209C68P29N_ThinF",
+        "212C71P32_ThinF",
+        "372C187P148NThinF",
+        "377C238NThinF"
+      ]
+    }
+  },
+  "per_patient_counts": {
+    "142C38P3thinF_original": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 999,
+      "Parasitized": 5,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 66
+    },
+    "146C47P8thin_Original_Motic": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 939,
+      "Parasitized": 9,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 30
+    },
+    "150C49P10thinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1108,
+      "Parasitized": 43,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 56
+    },
+    "153C52P13thinF": {
+      "partition": "val",
+      "images_count": 5,
+      "Uninfected": 886,
+      "Parasitized": 30,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 12
+    },
+    "156C55P16thinF": {
+      "partition": "test",
+      "images_count": 5,
+      "Uninfected": 893,
+      "Parasitized": 3,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 8
+    },
+    "158C57P18thinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1140,
+      "Parasitized": 5,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 18
+    },
+    "208C67P28N_ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1153,
+      "Parasitized": 42,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 73
+    },
+    "209C68P29N_ThinF": {
+      "partition": "test",
+      "images_count": 5,
+      "Uninfected": 643,
+      "Parasitized": 349,
+      "excluded_wbc": 3,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 48
+    },
+    "211C70P31_ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 431,
+      "Parasitized": 69,
+      "excluded_wbc": 4,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 22
+    },
+    "212C71P32_ThinF": {
+      "partition": "test",
+      "images_count": 5,
+      "Uninfected": 1159,
+      "Parasitized": 10,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 52
+    },
+    "221C79P40ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 767,
+      "Parasitized": 4,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 14
+    },
+    "228C86P47ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1236,
+      "Parasitized": 4,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 63
+    },
+    "231C89P50ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1023,
+      "Parasitized": 58,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 17
+    },
+    "236C94P55ThinF": {
+      "partition": "val",
+      "images_count": 5,
+      "Uninfected": 1252,
+      "Parasitized": 10,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 58
+    },
+    "244C7NthinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1029,
+      "Parasitized": 0,
+      "excluded_wbc": 3,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 4
+    },
+    "247C99P60ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 534,
+      "Parasitized": 313,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 89
+    },
+    "263C115P76ThinF": {
+      "partition": "val",
+      "images_count": 5,
+      "Uninfected": 1191,
+      "Parasitized": 13,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 6
+    },
+    "270C122P83ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 795,
+      "Parasitized": 3,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 16
+    },
+    "274C126P87ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 678,
+      "Parasitized": 22,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 0
+    },
+    "276C128P89ThinF": {
+      "partition": "val",
+      "images_count": 5,
+      "Uninfected": 753,
+      "Parasitized": 86,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 18
+    },
+    "282C134P95ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 609,
+      "Parasitized": 10,
+      "excluded_wbc": 4,
+      "suppressed_duplicates": 4,
+      "ambiguous_overlaps_flagged": 8
+    },
+    "302C210ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1307,
+      "Parasitized": 0,
+      "excluded_wbc": 4,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 4
+    },
+    "305C212ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1412,
+      "Parasitized": 0,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 4
+    },
+    "306C213ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1303,
+      "Parasitized": 0,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 2
+    },
+    "309C216ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1257,
+      "Parasitized": 0,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 6
+    },
+    "318C226ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1343,
+      "Parasitized": 0,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 0
+    },
+    "323C231ThinF": {
+      "partition": "val",
+      "images_count": 5,
+      "Uninfected": 1081,
+      "Parasitized": 0,
+      "excluded_wbc": 4,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 2
+    },
+    "327C235ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1519,
+      "Parasitized": 0,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 0
+    },
+    "343C160P121ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 753,
+      "Parasitized": 3,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 14
+    },
+    "354C169P130ThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 1182,
+      "Parasitized": 7,
+      "excluded_wbc": 1,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 0
+    },
+    "362C177P138NThinF": {
+      "partition": "train",
+      "images_count": 5,
+      "Uninfected": 968,
+      "Parasitized": 30,
+      "excluded_wbc": 5,
+      "suppressed_duplicates": 1,
+      "ambiguous_overlaps_flagged": 137
+    },
+    "372C187P148NThinF": {
+      "partition": "test",
+      "images_count": 5,
+      "Uninfected": 780,
+      "Parasitized": 14,
+      "excluded_wbc": 0,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 4
+    },
+    "377C238NThinF": {
+      "partition": "test",
+      "images_count": 5,
+      "Uninfected": 943,
+      "Parasitized": 0,
+      "excluded_wbc": 2,
+      "suppressed_duplicates": 0,
+      "ambiguous_overlaps_flagged": 14
+    }
+  },
+  "exclusions_and_overlaps_summary": {
+    "total_excluded_wbcs": 51,
+    "total_invalid_boxes": 0,
+    "total_duplicate_annotations_suppressed": 5,
+    "total_ambiguous_overlaps_flagged": 865,
+    "duplicate_suppressed_details": [
+      {
+        "partition": "train",
+        "source_image": "IMG_20151005_121048.jpg",
+        "patient_id": "282C134P95ThinF",
+        "suppressed_line": 51,
+        "kept_line": 44,
+        "class_label": "Uninfected",
+        "iou": 0.9705,
+        "bbox": [
+          2509,
+          935,
+          2639,
+          1068
+        ]
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20151005_121048.jpg",
+        "patient_id": "282C134P95ThinF",
+        "suppressed_line": 52,
+        "kept_line": 46,
+        "class_label": "Uninfected",
+        "iou": 0.9847,
+        "bbox": [
+          2473,
+          648,
+          2599,
+          780
+        ]
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20151005_121048.jpg",
+        "patient_id": "282C134P95ThinF",
+        "suppressed_line": 53,
+        "kept_line": 47,
+        "class_label": "Uninfected",
+        "iou": 0.9855,
+        "bbox": [
+          2478,
+          491,
+          2612,
+          630
+        ]
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20151005_121048.jpg",
+        "patient_id": "282C134P95ThinF",
+        "suppressed_line": 54,
+        "kept_line": 48,
+        "class_label": "Uninfected",
+        "iou": 0.9424,
+        "bbox": [
+          2566,
+          394,
+          2728,
+          510
+        ]
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20151201_142514.jpg",
+        "patient_id": "362C177P138NThinF",
+        "suppressed_line": 151,
+        "kept_line": 149,
+        "class_label": "Uninfected",
+        "iou": 0.9693,
+        "bbox": [
+          2868,
+          43,
+          2992,
+          176
+        ]
+      }
+    ],
+    "excluded_wbcs_sample": [
+      {
+        "partition": "train",
+        "source_image": "IMG_20150611_104609.jpg",
+        "patient_id": "244C7NthinF",
+        "line_number": 1,
+        "bbox": [
+          2788,
+          1595,
+          2999,
+          1824
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150611_104753.jpg",
+        "patient_id": "244C7NthinF",
+        "line_number": 1,
+        "bbox": [
+          2023,
+          2200,
+          2278,
+          2467
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150611_104753.jpg",
+        "patient_id": "244C7NthinF",
+        "line_number": 2,
+        "bbox": [
+          3949,
+          1413,
+          4329,
+          1770
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150714_093636.jpg",
+        "patient_id": "146C47P8thin_Original_Motic",
+        "line_number": 8,
+        "bbox": [
+          1854,
+          2240,
+          2065,
+          2454
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150729_110305.jpg",
+        "patient_id": "158C57P18thinF",
+        "line_number": 1,
+        "bbox": [
+          3408,
+          172,
+          3673,
+          421
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150729_110457.jpg",
+        "patient_id": "158C57P18thinF",
+        "line_number": 1,
+        "bbox": [
+          2632,
+          2467,
+          2862,
+          2719
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150813_130332.jpg",
+        "patient_id": "211C70P31_ThinF",
+        "line_number": 1,
+        "bbox": [
+          2466,
+          167,
+          2661,
+          384
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150813_130332.jpg",
+        "patient_id": "211C70P31_ThinF",
+        "line_number": 2,
+        "bbox": [
+          1712,
+          2416,
+          1933,
+          2706
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150813_131330.jpg",
+        "patient_id": "211C70P31_ThinF",
+        "line_number": 1,
+        "bbox": [
+          1341,
+          2163,
+          1512,
+          2292
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150813_131330.jpg",
+        "patient_id": "211C70P31_ThinF",
+        "line_number": 2,
+        "bbox": [
+          3710,
+          1987,
+          3912,
+          2166
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150820_162504.jpg",
+        "patient_id": "231C89P50ThinF",
+        "line_number": 1,
+        "bbox": [
+          1722,
+          1368,
+          1944,
+          1587
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150820_162504.jpg",
+        "patient_id": "231C89P50ThinF",
+        "line_number": 2,
+        "bbox": [
+          1550,
+          1248,
+          1805,
+          1491
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150918_140900.jpg",
+        "patient_id": "247C99P60ThinF",
+        "line_number": 1,
+        "bbox": [
+          3417,
+          1098,
+          3670,
+          1345
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20150918_141314.jpg",
+        "patient_id": "247C99P60ThinF",
+        "line_number": 1,
+        "bbox": [
+          1652,
+          1312,
+          1911,
+          1527
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      },
+      {
+        "partition": "train",
+        "source_image": "IMG_20151004_104623.jpg",
+        "patient_id": "274C126P87ThinF",
+        "line_number": 1,
+        "bbox": [
+          2742,
+          243,
+          3032,
+          483
+        ],
+        "reason": "WBC (class 2) excluded from binary malaria RBC dataset"
+      }
+    ],
+    "invalid_boxes_details": []
+  },
+  "total_manifest_rows_written": 68416,
+  "processing_time_seconds": 225.21
+}

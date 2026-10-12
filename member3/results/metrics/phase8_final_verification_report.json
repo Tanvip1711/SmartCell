@@ -1,0 +1,288 @@
+{
+  "timestamp": "2026-10-11T22:51:22",
+  "server_url": "http://127.0.0.1:8518",
+  "default_bind_host": "127.0.0.1",
+  "phase7_suite_reference": {
+    "report_path": "D:\\smartcell\\results\\metrics\\phase7_demo_verification_report.json",
+    "all_phase7_checks_passed": true
+  },
+  "reproducibility_test": {
+    "sample_image": "IMG_20150819_133447.jpg",
+    "settings": {
+      "cnn_variant": "finetuned_raw",
+      "crop_mode": "raw",
+      "yolo_device": "0",
+      "yolo_conf": "0.25",
+      "yolo_iou": "0.45",
+      "dedup_iou": "0.50",
+      "cnn_thresh": "0.50",
+      "pad_px": "4",
+      "min_box_size": "16"
+    },
+    "run_1": {
+      "run_id": "run_20261011_225123_IMG_20150819_133447_finetuned_raw_raw_17530a",
+      "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225123_IMG_20150819_133447_finetuned_raw_raw_17530a",
+      "valid_rbc_detections": 195,
+      "parasitized_rbc_count": 74,
+      "uninfected_rbc_count": 121,
+      "excluded_wbc_count": 0,
+      "rejected_box_count": 0,
+      "estimated_parasitemia_percent": 37.9487,
+      "cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+      "crop_mode": "raw",
+      "processing_time_seconds": {
+        "stage1_yolo_detection_and_cropping": 7.9105,
+        "stage2_cnn_classification": 9.2763,
+        "total_pipeline_seconds": 17.1868
+      },
+      "csv_sha256": "9d3e3fd6fc20729186507df28dca7a1429d9ed4f5d4d50706c88adb474606854",
+      "annotated_jpg_sha256": "f1bbe8bb21286e376865f54e0215e587c49112a1fe47695970f6736b68b4333f",
+      "contact_sheet_jpg_sha256": "b658d59290146c5e0503bd290124ff2cedc73c39c87f5c2f29b85d49b1c462d6",
+      "summary_json_sha256": "6458a7b2b50dcffb03d6b69ccaa7970b47c20c820063dc96ab9fdffdd5a0f868"
+    },
+    "run_2": {
+      "run_id": "run_20261011_225156_IMG_20150819_133447_finetuned_raw_raw_2e21ef",
+      "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225156_IMG_20150819_133447_finetuned_raw_raw_2e21ef",
+      "valid_rbc_detections": 195,
+      "parasitized_rbc_count": 74,
+      "uninfected_rbc_count": 121,
+      "excluded_wbc_count": 0,
+      "rejected_box_count": 0,
+      "estimated_parasitemia_percent": 37.9487,
+      "cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+      "crop_mode": "raw",
+      "processing_time_seconds": {
+        "stage1_yolo_detection_and_cropping": 7.7647,
+        "stage2_cnn_classification": 9.204,
+        "total_pipeline_seconds": 16.9687
+      },
+      "csv_sha256": "9d3e3fd6fc20729186507df28dca7a1429d9ed4f5d4d50706c88adb474606854",
+      "annotated_jpg_sha256": "f1bbe8bb21286e376865f54e0215e587c49112a1fe47695970f6736b68b4333f",
+      "contact_sheet_jpg_sha256": "b658d59290146c5e0503bd290124ff2cedc73c39c87f5c2f29b85d49b1c462d6",
+      "summary_json_sha256": "654d0d7956711610dbdd6e9f57f3b4e7aaf8c30a8536d970f6b1f88bebae8941"
+    },
+    "comparison_summary": {
+      "valid_rbc_detections_identical": true,
+      "parasitized_and_uninfected_counts_identical": true,
+      "estimated_parasitemia_identical": true,
+      "checkpoint_and_crop_mode_identical": true,
+      "csv_byte_for_byte_identical": true,
+      "annotated_jpg_byte_for_byte_identical": true,
+      "contact_sheet_jpg_byte_for_byte_identical": true,
+      "summary_json_byte_for_byte_identical": false,
+      "summary_json_deterministic_fields_identical": true,
+      "summary_json_differing_keys": [
+        "image_path",
+        "processing_time_seconds",
+        "output_files"
+      ],
+      "max_per_cell_probability_difference": 0.0,
+      "explanation_of_differences": "All cell detections, bounding boxes, YOLO confidences, CNN probabilities, cell_predictions_IMG_20150819_133447.csv, annotated_IMG_20150819_133447.jpg, and contact_sheet_IMG_20150819_133447.jpg are 100% byte-for-byte identical across runs (max probability diff = 0.0). field_summary_IMG_20150819_133447.json differs only in run-specific metadata keys ['image_path', 'processing_time_seconds', 'output_files'] because each upload is isolated in its own timestamped directory (`_uploads/<timestamp_uid>` and `demo_app_runs/<run_id>`) and wall-clock execution time (`processing_time_seconds`) varies by milliseconds across OS scheduling."
+    }
+  },
+  "additional_images_test": {
+    "low_parasitemia_test_image": {
+      "image_filename": "IMG_20151203_152841.jpg",
+      "run_id": "run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e",
+      "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e",
+      "ground_truth_reference": {
+        "has_ground_truth": true,
+        "split": "test",
+        "patient_id": "372C187P148NThinF",
+        "gt_uninfected_rbc": 164,
+        "gt_parasitized_rbc": 1,
+        "gt_wbc": 0,
+        "gt_total_rbc": 165,
+        "gt_parasitemia_percent": 0.61
+      },
+      "counts": {
+        "raw_yolo_detections": 169,
+        "valid_candidate_rbc_crops": 169,
+        "cnn_parasitized_rbc_count": 1,
+        "cnn_uninfected_rbc_count": 168,
+        "cnn_raw_crop_parasitized_count": 1,
+        "cnn_raw_crop_uninfected_count": 168,
+        "cnn_ellipse_masked_parasitized_count": 1,
+        "cnn_ellipse_masked_uninfected_count": 168,
+        "excluded_wbc_detections": 0,
+        "rejected_or_duplicate_boxes": 0
+      },
+      "parasitemia_estimate": {
+        "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+        "primary_mode": "raw",
+        "estimated_parasitemia_percent": 0.5917,
+        "calculation_fraction": "1 / 169 classified RBCs",
+        "raw_crop_parasitemia_percent": 0.5917,
+        "ellipse_masked_parasitemia_percent": 0.5917
+      },
+      "confidence_statistics": {
+        "yolo_detection_confidence": {
+          "count": 169,
+          "mean": 0.7753,
+          "median": 0.7933,
+          "min": 0.2865,
+          "max": 0.918
+        },
+        "cnn_overall_confidence": {
+          "count": 169,
+          "mean": 0.9999,
+          "median": 1.0,
+          "min": 0.9971,
+          "max": 1.0
+        },
+        "cnn_parasitized_confidence": {
+          "count": 1,
+          "mean": 0.9991,
+          "median": 0.9991,
+          "min": 0.9991,
+          "max": 0.9991
+        },
+        "cnn_uninfected_confidence": {
+          "count": 168,
+          "mean": 0.9999,
+          "median": 1.0,
+          "min": 0.9971,
+          "max": 1.0
+        }
+      },
+      "processing_time_seconds": {
+        "stage1_yolo_detection_and_cropping": 7.3922,
+        "stage2_cnn_classification": 7.7927,
+        "total_pipeline_seconds": 15.1849
+      },
+      "report_consistency_checks": {
+        "original_stem_preserved": true,
+        "ui_matches_disk_summary_json": true,
+        "csv_row_count_matches_valid_rbcs": true,
+        "csv_parasitized_matches_summary": true,
+        "csv_uninfected_matches_summary": true,
+        "excluded_wbc_matches_rejected_json": true,
+        "rejected_boxes_matches_rejected_json": true
+      },
+      "export_belongs_strictly_to_current_analysis": true
+    },
+    "uninfected_control_test_image": {
+      "image_filename": "IMG_20151207_114038.jpg",
+      "run_id": "run_20261011_225301_IMG_20151207_114038_finetuned_raw_raw_8a4c9d",
+      "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225301_IMG_20151207_114038_finetuned_raw_raw_8a4c9d",
+      "ground_truth_reference": {
+        "has_ground_truth": true,
+        "split": "test",
+        "patient_id": "377C238NThinF",
+        "gt_uninfected_rbc": 208,
+        "gt_parasitized_rbc": 0,
+        "gt_wbc": 0,
+        "gt_total_rbc": 208,
+        "gt_parasitemia_percent": 0.0
+      },
+      "counts": {
+        "raw_yolo_detections": 210,
+        "valid_candidate_rbc_crops": 210,
+        "cnn_parasitized_rbc_count": 1,
+        "cnn_uninfected_rbc_count": 209,
+        "cnn_raw_crop_parasitized_count": 1,
+        "cnn_raw_crop_uninfected_count": 209,
+        "cnn_ellipse_masked_parasitized_count": 1,
+        "cnn_ellipse_masked_uninfected_count": 209,
+        "excluded_wbc_detections": 0,
+        "rejected_or_duplicate_boxes": 0
+      },
+      "parasitemia_estimate": {
+        "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+        "primary_mode": "raw",
+        "estimated_parasitemia_percent": 0.4762,
+        "calculation_fraction": "1 / 210 classified RBCs",
+        "raw_crop_parasitemia_percent": 0.4762,
+        "ellipse_masked_parasitemia_percent": 0.4762
+      },
+      "confidence_statistics": {
+        "yolo_detection_confidence": {
+          "count": 210,
+          "mean": 0.7347,
+          "median": 0.7508,
+          "min": 0.2931,
+          "max": 0.911
+        },
+        "cnn_overall_confidence": {
+          "count": 210,
+          "mean": 0.9997,
+          "median": 0.9998,
+          "min": 0.9944,
+          "max": 1.0
+        },
+        "cnn_parasitized_confidence": {
+          "count": 1,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "cnn_uninfected_confidence": {
+          "count": 209,
+          "mean": 0.9997,
+          "median": 0.9998,
+          "min": 0.9944,
+          "max": 1.0
+        }
+      },
+      "processing_time_seconds": {
+        "stage1_yolo_detection_and_cropping": 7.8442,
+        "stage2_cnn_classification": 9.5529,
+        "total_pipeline_seconds": 17.3971
+      },
+      "report_consistency_checks": {
+        "original_stem_preserved": true,
+        "ui_matches_disk_summary_json": true,
+        "csv_row_count_matches_valid_rbcs": true,
+        "csv_parasitized_matches_summary": true,
+        "csv_uninfected_matches_summary": true,
+        "excluded_wbc_matches_rejected_json": true,
+        "rejected_boxes_matches_rejected_json": true
+      },
+      "export_belongs_strictly_to_current_analysis": true
+    }
+  },
+  "remaining_model_mode_combinations": {
+    "finetuned_raw__masked": {
+      "run_id": "run_20261011_225334_IMG_20150819_133447_finetuned_raw_masked_53c20a",
+      "verified_model_variant": "finetuned_raw",
+      "verified_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+      "verified_crop_mode": "masked",
+      "parasitized_count": 71,
+      "uninfected_count": 124,
+      "estimated_parasitemia_percent": 36.4103,
+      "report_consistency_passed": true
+    },
+    "finetuned_masked__raw": {
+      "run_id": "run_20261011_225407_IMG_20150819_133447_finetuned_masked_raw_ec88f0",
+      "verified_model_variant": "finetuned_masked",
+      "verified_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_masked_best.keras",
+      "verified_crop_mode": "raw",
+      "parasitized_count": 108,
+      "uninfected_count": 87,
+      "estimated_parasitemia_percent": 55.3846,
+      "report_consistency_passed": true
+    }
+  },
+  "reliability_and_security_checks": {
+    "missing_image_request": {
+      "http_status": 400,
+      "error_type": "MissingImageError",
+      "passed": true
+    },
+    "invalid_cnn_variant_request": {
+      "http_status": 400,
+      "error_type": "InvalidParameterError",
+      "passed": true
+    },
+    "path_traversal_protection_on_api_file": {
+      "http_status": 404,
+      "passed": true
+    },
+    "orphaned_worker_processes": {
+      "workers_before_suite": 0,
+      "workers_after_suite": 0,
+      "zero_orphaned_processes_verified": true
+    }
+  }
+}

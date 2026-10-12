@@ -1,0 +1,28 @@
+{
+  "image_path": "D:\\smartcell\\yolo_malaria\\images\\test\\IMG_20150819_133447.jpg",
+  "image_filename": "IMG_20150819_133447.jpg",
+  "image_stem": "IMG_20150819_133447",
+  "image_width": 5312,
+  "image_height": 2988,
+  "yolo_weights": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+  "stage1_device": "NVIDIA GeForce RTX 2050 (CUDA device=0, PyTorch 2.14.1+cu130)",
+  "stage1_peak_vram_mb": 0.0,
+  "gpu_fallback_triggered": false,
+  "gpu_fallback_reason": null,
+  "yolo_conf_threshold": 0.25,
+  "yolo_iou_threshold": 0.45,
+  "dedup_iou_threshold": 0.5,
+  "max_det": 350,
+  "pad_px": 4,
+  "min_box_size": 16,
+  "stage1_processing_time_seconds": 2.0858,
+  "counts": {
+    "raw_yolo_detections": 0,
+    "valid_candidate_rbc_crops": 0,
+    "excluded_wbc_detections": 0,
+    "rejected_or_duplicate_boxes": 0
+  },
+  "candidate_rbcs": [],
+  "excluded_wbcs": [],
+  "rejected_boxes": []
+}

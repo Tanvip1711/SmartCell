@@ -1,0 +1,5275 @@
+{
+  "image_path": "D:\\smartcell\\yolo_malaria\\images\\test\\IMG_20151207_114038.jpg",
+  "image_filename": "IMG_20151207_114038.jpg",
+  "image_stem": "IMG_20151207_114038",
+  "image_width": 5312,
+  "image_height": 2988,
+  "yolo_weights": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+  "yolo_conf_threshold": 0.25,
+  "yolo_iou_threshold": 0.45,
+  "dedup_iou_threshold": 0.5,
+  "max_det": 350,
+  "pad_px": 4,
+  "min_box_size": 16,
+  "stage1_processing_time_seconds": 14.9416,
+  "counts": {
+    "raw_yolo_detections": 210,
+    "valid_candidate_rbc_crops": 210,
+    "excluded_wbc_detections": 0,
+    "rejected_or_duplicate_boxes": 0
+  },
+  "candidate_rbcs": [
+    {
+      "raw_index": 183,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.624988,
+      "bbox": [
+        2550,
+        2,
+        2658,
+        152
+      ],
+      "bbox_width": 108,
+      "bbox_height": 150,
+      "crop_id": "IMG_20151207_114038_cell_0001",
+      "padded_bbox": [
+        2546,
+        0,
+        2662,
+        156
+      ],
+      "crop_width": 116,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0001.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0001.png"
+    },
+    {
+      "raw_index": 204,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.431747,
+      "bbox": [
+        2942,
+        2,
+        3095,
+        146
+      ],
+      "bbox_width": 153,
+      "bbox_height": 144,
+      "crop_id": "IMG_20151207_114038_cell_0002",
+      "padded_bbox": [
+        2938,
+        0,
+        3099,
+        150
+      ],
+      "crop_width": 161,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0002.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0002.png"
+    },
+    {
+      "raw_index": 6,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.876178,
+      "bbox": [
+        2245,
+        13,
+        2393,
+        167
+      ],
+      "bbox_width": 148,
+      "bbox_height": 154,
+      "crop_id": "IMG_20151207_114038_cell_0003",
+      "padded_bbox": [
+        2241,
+        9,
+        2397,
+        171
+      ],
+      "crop_width": 156,
+      "crop_height": 162,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0003.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0003.png"
+    },
+    {
+      "raw_index": 198,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.534321,
+      "bbox": [
+        2705,
+        17,
+        2848,
+        163
+      ],
+      "bbox_width": 143,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0004",
+      "padded_bbox": [
+        2701,
+        13,
+        2852,
+        167
+      ],
+      "crop_width": 151,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0004.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0004.png"
+    },
+    {
+      "raw_index": 181,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.628407,
+      "bbox": [
+        1692,
+        60,
+        1824,
+        234
+      ],
+      "bbox_width": 132,
+      "bbox_height": 174,
+      "crop_id": "IMG_20151207_114038_cell_0005",
+      "padded_bbox": [
+        1688,
+        56,
+        1828,
+        238
+      ],
+      "crop_width": 140,
+      "crop_height": 182,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0005.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0005.png"
+    },
+    {
+      "raw_index": 196,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.550069,
+      "bbox": [
+        1465,
+        82,
+        1617,
+        230
+      ],
+      "bbox_width": 152,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0006",
+      "padded_bbox": [
+        1461,
+        78,
+        1621,
+        234
+      ],
+      "crop_width": 160,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0006.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0006.png"
+    },
+    {
+      "raw_index": 59,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.80056,
+      "bbox": [
+        1831,
+        102,
+        1961,
+        268
+      ],
+      "bbox_width": 130,
+      "bbox_height": 166,
+      "crop_id": "IMG_20151207_114038_cell_0007",
+      "padded_bbox": [
+        1827,
+        98,
+        1965,
+        272
+      ],
+      "crop_width": 138,
+      "crop_height": 174,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0007.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0007.png"
+    },
+    {
+      "raw_index": 167,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.669816,
+      "bbox": [
+        2810,
+        121,
+        2969,
+        247
+      ],
+      "bbox_width": 159,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0008",
+      "padded_bbox": [
+        2806,
+        117,
+        2973,
+        251
+      ],
+      "crop_width": 167,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0008.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0008.png"
+    },
+    {
+      "raw_index": 158,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.68121,
+      "bbox": [
+        2664,
+        143,
+        2779,
+        261
+      ],
+      "bbox_width": 115,
+      "bbox_height": 118,
+      "crop_id": "IMG_20151207_114038_cell_0009",
+      "padded_bbox": [
+        2660,
+        139,
+        2783,
+        265
+      ],
+      "crop_width": 123,
+      "crop_height": 126,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0009.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0009.png"
+    },
+    {
+      "raw_index": 23,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.848633,
+      "bbox": [
+        2154,
+        149,
+        2311,
+        316
+      ],
+      "bbox_width": 157,
+      "bbox_height": 167,
+      "crop_id": "IMG_20151207_114038_cell_0010",
+      "padded_bbox": [
+        2150,
+        145,
+        2315,
+        320
+      ],
+      "crop_width": 165,
+      "crop_height": 175,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0010.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0010.png"
+    },
+    {
+      "raw_index": 173,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.666506,
+      "bbox": [
+        3074,
+        175,
+        3229,
+        344
+      ],
+      "bbox_width": 155,
+      "bbox_height": 169,
+      "crop_id": "IMG_20151207_114038_cell_0011",
+      "padded_bbox": [
+        3070,
+        171,
+        3233,
+        348
+      ],
+      "crop_width": 163,
+      "crop_height": 177,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0011.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0011.png"
+    },
+    {
+      "raw_index": 86,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.770823,
+      "bbox": [
+        2352,
+        201,
+        2499,
+        345
+      ],
+      "bbox_width": 147,
+      "bbox_height": 144,
+      "crop_id": "IMG_20151207_114038_cell_0012",
+      "padded_bbox": [
+        2348,
+        197,
+        2503,
+        349
+      ],
+      "crop_width": 155,
+      "crop_height": 152,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0012.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0012.png"
+    },
+    {
+      "raw_index": 107,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.747241,
+      "bbox": [
+        1568,
+        209,
+        1719,
+        355
+      ],
+      "bbox_width": 151,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0013",
+      "padded_bbox": [
+        1564,
+        205,
+        1723,
+        359
+      ],
+      "crop_width": 159,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0013.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0013.png"
+    },
+    {
+      "raw_index": 160,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.679568,
+      "bbox": [
+        2784,
+        209,
+        2930,
+        342
+      ],
+      "bbox_width": 146,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151207_114038_cell_0014",
+      "padded_bbox": [
+        2780,
+        205,
+        2934,
+        346
+      ],
+      "crop_width": 154,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0014.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0014.png"
+    },
+    {
+      "raw_index": 192,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.562259,
+      "bbox": [
+        1425,
+        216,
+        1552,
+        357
+      ],
+      "bbox_width": 127,
+      "bbox_height": 141,
+      "crop_id": "IMG_20151207_114038_cell_0015",
+      "padded_bbox": [
+        1421,
+        212,
+        1556,
+        361
+      ],
+      "crop_width": 135,
+      "crop_height": 149,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0015.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0015.png"
+    },
+    {
+      "raw_index": 126,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.73219,
+      "bbox": [
+        2574,
+        257,
+        2718,
+        428
+      ],
+      "bbox_width": 144,
+      "bbox_height": 171,
+      "crop_id": "IMG_20151207_114038_cell_0016",
+      "padded_bbox": [
+        2570,
+        253,
+        2722,
+        432
+      ],
+      "crop_width": 152,
+      "crop_height": 179,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0016.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0016.png"
+    },
+    {
+      "raw_index": 150,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.697545,
+      "bbox": [
+        1884,
+        265,
+        2026,
+        402
+      ],
+      "bbox_width": 142,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0017",
+      "padded_bbox": [
+        1880,
+        261,
+        2030,
+        406
+      ],
+      "crop_width": 150,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0017.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0017.png"
+    },
+    {
+      "raw_index": 208,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.301873,
+      "bbox": [
+        1222,
+        313,
+        1356,
+        466
+      ],
+      "bbox_width": 134,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0018",
+      "padded_bbox": [
+        1218,
+        309,
+        1360,
+        470
+      ],
+      "crop_width": 142,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0018.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0018.png"
+    },
+    {
+      "raw_index": 17,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.858215,
+      "bbox": [
+        2089,
+        315,
+        2241,
+        467
+      ],
+      "bbox_width": 152,
+      "bbox_height": 152,
+      "crop_id": "IMG_20151207_114038_cell_0019",
+      "padded_bbox": [
+        2085,
+        311,
+        2245,
+        471
+      ],
+      "crop_width": 160,
+      "crop_height": 160,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0019.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0019.png"
+    },
+    {
+      "raw_index": 120,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.737211,
+      "bbox": [
+        2459,
+        334,
+        2595,
+        476
+      ],
+      "bbox_width": 136,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0020",
+      "padded_bbox": [
+        2455,
+        330,
+        2599,
+        480
+      ],
+      "crop_width": 144,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0020.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0020.png"
+    },
+    {
+      "raw_index": 103,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.752644,
+      "bbox": [
+        2864,
+        362,
+        2989,
+        522
+      ],
+      "bbox_width": 125,
+      "bbox_height": 160,
+      "crop_id": "IMG_20151207_114038_cell_0021",
+      "padded_bbox": [
+        2860,
+        358,
+        2993,
+        526
+      ],
+      "crop_width": 133,
+      "crop_height": 168,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0021.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0021.png"
+    },
+    {
+      "raw_index": 36,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.830022,
+      "bbox": [
+        1564,
+        367,
+        1718,
+        526
+      ],
+      "bbox_width": 154,
+      "bbox_height": 159,
+      "crop_id": "IMG_20151207_114038_cell_0022",
+      "padded_bbox": [
+        1560,
+        363,
+        1722,
+        530
+      ],
+      "crop_width": 162,
+      "crop_height": 167,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0022.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0022.png"
+    },
+    {
+      "raw_index": 144,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.708353,
+      "bbox": [
+        2683,
+        389,
+        2836,
+        533
+      ],
+      "bbox_width": 153,
+      "bbox_height": 144,
+      "crop_id": "IMG_20151207_114038_cell_0023",
+      "padded_bbox": [
+        2679,
+        385,
+        2840,
+        537
+      ],
+      "crop_width": 161,
+      "crop_height": 152,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0023.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0023.png"
+    },
+    {
+      "raw_index": 101,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.755073,
+      "bbox": [
+        1350,
+        411,
+        1492,
+        549
+      ],
+      "bbox_width": 142,
+      "bbox_height": 138,
+      "crop_id": "IMG_20151207_114038_cell_0024",
+      "padded_bbox": [
+        1346,
+        407,
+        1496,
+        553
+      ],
+      "crop_width": 150,
+      "crop_height": 146,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0024.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0024.png"
+    },
+    {
+      "raw_index": 179,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.640061,
+      "bbox": [
+        2992,
+        423,
+        3144,
+        572
+      ],
+      "bbox_width": 152,
+      "bbox_height": 149,
+      "crop_id": "IMG_20151207_114038_cell_0025",
+      "padded_bbox": [
+        2988,
+        419,
+        3148,
+        576
+      ],
+      "crop_width": 160,
+      "crop_height": 157,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0025.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0025.png"
+    },
+    {
+      "raw_index": 32,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.834923,
+      "bbox": [
+        1774,
+        435,
+        1918,
+        600
+      ],
+      "bbox_width": 144,
+      "bbox_height": 165,
+      "crop_id": "IMG_20151207_114038_cell_0026",
+      "padded_bbox": [
+        1770,
+        431,
+        1922,
+        604
+      ],
+      "crop_width": 152,
+      "crop_height": 173,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0026.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0026.png"
+    },
+    {
+      "raw_index": 174,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.665395,
+      "bbox": [
+        1924,
+        468,
+        2055,
+        594
+      ],
+      "bbox_width": 131,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0027",
+      "padded_bbox": [
+        1920,
+        464,
+        2059,
+        598
+      ],
+      "crop_width": 139,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0027.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0027.png"
+    },
+    {
+      "raw_index": 54,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.807015,
+      "bbox": [
+        2407,
+        484,
+        2551,
+        652
+      ],
+      "bbox_width": 144,
+      "bbox_height": 168,
+      "crop_id": "IMG_20151207_114038_cell_0028",
+      "padded_bbox": [
+        2403,
+        480,
+        2555,
+        656
+      ],
+      "crop_width": 152,
+      "crop_height": 176,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0028.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0028.png"
+    },
+    {
+      "raw_index": 5,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.876606,
+      "bbox": [
+        2617,
+        518,
+        2739,
+        665
+      ],
+      "bbox_width": 122,
+      "bbox_height": 147,
+      "crop_id": "IMG_20151207_114038_cell_0029",
+      "padded_bbox": [
+        2613,
+        514,
+        2743,
+        669
+      ],
+      "crop_width": 130,
+      "crop_height": 155,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0029.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0029.png"
+    },
+    {
+      "raw_index": 128,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.730714,
+      "bbox": [
+        1065,
+        519,
+        1207,
+        680
+      ],
+      "bbox_width": 142,
+      "bbox_height": 161,
+      "crop_id": "IMG_20151207_114038_cell_0030",
+      "padded_bbox": [
+        1061,
+        515,
+        1211,
+        684
+      ],
+      "crop_width": 150,
+      "crop_height": 169,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0030.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0030.png"
+    },
+    {
+      "raw_index": 140,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.717929,
+      "bbox": [
+        3445,
+        529,
+        3561,
+        656
+      ],
+      "bbox_width": 116,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151207_114038_cell_0031",
+      "padded_bbox": [
+        3441,
+        525,
+        3565,
+        660
+      ],
+      "crop_width": 124,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0031.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0031.png"
+    },
+    {
+      "raw_index": 176,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.657618,
+      "bbox": [
+        2744,
+        534,
+        2903,
+        691
+      ],
+      "bbox_width": 159,
+      "bbox_height": 157,
+      "crop_id": "IMG_20151207_114038_cell_0032",
+      "padded_bbox": [
+        2740,
+        530,
+        2907,
+        695
+      ],
+      "crop_width": 167,
+      "crop_height": 165,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0032.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0032.png"
+    },
+    {
+      "raw_index": 137,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.72113,
+      "bbox": [
+        1423,
+        543,
+        1576,
+        686
+      ],
+      "bbox_width": 153,
+      "bbox_height": 143,
+      "crop_id": "IMG_20151207_114038_cell_0033",
+      "padded_bbox": [
+        1419,
+        539,
+        1580,
+        690
+      ],
+      "crop_width": 161,
+      "crop_height": 151,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0033.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0033.png"
+    },
+    {
+      "raw_index": 136,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.721533,
+      "bbox": [
+        1675,
+        546,
+        1845,
+        692
+      ],
+      "bbox_width": 170,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0034",
+      "padded_bbox": [
+        1671,
+        542,
+        1849,
+        696
+      ],
+      "crop_width": 178,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0034.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0034.png"
+    },
+    {
+      "raw_index": 12,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.868121,
+      "bbox": [
+        3111,
+        561,
+        3262,
+        694
+      ],
+      "bbox_width": 151,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151207_114038_cell_0035",
+      "padded_bbox": [
+        3107,
+        557,
+        3266,
+        698
+      ],
+      "crop_width": 159,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0035.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0035.png"
+    },
+    {
+      "raw_index": 68,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.792316,
+      "bbox": [
+        1216,
+        571,
+        1382,
+        726
+      ],
+      "bbox_width": 166,
+      "bbox_height": 155,
+      "crop_id": "IMG_20151207_114038_cell_0036",
+      "padded_bbox": [
+        1212,
+        567,
+        1386,
+        730
+      ],
+      "crop_width": 174,
+      "crop_height": 163,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0036.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0036.png"
+    },
+    {
+      "raw_index": 132,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.727458,
+      "bbox": [
+        1977,
+        576,
+        2107,
+        727
+      ],
+      "bbox_width": 130,
+      "bbox_height": 151,
+      "crop_id": "IMG_20151207_114038_cell_0037",
+      "padded_bbox": [
+        1973,
+        572,
+        2111,
+        731
+      ],
+      "crop_width": 138,
+      "crop_height": 159,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0037.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0037.png"
+    },
+    {
+      "raw_index": 42,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.820618,
+      "bbox": [
+        2522,
+        602,
+        2635,
+        739
+      ],
+      "bbox_width": 113,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0038",
+      "padded_bbox": [
+        2518,
+        598,
+        2639,
+        743
+      ],
+      "crop_width": 121,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0038.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0038.png"
+    },
+    {
+      "raw_index": 63,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.797457,
+      "bbox": [
+        2311,
+        603,
+        2452,
+        769
+      ],
+      "bbox_width": 141,
+      "bbox_height": 166,
+      "crop_id": "IMG_20151207_114038_cell_0039",
+      "padded_bbox": [
+        2307,
+        599,
+        2456,
+        773
+      ],
+      "crop_width": 149,
+      "crop_height": 174,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0039.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0039.png"
+    },
+    {
+      "raw_index": 105,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.750183,
+      "bbox": [
+        2091,
+        623,
+        2232,
+        821
+      ],
+      "bbox_width": 141,
+      "bbox_height": 198,
+      "crop_id": "IMG_20151207_114038_cell_0040",
+      "padded_bbox": [
+        2087,
+        619,
+        2236,
+        825
+      ],
+      "crop_width": 149,
+      "crop_height": 206,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0040.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0040.png"
+    },
+    {
+      "raw_index": 79,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.780971,
+      "bbox": [
+        1842,
+        638,
+        1969,
+        741
+      ],
+      "bbox_width": 127,
+      "bbox_height": 103,
+      "crop_id": "IMG_20151207_114038_cell_0041",
+      "padded_bbox": [
+        1838,
+        634,
+        1973,
+        745
+      ],
+      "crop_width": 135,
+      "crop_height": 111,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0041.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0041.png"
+    },
+    {
+      "raw_index": 125,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.732247,
+      "bbox": [
+        3358,
+        648,
+        3496,
+        772
+      ],
+      "bbox_width": 138,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151207_114038_cell_0042",
+      "padded_bbox": [
+        3354,
+        644,
+        3500,
+        776
+      ],
+      "crop_width": 146,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0042.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0042.png"
+    },
+    {
+      "raw_index": 83,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.774111,
+      "bbox": [
+        3554,
+        660,
+        3702,
+        807
+      ],
+      "bbox_width": 148,
+      "bbox_height": 147,
+      "crop_id": "IMG_20151207_114038_cell_0043",
+      "padded_bbox": [
+        3550,
+        656,
+        3706,
+        811
+      ],
+      "crop_width": 156,
+      "crop_height": 155,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0043.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0043.png"
+    },
+    {
+      "raw_index": 46,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.818252,
+      "bbox": [
+        1632,
+        667,
+        1775,
+        819
+      ],
+      "bbox_width": 143,
+      "bbox_height": 152,
+      "crop_id": "IMG_20151207_114038_cell_0044",
+      "padded_bbox": [
+        1628,
+        663,
+        1779,
+        823
+      ],
+      "crop_width": 151,
+      "crop_height": 160,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0044.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0044.png"
+    },
+    {
+      "raw_index": 47,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.816603,
+      "bbox": [
+        3044,
+        688,
+        3186,
+        820
+      ],
+      "bbox_width": 142,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151207_114038_cell_0045",
+      "padded_bbox": [
+        3040,
+        684,
+        3190,
+        824
+      ],
+      "crop_width": 150,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0045.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0045.png"
+    },
+    {
+      "raw_index": 151,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.697059,
+      "bbox": [
+        1142,
+        696,
+        1298,
+        865
+      ],
+      "bbox_width": 156,
+      "bbox_height": 169,
+      "crop_id": "IMG_20151207_114038_cell_0046",
+      "padded_bbox": [
+        1138,
+        692,
+        1302,
+        869
+      ],
+      "crop_width": 164,
+      "crop_height": 177,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0046.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0046.png"
+    },
+    {
+      "raw_index": 147,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.701593,
+      "bbox": [
+        2755,
+        699,
+        2890,
+        857
+      ],
+      "bbox_width": 135,
+      "bbox_height": 158,
+      "crop_id": "IMG_20151207_114038_cell_0047",
+      "padded_bbox": [
+        2751,
+        695,
+        2894,
+        861
+      ],
+      "crop_width": 143,
+      "crop_height": 166,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0047.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0047.png"
+    },
+    {
+      "raw_index": 75,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.787492,
+      "bbox": [
+        3246,
+        731,
+        3396,
+        871
+      ],
+      "bbox_width": 150,
+      "bbox_height": 140,
+      "crop_id": "IMG_20151207_114038_cell_0048",
+      "padded_bbox": [
+        3242,
+        727,
+        3400,
+        875
+      ],
+      "crop_width": 158,
+      "crop_height": 148,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0048.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0048.png"
+    },
+    {
+      "raw_index": 34,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.832024,
+      "bbox": [
+        2221,
+        735,
+        2366,
+        867
+      ],
+      "bbox_width": 145,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151207_114038_cell_0049",
+      "padded_bbox": [
+        2217,
+        731,
+        2370,
+        871
+      ],
+      "crop_width": 153,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0049.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0049.png"
+    },
+    {
+      "raw_index": 53,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.808101,
+      "bbox": [
+        1316,
+        761,
+        1476,
+        932
+      ],
+      "bbox_width": 160,
+      "bbox_height": 171,
+      "crop_id": "IMG_20151207_114038_cell_0050",
+      "padded_bbox": [
+        1312,
+        757,
+        1480,
+        936
+      ],
+      "crop_width": 168,
+      "crop_height": 179,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0050.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0050.png"
+    },
+    {
+      "raw_index": 3,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.888838,
+      "bbox": [
+        2421,
+        765,
+        2564,
+        915
+      ],
+      "bbox_width": 143,
+      "bbox_height": 150,
+      "crop_id": "IMG_20151207_114038_cell_0051",
+      "padded_bbox": [
+        2417,
+        761,
+        2568,
+        919
+      ],
+      "crop_width": 151,
+      "crop_height": 158,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0051.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0051.png"
+    },
+    {
+      "raw_index": 0,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.911076,
+      "bbox": [
+        1481,
+        772,
+        1628,
+        916
+      ],
+      "bbox_width": 147,
+      "bbox_height": 144,
+      "crop_id": "IMG_20151207_114038_cell_0052",
+      "padded_bbox": [
+        1477,
+        768,
+        1632,
+        920
+      ],
+      "crop_width": 155,
+      "crop_height": 152,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0052.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0052.png"
+    },
+    {
+      "raw_index": 134,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.725794,
+      "bbox": [
+        3484,
+        782,
+        3608,
+        916
+      ],
+      "bbox_width": 124,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151207_114038_cell_0053",
+      "padded_bbox": [
+        3480,
+        778,
+        3612,
+        920
+      ],
+      "crop_width": 132,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0053.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0053.png"
+    },
+    {
+      "raw_index": 98,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.755449,
+      "bbox": [
+        2653,
+        784,
+        2768,
+        934
+      ],
+      "bbox_width": 115,
+      "bbox_height": 150,
+      "crop_id": "IMG_20151207_114038_cell_0054",
+      "padded_bbox": [
+        2649,
+        780,
+        2772,
+        938
+      ],
+      "crop_width": 123,
+      "crop_height": 158,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0054.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0054.png"
+    },
+    {
+      "raw_index": 92,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.765192,
+      "bbox": [
+        3708,
+        803,
+        3852,
+        966
+      ],
+      "bbox_width": 144,
+      "bbox_height": 163,
+      "crop_id": "IMG_20151207_114038_cell_0055",
+      "padded_bbox": [
+        3704,
+        799,
+        3856,
+        970
+      ],
+      "crop_width": 152,
+      "crop_height": 171,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0055.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0055.png"
+    },
+    {
+      "raw_index": 178,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.644003,
+      "bbox": [
+        961,
+        804,
+        1111,
+        977
+      ],
+      "bbox_width": 150,
+      "bbox_height": 173,
+      "crop_id": "IMG_20151207_114038_cell_0056",
+      "padded_bbox": [
+        957,
+        800,
+        1115,
+        981
+      ],
+      "crop_width": 158,
+      "crop_height": 181,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0056.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0056.png"
+    },
+    {
+      "raw_index": 56,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.80472,
+      "bbox": [
+        1692,
+        824,
+        1840,
+        947
+      ],
+      "bbox_width": 148,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151207_114038_cell_0057",
+      "padded_bbox": [
+        1688,
+        820,
+        1844,
+        951
+      ],
+      "crop_width": 156,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0057.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0057.png"
+    },
+    {
+      "raw_index": 172,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.666645,
+      "bbox": [
+        3139,
+        831,
+        3267,
+        977
+      ],
+      "bbox_width": 128,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0058",
+      "padded_bbox": [
+        3135,
+        827,
+        3271,
+        981
+      ],
+      "crop_width": 136,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0058.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0058.png"
+    },
+    {
+      "raw_index": 89,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.768112,
+      "bbox": [
+        1990,
+        866,
+        2140,
+        1018
+      ],
+      "bbox_width": 150,
+      "bbox_height": 152,
+      "crop_id": "IMG_20151207_114038_cell_0059",
+      "padded_bbox": [
+        1986,
+        862,
+        2144,
+        1022
+      ],
+      "crop_width": 158,
+      "crop_height": 160,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0059.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0059.png"
+    },
+    {
+      "raw_index": 44,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.81903,
+      "bbox": [
+        2202,
+        868,
+        2334,
+        1003
+      ],
+      "bbox_width": 132,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151207_114038_cell_0060",
+      "padded_bbox": [
+        2198,
+        864,
+        2338,
+        1007
+      ],
+      "crop_width": 140,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0060.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0060.png"
+    },
+    {
+      "raw_index": 138,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.721053,
+      "bbox": [
+        2529,
+        872,
+        2671,
+        1019
+      ],
+      "bbox_width": 142,
+      "bbox_height": 147,
+      "crop_id": "IMG_20151207_114038_cell_0061",
+      "padded_bbox": [
+        2525,
+        868,
+        2675,
+        1023
+      ],
+      "crop_width": 150,
+      "crop_height": 155,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0061.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0061.png"
+    },
+    {
+      "raw_index": 202,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.508933,
+      "bbox": [
+        3235,
+        877,
+        3397,
+        1014
+      ],
+      "bbox_width": 162,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0062",
+      "padded_bbox": [
+        3231,
+        873,
+        3401,
+        1018
+      ],
+      "crop_width": 170,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0062.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0062.png"
+    },
+    {
+      "raw_index": 119,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.737989,
+      "bbox": [
+        2342,
+        880,
+        2474,
+        1026
+      ],
+      "bbox_width": 132,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0063",
+      "padded_bbox": [
+        2338,
+        876,
+        2478,
+        1030
+      ],
+      "crop_width": 140,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0063.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0063.png"
+    },
+    {
+      "raw_index": 39,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.827143,
+      "bbox": [
+        3557,
+        882,
+        3702,
+        1021
+      ],
+      "bbox_width": 145,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151207_114038_cell_0064",
+      "padded_bbox": [
+        3553,
+        878,
+        3706,
+        1025
+      ],
+      "crop_width": 153,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0064.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0064.png"
+    },
+    {
+      "raw_index": 26,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.843987,
+      "bbox": [
+        2890,
+        896,
+        3034,
+        1021
+      ],
+      "bbox_width": 144,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0065",
+      "padded_bbox": [
+        2886,
+        892,
+        3038,
+        1025
+      ],
+      "crop_width": 152,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0065.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0065.png"
+    },
+    {
+      "raw_index": 106,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.750176,
+      "bbox": [
+        3039,
+        897,
+        3172,
+        1053
+      ],
+      "bbox_width": 133,
+      "bbox_height": 156,
+      "crop_id": "IMG_20151207_114038_cell_0066",
+      "padded_bbox": [
+        3035,
+        893,
+        3176,
+        1057
+      ],
+      "crop_width": 141,
+      "crop_height": 164,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0066.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0066.png"
+    },
+    {
+      "raw_index": 186,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.601977,
+      "bbox": [
+        1629,
+        926,
+        1762,
+        1055
+      ],
+      "bbox_width": 133,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151207_114038_cell_0067",
+      "padded_bbox": [
+        1625,
+        922,
+        1766,
+        1059
+      ],
+      "crop_width": 141,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0067.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0067.png"
+    },
+    {
+      "raw_index": 163,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.675265,
+      "bbox": [
+        3411,
+        965,
+        3553,
+        1128
+      ],
+      "bbox_width": 142,
+      "bbox_height": 163,
+      "crop_id": "IMG_20151207_114038_cell_0068",
+      "padded_bbox": [
+        3407,
+        961,
+        3557,
+        1132
+      ],
+      "crop_width": 150,
+      "crop_height": 171,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0068.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0068.png"
+    },
+    {
+      "raw_index": 152,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.6964,
+      "bbox": [
+        3260,
+        967,
+        3418,
+        1112
+      ],
+      "bbox_width": 158,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0069",
+      "padded_bbox": [
+        3256,
+        963,
+        3422,
+        1116
+      ],
+      "crop_width": 166,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0069.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0069.png"
+    },
+    {
+      "raw_index": 61,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.800321,
+      "bbox": [
+        1370,
+        976,
+        1520,
+        1137
+      ],
+      "bbox_width": 150,
+      "bbox_height": 161,
+      "crop_id": "IMG_20151207_114038_cell_0070",
+      "padded_bbox": [
+        1366,
+        972,
+        1524,
+        1141
+      ],
+      "crop_width": 158,
+      "crop_height": 169,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0070.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0070.png"
+    },
+    {
+      "raw_index": 93,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.76456,
+      "bbox": [
+        2089,
+        979,
+        2241,
+        1111
+      ],
+      "bbox_width": 152,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151207_114038_cell_0071",
+      "padded_bbox": [
+        2085,
+        975,
+        2245,
+        1115
+      ],
+      "crop_width": 160,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0071.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0071.png"
+    },
+    {
+      "raw_index": 108,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.746765,
+      "bbox": [
+        3700,
+        998,
+        3840,
+        1144
+      ],
+      "bbox_width": 140,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0072",
+      "padded_bbox": [
+        3696,
+        994,
+        3844,
+        1148
+      ],
+      "crop_width": 148,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0072.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0072.png"
+    },
+    {
+      "raw_index": 165,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.672017,
+      "bbox": [
+        3116,
+        999,
+        3237,
+        1127
+      ],
+      "bbox_width": 121,
+      "bbox_height": 128,
+      "crop_id": "IMG_20151207_114038_cell_0073",
+      "padded_bbox": [
+        3112,
+        995,
+        3241,
+        1131
+      ],
+      "crop_width": 129,
+      "crop_height": 136,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0073.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0073.png"
+    },
+    {
+      "raw_index": 180,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.63356,
+      "bbox": [
+        1974,
+        1000,
+        2087,
+        1138
+      ],
+      "bbox_width": 113,
+      "bbox_height": 138,
+      "crop_id": "IMG_20151207_114038_cell_0074",
+      "padded_bbox": [
+        1970,
+        996,
+        2091,
+        1142
+      ],
+      "crop_width": 121,
+      "crop_height": 146,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0074.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0074.png"
+    },
+    {
+      "raw_index": 143,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.713711,
+      "bbox": [
+        853,
+        1001,
+        1031,
+        1170
+      ],
+      "bbox_width": 178,
+      "bbox_height": 169,
+      "crop_id": "IMG_20151207_114038_cell_0075",
+      "padded_bbox": [
+        849,
+        997,
+        1035,
+        1174
+      ],
+      "crop_width": 186,
+      "crop_height": 177,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0075.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0075.png"
+    },
+    {
+      "raw_index": 72,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.7895,
+      "bbox": [
+        1847,
+        1011,
+        1986,
+        1147
+      ],
+      "bbox_width": 139,
+      "bbox_height": 136,
+      "crop_id": "IMG_20151207_114038_cell_0076",
+      "padded_bbox": [
+        1843,
+        1007,
+        1990,
+        1151
+      ],
+      "crop_width": 147,
+      "crop_height": 144,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0076.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0076.png"
+    },
+    {
+      "raw_index": 121,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.736848,
+      "bbox": [
+        2929,
+        1018,
+        3098,
+        1166
+      ],
+      "bbox_width": 169,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0077",
+      "padded_bbox": [
+        2925,
+        1014,
+        3102,
+        1170
+      ],
+      "crop_width": 177,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0077.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0077.png"
+    },
+    {
+      "raw_index": 97,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.757763,
+      "bbox": [
+        1235,
+        1022,
+        1371,
+        1157
+      ],
+      "bbox_width": 136,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151207_114038_cell_0078",
+      "padded_bbox": [
+        1231,
+        1018,
+        1375,
+        1161
+      ],
+      "crop_width": 144,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0078.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0078.png"
+    },
+    {
+      "raw_index": 85,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.771372,
+      "bbox": [
+        2729,
+        1040,
+        2884,
+        1176
+      ],
+      "bbox_width": 155,
+      "bbox_height": 136,
+      "crop_id": "IMG_20151207_114038_cell_0079",
+      "padded_bbox": [
+        2725,
+        1036,
+        2888,
+        1180
+      ],
+      "crop_width": 163,
+      "crop_height": 144,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0079.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0079.png"
+    },
+    {
+      "raw_index": 19,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.854851,
+      "bbox": [
+        2368,
+        1044,
+        2506,
+        1196
+      ],
+      "bbox_width": 138,
+      "bbox_height": 152,
+      "crop_id": "IMG_20151207_114038_cell_0080",
+      "padded_bbox": [
+        2364,
+        1040,
+        2510,
+        1200
+      ],
+      "crop_width": 146,
+      "crop_height": 160,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0080.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0080.png"
+    },
+    {
+      "raw_index": 31,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.835811,
+      "bbox": [
+        1487,
+        1056,
+        1646,
+        1209
+      ],
+      "bbox_width": 159,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0081",
+      "padded_bbox": [
+        1483,
+        1052,
+        1650,
+        1213
+      ],
+      "crop_width": 167,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0081.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0081.png"
+    },
+    {
+      "raw_index": 96,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.761836,
+      "bbox": [
+        1089,
+        1077,
+        1237,
+        1213
+      ],
+      "bbox_width": 148,
+      "bbox_height": 136,
+      "crop_id": "IMG_20151207_114038_cell_0082",
+      "padded_bbox": [
+        1085,
+        1073,
+        1241,
+        1217
+      ],
+      "crop_width": 156,
+      "crop_height": 144,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0082.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0082.png"
+    },
+    {
+      "raw_index": 29,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.840925,
+      "bbox": [
+        2141,
+        1081,
+        2284,
+        1225
+      ],
+      "bbox_width": 143,
+      "bbox_height": 144,
+      "crop_id": "IMG_20151207_114038_cell_0083",
+      "padded_bbox": [
+        2137,
+        1077,
+        2288,
+        1229
+      ],
+      "crop_width": 151,
+      "crop_height": 152,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0083.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0083.png"
+    },
+    {
+      "raw_index": 45,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.818809,
+      "bbox": [
+        3470,
+        1088,
+        3613,
+        1212
+      ],
+      "bbox_width": 143,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151207_114038_cell_0084",
+      "padded_bbox": [
+        3466,
+        1084,
+        3617,
+        1216
+      ],
+      "crop_width": 151,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0084.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0084.png"
+    },
+    {
+      "raw_index": 135,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.724347,
+      "bbox": [
+        2908,
+        1119,
+        3036,
+        1261
+      ],
+      "bbox_width": 128,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0085",
+      "padded_bbox": [
+        2904,
+        1115,
+        3040,
+        1265
+      ],
+      "crop_width": 136,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0085.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0085.png"
+    },
+    {
+      "raw_index": 187,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.598193,
+      "bbox": [
+        1643,
+        1122,
+        1778,
+        1261
+      ],
+      "bbox_width": 135,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151207_114038_cell_0086",
+      "padded_bbox": [
+        1639,
+        1118,
+        1782,
+        1265
+      ],
+      "crop_width": 143,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0086.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0086.png"
+    },
+    {
+      "raw_index": 130,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.728201,
+      "bbox": [
+        1902,
+        1157,
+        2046,
+        1305
+      ],
+      "bbox_width": 144,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0087",
+      "padded_bbox": [
+        1898,
+        1153,
+        2050,
+        1309
+      ],
+      "crop_width": 152,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0087.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0087.png"
+    },
+    {
+      "raw_index": 90,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.76789,
+      "bbox": [
+        2463,
+        1159,
+        2604,
+        1301
+      ],
+      "bbox_width": 141,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0088",
+      "padded_bbox": [
+        2459,
+        1155,
+        2608,
+        1305
+      ],
+      "crop_width": 149,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0088.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0088.png"
+    },
+    {
+      "raw_index": 70,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.791373,
+      "bbox": [
+        3146,
+        1161,
+        3298,
+        1300
+      ],
+      "bbox_width": 152,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151207_114038_cell_0089",
+      "padded_bbox": [
+        3142,
+        1157,
+        3302,
+        1304
+      ],
+      "crop_width": 160,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0089.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0089.png"
+    },
+    {
+      "raw_index": 64,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.796614,
+      "bbox": [
+        3623,
+        1188,
+        3773,
+        1313
+      ],
+      "bbox_width": 150,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0090",
+      "padded_bbox": [
+        3619,
+        1184,
+        3777,
+        1317
+      ],
+      "crop_width": 158,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0090.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0090.png"
+    },
+    {
+      "raw_index": 37,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.827916,
+      "bbox": [
+        2781,
+        1199,
+        2925,
+        1334
+      ],
+      "bbox_width": 144,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151207_114038_cell_0091",
+      "padded_bbox": [
+        2777,
+        1195,
+        2929,
+        1338
+      ],
+      "crop_width": 152,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0091.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0091.png"
+    },
+    {
+      "raw_index": 203,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.486398,
+      "bbox": [
+        3489,
+        1205,
+        3614,
+        1326
+      ],
+      "bbox_width": 125,
+      "bbox_height": 121,
+      "crop_id": "IMG_20151207_114038_cell_0092",
+      "padded_bbox": [
+        3485,
+        1201,
+        3618,
+        1330
+      ],
+      "crop_width": 133,
+      "crop_height": 129,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0092.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0092.png"
+    },
+    {
+      "raw_index": 67,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.79413,
+      "bbox": [
+        912,
+        1206,
+        1068,
+        1360
+      ],
+      "bbox_width": 156,
+      "bbox_height": 154,
+      "crop_id": "IMG_20151207_114038_cell_0093",
+      "padded_bbox": [
+        908,
+        1202,
+        1072,
+        1364
+      ],
+      "crop_width": 164,
+      "crop_height": 162,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0093.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0093.png"
+    },
+    {
+      "raw_index": 27,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.843794,
+      "bbox": [
+        2306,
+        1208,
+        2444,
+        1339
+      ],
+      "bbox_width": 138,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151207_114038_cell_0094",
+      "padded_bbox": [
+        2302,
+        1204,
+        2448,
+        1343
+      ],
+      "crop_width": 146,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0094.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0094.png"
+    },
+    {
+      "raw_index": 74,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.788386,
+      "bbox": [
+        2582,
+        1217,
+        2705,
+        1354
+      ],
+      "bbox_width": 123,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0095",
+      "padded_bbox": [
+        2578,
+        1213,
+        2709,
+        1358
+      ],
+      "crop_width": 131,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0095.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0095.png"
+    },
+    {
+      "raw_index": 209,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.2931,
+      "bbox": [
+        1425,
+        1219,
+        1535,
+        1307
+      ],
+      "bbox_width": 110,
+      "bbox_height": 88,
+      "crop_id": "IMG_20151207_114038_cell_0096",
+      "padded_bbox": [
+        1421,
+        1215,
+        1539,
+        1311
+      ],
+      "crop_width": 118,
+      "crop_height": 96,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0096.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0096.png"
+    },
+    {
+      "raw_index": 18,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.857976,
+      "bbox": [
+        1771,
+        1233,
+        1914,
+        1358
+      ],
+      "bbox_width": 143,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0097",
+      "padded_bbox": [
+        1767,
+        1229,
+        1918,
+        1362
+      ],
+      "crop_width": 151,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0097.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0097.png"
+    },
+    {
+      "raw_index": 58,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.801278,
+      "bbox": [
+        1518,
+        1241,
+        1648,
+        1384
+      ],
+      "bbox_width": 130,
+      "bbox_height": 143,
+      "crop_id": "IMG_20151207_114038_cell_0098",
+      "padded_bbox": [
+        1514,
+        1237,
+        1652,
+        1388
+      ],
+      "crop_width": 138,
+      "crop_height": 151,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0098.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0098.png"
+    },
+    {
+      "raw_index": 195,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.552808,
+      "bbox": [
+        3079,
+        1248,
+        3216,
+        1387
+      ],
+      "bbox_width": 137,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151207_114038_cell_0099",
+      "padded_bbox": [
+        3075,
+        1244,
+        3220,
+        1391
+      ],
+      "crop_width": 145,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0099.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0099.png"
+    },
+    {
+      "raw_index": 197,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.541468,
+      "bbox": [
+        3764,
+        1249,
+        3913,
+        1366
+      ],
+      "bbox_width": 149,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151207_114038_cell_0100",
+      "padded_bbox": [
+        3760,
+        1245,
+        3917,
+        1370
+      ],
+      "crop_width": 157,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0100.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0100.png"
+    },
+    {
+      "raw_index": 166,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.672016,
+      "bbox": [
+        3275,
+        1257,
+        3421,
+        1405
+      ],
+      "bbox_width": 146,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0101",
+      "padded_bbox": [
+        3271,
+        1253,
+        3425,
+        1409
+      ],
+      "crop_width": 154,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0101.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0101.png"
+    },
+    {
+      "raw_index": 191,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.586312,
+      "bbox": [
+        2671,
+        1270,
+        2811,
+        1406
+      ],
+      "bbox_width": 140,
+      "bbox_height": 136,
+      "crop_id": "IMG_20151207_114038_cell_0102",
+      "padded_bbox": [
+        2667,
+        1266,
+        2815,
+        1410
+      ],
+      "crop_width": 148,
+      "crop_height": 144,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0102.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0102.png"
+    },
+    {
+      "raw_index": 1,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.899746,
+      "bbox": [
+        1655,
+        1288,
+        1774,
+        1404
+      ],
+      "bbox_width": 119,
+      "bbox_height": 116,
+      "crop_id": "IMG_20151207_114038_cell_0103",
+      "padded_bbox": [
+        1651,
+        1284,
+        1778,
+        1408
+      ],
+      "crop_width": 127,
+      "crop_height": 124,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0103.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0103.png"
+    },
+    {
+      "raw_index": 55,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.804815,
+      "bbox": [
+        1132,
+        1294,
+        1298,
+        1434
+      ],
+      "bbox_width": 166,
+      "bbox_height": 140,
+      "crop_id": "IMG_20151207_114038_cell_0104",
+      "padded_bbox": [
+        1128,
+        1290,
+        1302,
+        1438
+      ],
+      "crop_width": 174,
+      "crop_height": 148,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0104.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0104.png"
+    },
+    {
+      "raw_index": 115,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.739546,
+      "bbox": [
+        2167,
+        1313,
+        2293,
+        1444
+      ],
+      "bbox_width": 126,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151207_114038_cell_0105",
+      "padded_bbox": [
+        2163,
+        1309,
+        2297,
+        1448
+      ],
+      "crop_width": 134,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0105.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0105.png"
+    },
+    {
+      "raw_index": 112,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.743974,
+      "bbox": [
+        3622,
+        1315,
+        3761,
+        1430
+      ],
+      "bbox_width": 139,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151207_114038_cell_0106",
+      "padded_bbox": [
+        3618,
+        1311,
+        3765,
+        1434
+      ],
+      "crop_width": 147,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0106.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0106.png"
+    },
+    {
+      "raw_index": 142,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.714014,
+      "bbox": [
+        1404,
+        1333,
+        1560,
+        1475
+      ],
+      "bbox_width": 156,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0107",
+      "padded_bbox": [
+        1400,
+        1329,
+        1564,
+        1479
+      ],
+      "crop_width": 164,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0107.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0107.png"
+    },
+    {
+      "raw_index": 60,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.800414,
+      "bbox": [
+        2471,
+        1346,
+        2613,
+        1469
+      ],
+      "bbox_width": 142,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151207_114038_cell_0108",
+      "padded_bbox": [
+        2467,
+        1342,
+        2617,
+        1473
+      ],
+      "crop_width": 150,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0108.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0108.png"
+    },
+    {
+      "raw_index": 193,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.561834,
+      "bbox": [
+        3753,
+        1362,
+        3883,
+        1494
+      ],
+      "bbox_width": 130,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151207_114038_cell_0109",
+      "padded_bbox": [
+        3749,
+        1358,
+        3887,
+        1498
+      ],
+      "crop_width": 138,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0109.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0109.png"
+    },
+    {
+      "raw_index": 189,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.59739,
+      "bbox": [
+        1965,
+        1367,
+        2101,
+        1491
+      ],
+      "bbox_width": 136,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151207_114038_cell_0110",
+      "padded_bbox": [
+        1961,
+        1363,
+        2105,
+        1495
+      ],
+      "crop_width": 144,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0110.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0110.png"
+    },
+    {
+      "raw_index": 76,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.78719,
+      "bbox": [
+        3395,
+        1370,
+        3536,
+        1495
+      ],
+      "bbox_width": 141,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0111",
+      "padded_bbox": [
+        3391,
+        1366,
+        3540,
+        1499
+      ],
+      "crop_width": 149,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0111.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0111.png"
+    },
+    {
+      "raw_index": 43,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.819247,
+      "bbox": [
+        851,
+        1388,
+        1016,
+        1543
+      ],
+      "bbox_width": 165,
+      "bbox_height": 155,
+      "crop_id": "IMG_20151207_114038_cell_0112",
+      "padded_bbox": [
+        847,
+        1384,
+        1020,
+        1547
+      ],
+      "crop_width": 173,
+      "crop_height": 163,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0112.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0112.png"
+    },
+    {
+      "raw_index": 91,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.767731,
+      "bbox": [
+        2315,
+        1388,
+        2456,
+        1519
+      ],
+      "bbox_width": 141,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151207_114038_cell_0113",
+      "padded_bbox": [
+        2311,
+        1384,
+        2460,
+        1523
+      ],
+      "crop_width": 149,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0113.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0113.png"
+    },
+    {
+      "raw_index": 129,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.730636,
+      "bbox": [
+        1653,
+        1412,
+        1816,
+        1550
+      ],
+      "bbox_width": 163,
+      "bbox_height": 138,
+      "crop_id": "IMG_20151207_114038_cell_0114",
+      "padded_bbox": [
+        1649,
+        1408,
+        1820,
+        1554
+      ],
+      "crop_width": 171,
+      "crop_height": 146,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0114.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0114.png"
+    },
+    {
+      "raw_index": 171,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.666839,
+      "bbox": [
+        2109,
+        1436,
+        2251,
+        1581
+      ],
+      "bbox_width": 142,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0115",
+      "padded_bbox": [
+        2105,
+        1432,
+        2255,
+        1585
+      ],
+      "crop_width": 150,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0115.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0115.png"
+    },
+    {
+      "raw_index": 190,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.594313,
+      "bbox": [
+        1819,
+        1437,
+        1930,
+        1602
+      ],
+      "bbox_width": 111,
+      "bbox_height": 165,
+      "crop_id": "IMG_20151207_114038_cell_0116",
+      "padded_bbox": [
+        1815,
+        1433,
+        1934,
+        1606
+      ],
+      "crop_width": 119,
+      "crop_height": 173,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0116.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0116.png"
+    },
+    {
+      "raw_index": 9,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.873673,
+      "bbox": [
+        3428,
+        1502,
+        3579,
+        1620
+      ],
+      "bbox_width": 151,
+      "bbox_height": 118,
+      "crop_id": "IMG_20151207_114038_cell_0117",
+      "padded_bbox": [
+        3424,
+        1498,
+        3583,
+        1624
+      ],
+      "crop_width": 159,
+      "crop_height": 126,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0117.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0117.png"
+    },
+    {
+      "raw_index": 24,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.845961,
+      "bbox": [
+        2546,
+        1503,
+        2682,
+        1628
+      ],
+      "bbox_width": 136,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0118",
+      "padded_bbox": [
+        2542,
+        1499,
+        2686,
+        1632
+      ],
+      "crop_width": 144,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0118.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0118.png"
+    },
+    {
+      "raw_index": 155,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.687116,
+      "bbox": [
+        2407,
+        1506,
+        2532,
+        1632
+      ],
+      "bbox_width": 125,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0119",
+      "padded_bbox": [
+        2403,
+        1502,
+        2536,
+        1636
+      ],
+      "crop_width": 133,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0119.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0119.png"
+    },
+    {
+      "raw_index": 131,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.727601,
+      "bbox": [
+        1965,
+        1510,
+        2073,
+        1648
+      ],
+      "bbox_width": 108,
+      "bbox_height": 138,
+      "crop_id": "IMG_20151207_114038_cell_0120",
+      "padded_bbox": [
+        1961,
+        1506,
+        2077,
+        1652
+      ],
+      "crop_width": 116,
+      "crop_height": 146,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0120.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0120.png"
+    },
+    {
+      "raw_index": 21,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.854418,
+      "bbox": [
+        976,
+        1532,
+        1133,
+        1685
+      ],
+      "bbox_width": 157,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0121",
+      "padded_bbox": [
+        972,
+        1528,
+        1137,
+        1689
+      ],
+      "crop_width": 165,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0121.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0121.png"
+    },
+    {
+      "raw_index": 15,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.86306,
+      "bbox": [
+        3108,
+        1543,
+        3254,
+        1691
+      ],
+      "bbox_width": 146,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0122",
+      "padded_bbox": [
+        3104,
+        1539,
+        3258,
+        1695
+      ],
+      "crop_width": 154,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0122.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0122.png"
+    },
+    {
+      "raw_index": 51,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.809399,
+      "bbox": [
+        2287,
+        1550,
+        2411,
+        1676
+      ],
+      "bbox_width": 124,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0123",
+      "padded_bbox": [
+        2283,
+        1546,
+        2415,
+        1680
+      ],
+      "crop_width": 132,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0123.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0123.png"
+    },
+    {
+      "raw_index": 175,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.66119,
+      "bbox": [
+        2044,
+        1552,
+        2179,
+        1707
+      ],
+      "bbox_width": 135,
+      "bbox_height": 155,
+      "crop_id": "IMG_20151207_114038_cell_0124",
+      "padded_bbox": [
+        2040,
+        1548,
+        2183,
+        1711
+      ],
+      "crop_width": 143,
+      "crop_height": 163,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0124.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0124.png"
+    },
+    {
+      "raw_index": 8,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.873811,
+      "bbox": [
+        1666,
+        1569,
+        1813,
+        1684
+      ],
+      "bbox_width": 147,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151207_114038_cell_0125",
+      "padded_bbox": [
+        1662,
+        1565,
+        1817,
+        1688
+      ],
+      "crop_width": 155,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0125.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0125.png"
+    },
+    {
+      "raw_index": 50,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.812436,
+      "bbox": [
+        1360,
+        1574,
+        1512,
+        1720
+      ],
+      "bbox_width": 152,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0126",
+      "padded_bbox": [
+        1356,
+        1570,
+        1516,
+        1724
+      ],
+      "crop_width": 160,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0126.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0126.png"
+    },
+    {
+      "raw_index": 205,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.381702,
+      "bbox": [
+        1825,
+        1577,
+        1959,
+        1704
+      ],
+      "bbox_width": 134,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151207_114038_cell_0127",
+      "padded_bbox": [
+        1821,
+        1573,
+        1963,
+        1708
+      ],
+      "crop_width": 142,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0127.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0127.png"
+    },
+    {
+      "raw_index": 69,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.791774,
+      "bbox": [
+        1144,
+        1581,
+        1262,
+        1724
+      ],
+      "bbox_width": 118,
+      "bbox_height": 143,
+      "crop_id": "IMG_20151207_114038_cell_0128",
+      "padded_bbox": [
+        1140,
+        1577,
+        1266,
+        1728
+      ],
+      "crop_width": 126,
+      "crop_height": 151,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0128.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0128.png"
+    },
+    {
+      "raw_index": 22,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.849881,
+      "bbox": [
+        3486,
+        1632,
+        3618,
+        1750
+      ],
+      "bbox_width": 132,
+      "bbox_height": 118,
+      "crop_id": "IMG_20151207_114038_cell_0129",
+      "padded_bbox": [
+        3482,
+        1628,
+        3622,
+        1754
+      ],
+      "crop_width": 140,
+      "crop_height": 126,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0129.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0129.png"
+    },
+    {
+      "raw_index": 200,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.519618,
+      "bbox": [
+        3220,
+        1641,
+        3352,
+        1814
+      ],
+      "bbox_width": 132,
+      "bbox_height": 173,
+      "crop_id": "IMG_20151207_114038_cell_0130",
+      "padded_bbox": [
+        3216,
+        1637,
+        3356,
+        1818
+      ],
+      "crop_width": 140,
+      "crop_height": 181,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0130.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0130.png"
+    },
+    {
+      "raw_index": 133,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.727301,
+      "bbox": [
+        3364,
+        1664,
+        3482,
+        1817
+      ],
+      "bbox_width": 118,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0131",
+      "padded_bbox": [
+        3360,
+        1660,
+        3486,
+        1821
+      ],
+      "crop_width": 126,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0131.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0131.png"
+    },
+    {
+      "raw_index": 30,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.837041,
+      "bbox": [
+        1244,
+        1672,
+        1391,
+        1820
+      ],
+      "bbox_width": 147,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0132",
+      "padded_bbox": [
+        1240,
+        1668,
+        1395,
+        1824
+      ],
+      "crop_width": 155,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0132.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0132.png"
+    },
+    {
+      "raw_index": 127,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.731081,
+      "bbox": [
+        2346,
+        1680,
+        2488,
+        1829
+      ],
+      "bbox_width": 142,
+      "bbox_height": 149,
+      "crop_id": "IMG_20151207_114038_cell_0133",
+      "padded_bbox": [
+        2342,
+        1676,
+        2492,
+        1833
+      ],
+      "crop_width": 150,
+      "crop_height": 157,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0133.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0133.png"
+    },
+    {
+      "raw_index": 77,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.785799,
+      "bbox": [
+        2223,
+        1684,
+        2327,
+        1797
+      ],
+      "bbox_width": 104,
+      "bbox_height": 113,
+      "crop_id": "IMG_20151207_114038_cell_0134",
+      "padded_bbox": [
+        2219,
+        1680,
+        2331,
+        1801
+      ],
+      "crop_width": 112,
+      "crop_height": 121,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0134.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0134.png"
+    },
+    {
+      "raw_index": 102,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.754108,
+      "bbox": [
+        1657,
+        1699,
+        1817,
+        1839
+      ],
+      "bbox_width": 160,
+      "bbox_height": 140,
+      "crop_id": "IMG_20151207_114038_cell_0135",
+      "padded_bbox": [
+        1653,
+        1695,
+        1821,
+        1843
+      ],
+      "crop_width": 168,
+      "crop_height": 148,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0135.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0135.png"
+    },
+    {
+      "raw_index": 71,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.790442,
+      "bbox": [
+        1056,
+        1709,
+        1169,
+        1833
+      ],
+      "bbox_width": 113,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151207_114038_cell_0136",
+      "padded_bbox": [
+        1052,
+        1705,
+        1173,
+        1837
+      ],
+      "crop_width": 121,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0136.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0136.png"
+    },
+    {
+      "raw_index": 122,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.736818,
+      "bbox": [
+        900,
+        1713,
+        1051,
+        1855
+      ],
+      "bbox_width": 151,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0137",
+      "padded_bbox": [
+        896,
+        1709,
+        1055,
+        1859
+      ],
+      "crop_width": 159,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0137.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0137.png"
+    },
+    {
+      "raw_index": 159,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.68035,
+      "bbox": [
+        1508,
+        1728,
+        1636,
+        1857
+      ],
+      "bbox_width": 128,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151207_114038_cell_0138",
+      "padded_bbox": [
+        1504,
+        1724,
+        1640,
+        1861
+      ],
+      "crop_width": 136,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0138.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0138.png"
+    },
+    {
+      "raw_index": 33,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.832319,
+      "bbox": [
+        3664,
+        1736,
+        3823,
+        1879
+      ],
+      "bbox_width": 159,
+      "bbox_height": 143,
+      "crop_id": "IMG_20151207_114038_cell_0139",
+      "padded_bbox": [
+        3660,
+        1732,
+        3827,
+        1883
+      ],
+      "crop_width": 167,
+      "crop_height": 151,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0139.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0139.png"
+    },
+    {
+      "raw_index": 169,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.668886,
+      "bbox": [
+        1148,
+        1740,
+        1282,
+        1900
+      ],
+      "bbox_width": 134,
+      "bbox_height": 160,
+      "crop_id": "IMG_20151207_114038_cell_0140",
+      "padded_bbox": [
+        1144,
+        1736,
+        1286,
+        1904
+      ],
+      "crop_width": 142,
+      "crop_height": 168,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0140.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0140.png"
+    },
+    {
+      "raw_index": 84,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.772423,
+      "bbox": [
+        2077,
+        1760,
+        2227,
+        1896
+      ],
+      "bbox_width": 150,
+      "bbox_height": 136,
+      "crop_id": "IMG_20151207_114038_cell_0141",
+      "padded_bbox": [
+        2073,
+        1756,
+        2231,
+        1900
+      ],
+      "crop_width": 158,
+      "crop_height": 144,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0141.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0141.png"
+    },
+    {
+      "raw_index": 146,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.704862,
+      "bbox": [
+        3498,
+        1766,
+        3633,
+        1918
+      ],
+      "bbox_width": 135,
+      "bbox_height": 152,
+      "crop_id": "IMG_20151207_114038_cell_0142",
+      "padded_bbox": [
+        3494,
+        1762,
+        3637,
+        1922
+      ],
+      "crop_width": 143,
+      "crop_height": 160,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0142.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0142.png"
+    },
+    {
+      "raw_index": 149,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.699417,
+      "bbox": [
+        1332,
+        1770,
+        1485,
+        1903
+      ],
+      "bbox_width": 153,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151207_114038_cell_0143",
+      "padded_bbox": [
+        1328,
+        1766,
+        1489,
+        1907
+      ],
+      "crop_width": 161,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0143.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0143.png"
+    },
+    {
+      "raw_index": 139,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.720887,
+      "bbox": [
+        2247,
+        1794,
+        2378,
+        1915
+      ],
+      "bbox_width": 131,
+      "bbox_height": 121,
+      "crop_id": "IMG_20151207_114038_cell_0144",
+      "padded_bbox": [
+        2243,
+        1790,
+        2382,
+        1919
+      ],
+      "crop_width": 139,
+      "crop_height": 129,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0144.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0144.png"
+    },
+    {
+      "raw_index": 104,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.752113,
+      "bbox": [
+        2497,
+        1796,
+        2627,
+        1927
+      ],
+      "bbox_width": 130,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151207_114038_cell_0145",
+      "padded_bbox": [
+        2493,
+        1792,
+        2631,
+        1931
+      ],
+      "crop_width": 138,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0145.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0145.png"
+    },
+    {
+      "raw_index": 40,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.824443,
+      "bbox": [
+        1722,
+        1798,
+        1871,
+        1936
+      ],
+      "bbox_width": 149,
+      "bbox_height": 138,
+      "crop_id": "IMG_20151207_114038_cell_0146",
+      "padded_bbox": [
+        1718,
+        1794,
+        1875,
+        1940
+      ],
+      "crop_width": 157,
+      "crop_height": 146,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0146.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0146.png"
+    },
+    {
+      "raw_index": 73,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.789343,
+      "bbox": [
+        2665,
+        1802,
+        2819,
+        1948
+      ],
+      "bbox_width": 154,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0147",
+      "padded_bbox": [
+        2661,
+        1798,
+        2823,
+        1952
+      ],
+      "crop_width": 162,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0147.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0147.png"
+    },
+    {
+      "raw_index": 201,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.519101,
+      "bbox": [
+        3159,
+        1807,
+        3274,
+        1933
+      ],
+      "bbox_width": 115,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0148",
+      "padded_bbox": [
+        3155,
+        1803,
+        3278,
+        1937
+      ],
+      "crop_width": 123,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0148.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0148.png"
+    },
+    {
+      "raw_index": 114,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.742762,
+      "bbox": [
+        3032,
+        1818,
+        3145,
+        1934
+      ],
+      "bbox_width": 113,
+      "bbox_height": 116,
+      "crop_id": "IMG_20151207_114038_cell_0149",
+      "padded_bbox": [
+        3028,
+        1814,
+        3149,
+        1938
+      ],
+      "crop_width": 121,
+      "crop_height": 124,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0149.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0149.png"
+    },
+    {
+      "raw_index": 7,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.875939,
+      "bbox": [
+        3318,
+        1832,
+        3449,
+        1958
+      ],
+      "bbox_width": 131,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0150",
+      "padded_bbox": [
+        3314,
+        1828,
+        3453,
+        1962
+      ],
+      "crop_width": 139,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0150.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0150.png"
+    },
+    {
+      "raw_index": 118,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.7389,
+      "bbox": [
+        2896,
+        1835,
+        3022,
+        1965
+      ],
+      "bbox_width": 126,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151207_114038_cell_0151",
+      "padded_bbox": [
+        2892,
+        1831,
+        3026,
+        1969
+      ],
+      "crop_width": 134,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0151.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0151.png"
+    },
+    {
+      "raw_index": 162,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.675996,
+      "bbox": [
+        1431,
+        1845,
+        1565,
+        1968
+      ],
+      "bbox_width": 134,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151207_114038_cell_0152",
+      "padded_bbox": [
+        1427,
+        1841,
+        1569,
+        1972
+      ],
+      "crop_width": 142,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0152.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0152.png"
+    },
+    {
+      "raw_index": 170,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.668433,
+      "bbox": [
+        3628,
+        1856,
+        3770,
+        1983
+      ],
+      "bbox_width": 142,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151207_114038_cell_0153",
+      "padded_bbox": [
+        3624,
+        1852,
+        3774,
+        1987
+      ],
+      "crop_width": 150,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0153.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0153.png"
+    },
+    {
+      "raw_index": 110,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.745013,
+      "bbox": [
+        906,
+        1861,
+        1063,
+        2008
+      ],
+      "bbox_width": 157,
+      "bbox_height": 147,
+      "crop_id": "IMG_20151207_114038_cell_0154",
+      "padded_bbox": [
+        902,
+        1857,
+        1067,
+        2012
+      ],
+      "crop_width": 165,
+      "crop_height": 155,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0154.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0154.png"
+    },
+    {
+      "raw_index": 13,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.86783,
+      "bbox": [
+        1915,
+        1875,
+        2042,
+        2020
+      ],
+      "bbox_width": 127,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0155",
+      "padded_bbox": [
+        1911,
+        1871,
+        2046,
+        2024
+      ],
+      "crop_width": 135,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0155.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0155.png"
+    },
+    {
+      "raw_index": 35,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.830852,
+      "bbox": [
+        2113,
+        1901,
+        2240,
+        2055
+      ],
+      "bbox_width": 127,
+      "bbox_height": 154,
+      "crop_id": "IMG_20151207_114038_cell_0156",
+      "padded_bbox": [
+        2109,
+        1897,
+        2244,
+        2059
+      ],
+      "crop_width": 135,
+      "crop_height": 162,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0156.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0156.png"
+    },
+    {
+      "raw_index": 168,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.669733,
+      "bbox": [
+        2793,
+        1919,
+        2965,
+        2070
+      ],
+      "bbox_width": 172,
+      "bbox_height": 151,
+      "crop_id": "IMG_20151207_114038_cell_0157",
+      "padded_bbox": [
+        2789,
+        1915,
+        2969,
+        2074
+      ],
+      "crop_width": 180,
+      "crop_height": 159,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0157.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0157.png"
+    },
+    {
+      "raw_index": 157,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.68444,
+      "bbox": [
+        3426,
+        1926,
+        3598,
+        2065
+      ],
+      "bbox_width": 172,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151207_114038_cell_0158",
+      "padded_bbox": [
+        3422,
+        1922,
+        3602,
+        2069
+      ],
+      "crop_width": 180,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0158.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0158.png"
+    },
+    {
+      "raw_index": 16,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.862706,
+      "bbox": [
+        2252,
+        1928,
+        2386,
+        2074
+      ],
+      "bbox_width": 134,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0159",
+      "padded_bbox": [
+        2248,
+        1924,
+        2390,
+        2078
+      ],
+      "crop_width": 142,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0159.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0159.png"
+    },
+    {
+      "raw_index": 123,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.735672,
+      "bbox": [
+        1778,
+        1946,
+        1908,
+        2071
+      ],
+      "bbox_width": 130,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0160",
+      "padded_bbox": [
+        1774,
+        1942,
+        1912,
+        2075
+      ],
+      "crop_width": 138,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0160.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0160.png"
+    },
+    {
+      "raw_index": 49,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.812778,
+      "bbox": [
+        2991,
+        1952,
+        3103,
+        2078
+      ],
+      "bbox_width": 112,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0161",
+      "padded_bbox": [
+        2987,
+        1948,
+        3107,
+        2082
+      ],
+      "crop_width": 120,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0161.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0161.png"
+    },
+    {
+      "raw_index": 88,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.768144,
+      "bbox": [
+        1286,
+        1983,
+        1434,
+        2117
+      ],
+      "bbox_width": 148,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151207_114038_cell_0162",
+      "padded_bbox": [
+        1282,
+        1979,
+        1438,
+        2121
+      ],
+      "crop_width": 156,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0162.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0162.png"
+    },
+    {
+      "raw_index": 65,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.796363,
+      "bbox": [
+        2586,
+        2012,
+        2717,
+        2146
+      ],
+      "bbox_width": 131,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151207_114038_cell_0163",
+      "padded_bbox": [
+        2582,
+        2008,
+        2721,
+        2150
+      ],
+      "crop_width": 139,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0163.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0163.png"
+    },
+    {
+      "raw_index": 20,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.854761,
+      "bbox": [
+        1988,
+        2021,
+        2128,
+        2162
+      ],
+      "bbox_width": 140,
+      "bbox_height": 141,
+      "crop_id": "IMG_20151207_114038_cell_0164",
+      "padded_bbox": [
+        1984,
+        2017,
+        2132,
+        2166
+      ],
+      "crop_width": 148,
+      "crop_height": 149,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0164.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0164.png"
+    },
+    {
+      "raw_index": 109,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.746352,
+      "bbox": [
+        3202,
+        2021,
+        3326,
+        2158
+      ],
+      "bbox_width": 124,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0165",
+      "padded_bbox": [
+        3198,
+        2017,
+        3330,
+        2162
+      ],
+      "crop_width": 132,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0165.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0165.png"
+    },
+    {
+      "raw_index": 148,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.701404,
+      "bbox": [
+        3402,
+        2042,
+        3541,
+        2191
+      ],
+      "bbox_width": 139,
+      "bbox_height": 149,
+      "crop_id": "IMG_20151207_114038_cell_0166",
+      "padded_bbox": [
+        3398,
+        2038,
+        3545,
+        2195
+      ],
+      "crop_width": 147,
+      "crop_height": 157,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0166.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0166.png"
+    },
+    {
+      "raw_index": 154,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.68926,
+      "bbox": [
+        1688,
+        2050,
+        1827,
+        2183
+      ],
+      "bbox_width": 139,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151207_114038_cell_0167",
+      "padded_bbox": [
+        1684,
+        2046,
+        1831,
+        2187
+      ],
+      "crop_width": 147,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0167.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0167.png"
+    },
+    {
+      "raw_index": 14,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.864157,
+      "bbox": [
+        1047,
+        2055,
+        1191,
+        2195
+      ],
+      "bbox_width": 144,
+      "bbox_height": 140,
+      "crop_id": "IMG_20151207_114038_cell_0168",
+      "padded_bbox": [
+        1043,
+        2051,
+        1195,
+        2199
+      ],
+      "crop_width": 152,
+      "crop_height": 148,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0168.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0168.png"
+    },
+    {
+      "raw_index": 62,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.798643,
+      "bbox": [
+        2329,
+        2056,
+        2471,
+        2190
+      ],
+      "bbox_width": 142,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151207_114038_cell_0169",
+      "padded_bbox": [
+        2325,
+        2052,
+        2475,
+        2194
+      ],
+      "crop_width": 150,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0169.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0169.png"
+    },
+    {
+      "raw_index": 78,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.784641,
+      "bbox": [
+        2827,
+        2069,
+        2972,
+        2211
+      ],
+      "bbox_width": 145,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0170",
+      "padded_bbox": [
+        2823,
+        2065,
+        2976,
+        2215
+      ],
+      "crop_width": 153,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0170.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0170.png"
+    },
+    {
+      "raw_index": 124,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.733667,
+      "bbox": [
+        2975,
+        2118,
+        3094,
+        2246
+      ],
+      "bbox_width": 119,
+      "bbox_height": 128,
+      "crop_id": "IMG_20151207_114038_cell_0171",
+      "padded_bbox": [
+        2971,
+        2114,
+        3098,
+        2250
+      ],
+      "crop_width": 127,
+      "crop_height": 136,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0171.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0171.png"
+    },
+    {
+      "raw_index": 184,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.616371,
+      "bbox": [
+        1533,
+        2134,
+        1664,
+        2256
+      ],
+      "bbox_width": 131,
+      "bbox_height": 122,
+      "crop_id": "IMG_20151207_114038_cell_0172",
+      "padded_bbox": [
+        1529,
+        2130,
+        1668,
+        2260
+      ],
+      "crop_width": 139,
+      "crop_height": 130,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0172.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0172.png"
+    },
+    {
+      "raw_index": 188,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.597401,
+      "bbox": [
+        1811,
+        2180,
+        1955,
+        2323
+      ],
+      "bbox_width": 144,
+      "bbox_height": 143,
+      "crop_id": "IMG_20151207_114038_cell_0173",
+      "padded_bbox": [
+        1807,
+        2176,
+        1959,
+        2327
+      ],
+      "crop_width": 152,
+      "crop_height": 151,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0173.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0173.png"
+    },
+    {
+      "raw_index": 117,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.73917,
+      "bbox": [
+        2156,
+        2183,
+        2300,
+        2321
+      ],
+      "bbox_width": 144,
+      "bbox_height": 138,
+      "crop_id": "IMG_20151207_114038_cell_0174",
+      "padded_bbox": [
+        2152,
+        2179,
+        2304,
+        2325
+      ],
+      "crop_width": 152,
+      "crop_height": 146,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0174.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0174.png"
+    },
+    {
+      "raw_index": 100,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.755317,
+      "bbox": [
+        1972,
+        2196,
+        2107,
+        2323
+      ],
+      "bbox_width": 135,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151207_114038_cell_0175",
+      "padded_bbox": [
+        1968,
+        2192,
+        2111,
+        2327
+      ],
+      "crop_width": 143,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0175.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0175.png"
+    },
+    {
+      "raw_index": 10,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.871904,
+      "bbox": [
+        1311,
+        2206,
+        1479,
+        2365
+      ],
+      "bbox_width": 168,
+      "bbox_height": 159,
+      "crop_id": "IMG_20151207_114038_cell_0176",
+      "padded_bbox": [
+        1307,
+        2202,
+        1483,
+        2369
+      ],
+      "crop_width": 176,
+      "crop_height": 167,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0176.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0176.png"
+    },
+    {
+      "raw_index": 11,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.869405,
+      "bbox": [
+        1648,
+        2206,
+        1791,
+        2347
+      ],
+      "bbox_width": 143,
+      "bbox_height": 141,
+      "crop_id": "IMG_20151207_114038_cell_0177",
+      "padded_bbox": [
+        1644,
+        2202,
+        1795,
+        2351
+      ],
+      "crop_width": 151,
+      "crop_height": 149,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0177.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0177.png"
+    },
+    {
+      "raw_index": 2,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.894011,
+      "bbox": [
+        3176,
+        2211,
+        3309,
+        2368
+      ],
+      "bbox_width": 133,
+      "bbox_height": 157,
+      "crop_id": "IMG_20151207_114038_cell_0178",
+      "padded_bbox": [
+        3172,
+        2207,
+        3313,
+        2372
+      ],
+      "crop_width": 141,
+      "crop_height": 165,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0178.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0178.png"
+    },
+    {
+      "raw_index": 199,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.528271,
+      "bbox": [
+        1032,
+        2226,
+        1174,
+        2352
+      ],
+      "bbox_width": 142,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151207_114038_cell_0179",
+      "padded_bbox": [
+        1028,
+        2222,
+        1178,
+        2356
+      ],
+      "crop_width": 150,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0179.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0179.png"
+    },
+    {
+      "raw_index": 111,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.744371,
+      "bbox": [
+        2632,
+        2231,
+        2773,
+        2372
+      ],
+      "bbox_width": 141,
+      "bbox_height": 141,
+      "crop_id": "IMG_20151207_114038_cell_0180",
+      "padded_bbox": [
+        2628,
+        2227,
+        2777,
+        2376
+      ],
+      "crop_width": 149,
+      "crop_height": 149,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0180.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0180.png"
+    },
+    {
+      "raw_index": 161,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.676546,
+      "bbox": [
+        3022,
+        2250,
+        3171,
+        2406
+      ],
+      "bbox_width": 149,
+      "bbox_height": 156,
+      "crop_id": "IMG_20151207_114038_cell_0181",
+      "padded_bbox": [
+        3018,
+        2246,
+        3175,
+        2410
+      ],
+      "crop_width": 157,
+      "crop_height": 164,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0181.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0181.png"
+    },
+    {
+      "raw_index": 116,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.739172,
+      "bbox": [
+        3353,
+        2305,
+        3500,
+        2442
+      ],
+      "bbox_width": 147,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0182",
+      "padded_bbox": [
+        3349,
+        2301,
+        3504,
+        2446
+      ],
+      "crop_width": 155,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0182.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0182.png"
+    },
+    {
+      "raw_index": 99,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.755427,
+      "bbox": [
+        1493,
+        2313,
+        1641,
+        2450
+      ],
+      "bbox_width": 148,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0183",
+      "padded_bbox": [
+        1489,
+        2309,
+        1645,
+        2454
+      ],
+      "crop_width": 156,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0183.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0183.png"
+    },
+    {
+      "raw_index": 66,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.794441,
+      "bbox": [
+        2748,
+        2315,
+        2890,
+        2459
+      ],
+      "bbox_width": 142,
+      "bbox_height": 144,
+      "crop_id": "IMG_20151207_114038_cell_0184",
+      "padded_bbox": [
+        2744,
+        2311,
+        2894,
+        2463
+      ],
+      "crop_width": 150,
+      "crop_height": 152,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0184.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0184.png"
+    },
+    {
+      "raw_index": 177,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.652655,
+      "bbox": [
+        1888,
+        2322,
+        2025,
+        2456
+      ],
+      "bbox_width": 137,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151207_114038_cell_0185",
+      "padded_bbox": [
+        1884,
+        2318,
+        2029,
+        2460
+      ],
+      "crop_width": 145,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0185.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0185.png"
+    },
+    {
+      "raw_index": 41,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.820646,
+      "bbox": [
+        2069,
+        2354,
+        2197,
+        2489
+      ],
+      "bbox_width": 128,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151207_114038_cell_0186",
+      "padded_bbox": [
+        2065,
+        2350,
+        2201,
+        2493
+      ],
+      "crop_width": 136,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0186.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0186.png"
+    },
+    {
+      "raw_index": 57,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.804678,
+      "bbox": [
+        2548,
+        2362,
+        2693,
+        2498
+      ],
+      "bbox_width": 145,
+      "bbox_height": 136,
+      "crop_id": "IMG_20151207_114038_cell_0187",
+      "padded_bbox": [
+        2544,
+        2358,
+        2697,
+        2502
+      ],
+      "crop_width": 153,
+      "crop_height": 144,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0187.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0187.png"
+    },
+    {
+      "raw_index": 194,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.556534,
+      "bbox": [
+        2959,
+        2379,
+        3088,
+        2519
+      ],
+      "bbox_width": 129,
+      "bbox_height": 140,
+      "crop_id": "IMG_20151207_114038_cell_0188",
+      "padded_bbox": [
+        2955,
+        2375,
+        3092,
+        2523
+      ],
+      "crop_width": 137,
+      "crop_height": 148,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0188.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0188.png"
+    },
+    {
+      "raw_index": 182,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.62508,
+      "bbox": [
+        1181,
+        2408,
+        1336,
+        2553
+      ],
+      "bbox_width": 155,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0189",
+      "padded_bbox": [
+        1177,
+        2404,
+        1340,
+        2557
+      ],
+      "crop_width": 163,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0189.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0189.png"
+    },
+    {
+      "raw_index": 94,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.762299,
+      "bbox": [
+        1737,
+        2411,
+        1886,
+        2573
+      ],
+      "bbox_width": 149,
+      "bbox_height": 162,
+      "crop_id": "IMG_20151207_114038_cell_0190",
+      "padded_bbox": [
+        1733,
+        2407,
+        1890,
+        2577
+      ],
+      "crop_width": 157,
+      "crop_height": 170,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0190.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0190.png"
+    },
+    {
+      "raw_index": 156,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.68607,
+      "bbox": [
+        1577,
+        2432,
+        1713,
+        2577
+      ],
+      "bbox_width": 136,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0191",
+      "padded_bbox": [
+        1573,
+        2428,
+        1717,
+        2581
+      ],
+      "crop_width": 144,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0191.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0191.png"
+    },
+    {
+      "raw_index": 81,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.77732,
+      "bbox": [
+        2146,
+        2468,
+        2288,
+        2613
+      ],
+      "bbox_width": 142,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0192",
+      "padded_bbox": [
+        2142,
+        2464,
+        2292,
+        2617
+      ],
+      "crop_width": 150,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0192.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0192.png"
+    },
+    {
+      "raw_index": 25,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.844596,
+      "bbox": [
+        1903,
+        2469,
+        2055,
+        2602
+      ],
+      "bbox_width": 152,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151207_114038_cell_0193",
+      "padded_bbox": [
+        1899,
+        2465,
+        2059,
+        2606
+      ],
+      "crop_width": 160,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0193.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0193.png"
+    },
+    {
+      "raw_index": 185,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.615965,
+      "bbox": [
+        1311,
+        2479,
+        1454,
+        2632
+      ],
+      "bbox_width": 143,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0194",
+      "padded_bbox": [
+        1307,
+        2475,
+        1458,
+        2636
+      ],
+      "crop_width": 151,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0194.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0194.png"
+    },
+    {
+      "raw_index": 38,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.827551,
+      "bbox": [
+        3103,
+        2494,
+        3242,
+        2639
+      ],
+      "bbox_width": 139,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0195",
+      "padded_bbox": [
+        3099,
+        2490,
+        3246,
+        2643
+      ],
+      "crop_width": 147,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0195.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0195.png"
+    },
+    {
+      "raw_index": 4,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.881155,
+      "bbox": [
+        2622,
+        2496,
+        2754,
+        2631
+      ],
+      "bbox_width": 132,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151207_114038_cell_0196",
+      "padded_bbox": [
+        2618,
+        2492,
+        2758,
+        2635
+      ],
+      "crop_width": 140,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0196.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0196.png"
+    },
+    {
+      "raw_index": 48,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.815802,
+      "bbox": [
+        2467,
+        2514,
+        2624,
+        2666
+      ],
+      "bbox_width": 157,
+      "bbox_height": 152,
+      "crop_id": "IMG_20151207_114038_cell_0197",
+      "padded_bbox": [
+        2463,
+        2510,
+        2628,
+        2670
+      ],
+      "crop_width": 165,
+      "crop_height": 160,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0197.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0197.png"
+    },
+    {
+      "raw_index": 153,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.690554,
+      "bbox": [
+        2010,
+        2580,
+        2171,
+        2728
+      ],
+      "bbox_width": 161,
+      "bbox_height": 148,
+      "crop_id": "IMG_20151207_114038_cell_0198",
+      "padded_bbox": [
+        2006,
+        2576,
+        2175,
+        2732
+      ],
+      "crop_width": 169,
+      "crop_height": 156,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0198.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0198.png"
+    },
+    {
+      "raw_index": 164,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.673607,
+      "bbox": [
+        1443,
+        2597,
+        1587,
+        2748
+      ],
+      "bbox_width": 144,
+      "bbox_height": 151,
+      "crop_id": "IMG_20151207_114038_cell_0199",
+      "padded_bbox": [
+        1439,
+        2593,
+        1591,
+        2752
+      ],
+      "crop_width": 152,
+      "crop_height": 159,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0199.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0199.png"
+    },
+    {
+      "raw_index": 82,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.775939,
+      "bbox": [
+        1868,
+        2606,
+        1992,
+        2731
+      ],
+      "bbox_width": 124,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151207_114038_cell_0200",
+      "padded_bbox": [
+        1864,
+        2602,
+        1996,
+        2735
+      ],
+      "crop_width": 132,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0200.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0200.png"
+    },
+    {
+      "raw_index": 141,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.717257,
+      "bbox": [
+        3022,
+        2606,
+        3162,
+        2759
+      ],
+      "bbox_width": 140,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0201",
+      "padded_bbox": [
+        3018,
+        2602,
+        3166,
+        2763
+      ],
+      "crop_width": 148,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0201.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0201.png"
+    },
+    {
+      "raw_index": 28,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.84315,
+      "bbox": [
+        2316,
+        2623,
+        2454,
+        2765
+      ],
+      "bbox_width": 138,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151207_114038_cell_0202",
+      "padded_bbox": [
+        2312,
+        2619,
+        2458,
+        2769
+      ],
+      "crop_width": 146,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0202.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0202.png"
+    },
+    {
+      "raw_index": 80,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.778871,
+      "bbox": [
+        1667,
+        2655,
+        1822,
+        2813
+      ],
+      "bbox_width": 155,
+      "bbox_height": 158,
+      "crop_id": "IMG_20151207_114038_cell_0203",
+      "padded_bbox": [
+        1663,
+        2651,
+        1826,
+        2817
+      ],
+      "crop_width": 163,
+      "crop_height": 166,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0203.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0203.png"
+    },
+    {
+      "raw_index": 113,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.743101,
+      "bbox": [
+        2717,
+        2660,
+        2863,
+        2806
+      ],
+      "bbox_width": 146,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151207_114038_cell_0204",
+      "padded_bbox": [
+        2713,
+        2656,
+        2867,
+        2810
+      ],
+      "crop_width": 154,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0204.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0204.png"
+    },
+    {
+      "raw_index": 145,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.707118,
+      "bbox": [
+        2467,
+        2676,
+        2595,
+        2797
+      ],
+      "bbox_width": 128,
+      "bbox_height": 121,
+      "crop_id": "IMG_20151207_114038_cell_0205",
+      "padded_bbox": [
+        2463,
+        2672,
+        2599,
+        2801
+      ],
+      "crop_width": 136,
+      "crop_height": 129,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0205.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0205.png"
+    },
+    {
+      "raw_index": 52,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.808257,
+      "bbox": [
+        1983,
+        2734,
+        2127,
+        2887
+      ],
+      "bbox_width": 144,
+      "bbox_height": 153,
+      "crop_id": "IMG_20151207_114038_cell_0206",
+      "padded_bbox": [
+        1979,
+        2730,
+        2131,
+        2891
+      ],
+      "crop_width": 152,
+      "crop_height": 161,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0206.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0206.png"
+    },
+    {
+      "raw_index": 95,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.762121,
+      "bbox": [
+        2529,
+        2769,
+        2667,
+        2930
+      ],
+      "bbox_width": 138,
+      "bbox_height": 161,
+      "crop_id": "IMG_20151207_114038_cell_0207",
+      "padded_bbox": [
+        2525,
+        2765,
+        2671,
+        2934
+      ],
+      "crop_width": 146,
+      "crop_height": 169,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0207.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0207.png"
+    },
+    {
+      "raw_index": 87,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.769716,
+      "bbox": [
+        2334,
+        2778,
+        2487,
+        2923
+      ],
+      "bbox_width": 153,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151207_114038_cell_0208",
+      "padded_bbox": [
+        2330,
+        2774,
+        2491,
+        2927
+      ],
+      "crop_width": 161,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0208.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0208.png"
+    },
+    {
+      "raw_index": 206,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.361789,
+      "bbox": [
+        1749,
+        2784,
+        1891,
+        2921
+      ],
+      "bbox_width": 142,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151207_114038_cell_0209",
+      "padded_bbox": [
+        1745,
+        2780,
+        1895,
+        2925
+      ],
+      "crop_width": 150,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0209.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0209.png"
+    },
+    {
+      "raw_index": 207,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.336238,
+      "bbox": [
+        2892,
+        2797,
+        3033,
+        2920
+      ],
+      "bbox_width": 141,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151207_114038_cell_0210",
+      "padded_bbox": [
+        2888,
+        2793,
+        3037,
+        2924
+      ],
+      "crop_width": 149,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops\\IMG_20151207_114038_cell_0210.png",
+      "crop_rel_path": "crops\\IMG_20151207_114038_cell_0210.png"
+    }
+  ],
+  "excluded_wbcs": [],
+  "rejected_boxes": []
+}

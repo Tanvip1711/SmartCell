@@ -1,0 +1,11 @@
+SMARTCELL MOBILENETV2 CLASSIFICATION REPORT
+===========================================
+
+              precision    recall  f1-score   support
+
+  Uninfected     0.8747    0.9821    0.9253      2068
+ Parasitized     0.9796    0.8593    0.9155      2068
+
+    accuracy                         0.9207      4136
+   macro avg     0.9271    0.9207    0.9204      4136
+weighted avg     0.9271    0.9207    0.9204      4136

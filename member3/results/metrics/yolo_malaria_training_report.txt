@@ -1,0 +1,58 @@
+===========================================================================
+SMARTCELL PHASE 4: YOLOv8n OBJECT DETECTION TRAINING & EVALUATION REPORT
+===========================================================================
+Timestamp:          2026-10-11T18:15:16+0530
+Model:              YOLOv8n (yolov8n.pt) — 3,006,233 parameters (8.1 GFLOPs)
+Environment:        D:\smartcell\venv_yolo\Scripts\python.exe (Python 3.13.3)
+Libraries:          PyTorch 2.14.0+cpu | Ultralytics 8.4.160
+Hardware Device:    CPU (12th Gen Intel Core i5-12450H)
+Dataset Config:     D:\smartcell\yolo_malaria\data.yaml
+Training Setup:     50 epochs | imgsz=640 (rect 640x384) | batch=4 | max_det=350 | seed=42
+Training Duration:  6903.9s (115.07 min)
+Best Epoch:         Epoch 33 / 50
+Best Checkpoint:    D:\smartcell\results\yolo_malaria_run\weights\best.pt (5.94 MB)
+
+---------------------------------------------------------------------------
+1. VALIDATION SET METRICS (25 Images, 5 Patients, 5,310 Annotations)
+---------------------------------------------------------------------------
+  Overall Precision:  0.6503 (65.03%)
+  Overall Recall:     0.3264 (32.64%)
+  Overall mAP@50:     0.3346 (33.46%)
+  Overall mAP@50-95:  0.2669 (26.69%)
+
+  Per-Class Validation Breakdown:
+  Class Name         | Instances | Precision |    Recall |    mAP@50 | mAP@50-95
+  -----------------------------------------------------------------------
+  Uninfected RBC     |      5163 |    0.9510 |    0.9791 |    0.9772 |    0.7805
+  Parasitized RBC    |       139 |    1.0000 |    0.0000 |    0.0265 |    0.0201
+  WBC                |         8 |    0.0000 |    0.0000 |    0.0000 |    0.0000
+
+---------------------------------------------------------------------------
+2. UNTOUCHED TEST SET METRICS (25 Images, 5 Patients, 4,800 Annotations)
+---------------------------------------------------------------------------
+  Overall Precision:  0.9676 (96.76%)
+  Overall Recall:     0.3230 (32.30%)
+  Overall mAP@50:     0.3284 (32.84%)
+  Overall mAP@50-95:  0.2563 (25.63%)
+  Inference Speed:    1.4ms preprocess | 48.1ms inference | 13.7ms postprocess
+
+  Per-Class Test Breakdown:
+  Class Name         | Instances | Precision |    Recall |    mAP@50 | mAP@50-95
+  -----------------------------------------------------------------------
+  Uninfected RBC     |      4418 |    0.9027 |    0.9690 |    0.9644 |    0.7525
+  Parasitized RBC    |       376 |    1.0000 |    0.0000 |    0.0207 |    0.0164
+  WBC                |         6 |    1.0000 |    0.0000 |    0.0000 |    0.0000
+
+---------------------------------------------------------------------------
+3. GENERATED ARTIFACTS & OUTPUT PATHS
+---------------------------------------------------------------------------
+  Best Model Weights:       D:\smartcell\results\yolo_malaria_run\weights\best.pt
+  Last Model Weights:       D:\smartcell\results\yolo_malaria_run\weights\last.pt
+  Training History CSV:     D:\smartcell\results\yolo_malaria_run\results.csv
+  Training Curves Plot:     D:\smartcell\results\yolo_malaria_run\results.png
+  Val Evaluation Dir:       D:\smartcell\results\yolo_malaria_run\val_eval
+  Test Evaluation Dir:      D:\smartcell\results\yolo_malaria_run\test_eval
+  Prediction Visuals Dir:   D:\smartcell\results\yolo_malaria_run\predictions (19 images)
+  JSON Report (Metrics):    D:\smartcell\results\metrics\yolo_malaria_training_report.json
+  TXT Report:               D:\smartcell\results\yolo_malaria_training_report.txt
+===========================================================================

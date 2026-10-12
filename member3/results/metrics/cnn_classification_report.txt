@@ -1,0 +1,11 @@
+SMARTCELL BASELINE CNN CLASSIFICATION REPORT
+============================================
+
+              precision    recall  f1-score   support
+
+  Uninfected     0.9314    0.9724    0.9515      2068
+ Parasitized     0.9712    0.9284    0.9493      2068
+
+    accuracy                         0.9504      4136
+   macro avg     0.9513    0.9504    0.9504      4136
+weighted avg     0.9513    0.9504    0.9504      4136

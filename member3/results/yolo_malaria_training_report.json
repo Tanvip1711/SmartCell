@@ -1,0 +1,294 @@
+{
+  "phase": "Phase 4: YOLOv8n Baseline Object Detection",
+  "timestamp": "2026-10-11T18:15:16+0530",
+  "experiment_configuration": {
+    "task": "detect",
+    "model_architecture": "YOLOv8n (yolov8n.pt)",
+    "parameters": 3006233,
+    "layers_fused": 72,
+    "gflops": 8.1,
+    "dataset_yaml": "D:\\smartcell\\yolo_malaria\\data.yaml",
+    "epochs": 50,
+    "imgsz": 640,
+    "effective_rectangular_size": "640x384",
+    "batch_size": 4,
+    "rect": true,
+    "max_det": 350,
+    "optimizer": "AdamW (auto: lr=0.001429, momentum=0.9)",
+    "seed": 42,
+    "workers": 0,
+    "cache": "ram",
+    "prediction_confidence_threshold": 0.25,
+    "prediction_iou_threshold": 0.45
+  },
+  "software_and_hardware": {
+    "os": "Windows 11 (10.0.26300)",
+    "python_executable": "D:\\smartcell\\venv_yolo\\Scripts\\python.exe",
+    "python_version": "3.13.3",
+    "pytorch_version": "2.14.0+cpu",
+    "ultralytics_version": "8.4.160",
+    "opencv_version": "5.0.0",
+    "cuda_available": false,
+    "training_device": "CPU (12th Gen Intel Core i5-12450H)",
+    "gpu_hardware_present": "NVIDIA GeForce RTX 2050 Laptop GPU (4096 MiB) \u2014 unused due to CPU-only PyTorch build in environment"
+  },
+  "dataset_summary": {
+    "source": "NIH-NLM Thin Blood Smears Pf (Polygon Set)",
+    "original_image_resolution": "5312x2988",
+    "total_patients": 33,
+    "total_images": 165,
+    "total_annotations": 34264,
+    "patient_leakage_overlap": 0,
+    "class_mapping": {
+      "0": "Uninfected RBC",
+      "1": "Parasitized RBC",
+      "2": "WBC"
+    },
+    "splits": {
+      "train": {
+        "patients_count": 23,
+        "patients_list": [
+          "142C38P3thinF_original",
+          "146C47P8thin_Original_Motic",
+          "150C49P10thinF",
+          "158C57P18thinF",
+          "208C67P28N_ThinF",
+          "211C70P31_ThinF",
+          "221C79P40ThinF",
+          "228C86P47ThinF",
+          "231C89P50ThinF",
+          "244C7NthinF",
+          "247C99P60ThinF",
+          "270C122P83ThinF",
+          "274C126P87ThinF",
+          "282C134P95ThinF",
+          "302C210ThinF",
+          "305C212ThinF",
+          "306C213ThinF",
+          "309C216ThinF",
+          "318C226ThinF",
+          "327C235ThinF",
+          "343C160P121ThinF",
+          "354C169P130ThinF",
+          "362C177P138NThinF"
+        ],
+        "images_count": 115,
+        "total_annotations": 24154,
+        "annotations_by_class": {
+          "Uninfected RBC": 23490,
+          "Parasitized RBC": 627,
+          "WBC": 37
+        }
+      },
+      "val": {
+        "patients_count": 5,
+        "patients_list": [
+          "153C52P13thinF",
+          "236C94P55ThinF",
+          "263C115P76ThinF",
+          "276C128P89ThinF",
+          "323C231ThinF"
+        ],
+        "images_count": 25,
+        "total_annotations": 5310,
+        "annotations_by_class": {
+          "Parasitized RBC": 139,
+          "Uninfected RBC": 5163,
+          "WBC": 8
+        }
+      },
+      "test": {
+        "patients_count": 5,
+        "patients_list": [
+          "156C55P16thinF",
+          "209C68P29N_ThinF",
+          "212C71P32_ThinF",
+          "372C187P148NThinF",
+          "377C238NThinF"
+        ],
+        "images_count": 25,
+        "total_annotations": 4800,
+        "annotations_by_class": {
+          "Uninfected RBC": 4418,
+          "Parasitized RBC": 376,
+          "WBC": 6
+        }
+      }
+    }
+  },
+  "training_summary": {
+    "training_duration_seconds": 6903.9,
+    "training_duration_minutes": 115.07,
+    "training_duration_hours": 1.9178,
+    "epochs_completed": 50,
+    "best_epoch": 33,
+    "first_epoch_losses": {
+      "train_box_loss": 1.61089,
+      "train_cls_loss": 3.59672,
+      "train_dfl_loss": 1.0042,
+      "val_box_loss": 1.25633,
+      "val_cls_loss": 3.81217,
+      "val_dfl_loss": 0.83808
+    },
+    "best_epoch_metrics": {
+      "epoch": 33,
+      "train_box_loss": 0.94997,
+      "train_cls_loss": 0.66686,
+      "train_dfl_loss": 0.81967,
+      "val_box_loss": 0.79448,
+      "val_cls_loss": 0.58321,
+      "val_dfl_loss": 0.83397,
+      "precision": 0.65039,
+      "recall": 0.32636,
+      "mAP50": 0.33502,
+      "mAP50_95": 0.26726
+    },
+    "final_epoch_losses": {
+      "epoch": 50,
+      "train_box_loss": 0.82039,
+      "train_cls_loss": 0.60812,
+      "train_dfl_loss": 0.81819,
+      "val_box_loss": 0.77721,
+      "val_cls_loss": 0.54679,
+      "val_dfl_loss": 0.83105
+    },
+    "best_checkpoint_size_bytes": 6227690,
+    "best_checkpoint_size_mb": 5.94,
+    "last_checkpoint_size_bytes": 6227690
+  },
+  "validation_evaluation": {
+    "split": "val",
+    "images_evaluated": 25,
+    "patients_evaluated": 5,
+    "total_annotations": 5310,
+    "overall_metrics": {
+      "precision": 0.650342,
+      "recall": 0.326361,
+      "mAP50": 0.334568,
+      "mAP50_95": 0.266863
+    },
+    "per_class_metrics": {
+      "Uninfected RBC": {
+        "class_id": 0,
+        "instances": 5163,
+        "precision": 0.951026,
+        "recall": 0.979082,
+        "mAP50": 0.977222,
+        "mAP50_95": 0.780483
+      },
+      "Parasitized RBC": {
+        "class_id": 1,
+        "instances": 139,
+        "precision": 1.0,
+        "recall": 0.0,
+        "mAP50": 0.026482,
+        "mAP50_95": 0.020106
+      },
+      "WBC": {
+        "class_id": 2,
+        "instances": 8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mAP50": 0.0,
+        "mAP50_95": 0.0
+      }
+    },
+    "inference_speed_ms_per_image": {
+      "preprocess": 8.874,
+      "inference": 309.925,
+      "loss": 0.001,
+      "postprocess": 25.866
+    }
+  },
+  "test_evaluation": {
+    "split": "test",
+    "images_evaluated": 25,
+    "patients_evaluated": 5,
+    "total_annotations": 4800,
+    "overall_metrics": {
+      "precision": 0.967583,
+      "recall": 0.322997,
+      "mAP50": 0.328353,
+      "mAP50_95": 0.256316
+    },
+    "per_class_metrics": {
+      "Uninfected RBC": {
+        "class_id": 0,
+        "instances": 4418,
+        "precision": 0.902748,
+        "recall": 0.96899,
+        "mAP50": 0.964381,
+        "mAP50_95": 0.752514
+      },
+      "Parasitized RBC": {
+        "class_id": 1,
+        "instances": 376,
+        "precision": 1.0,
+        "recall": 0.0,
+        "mAP50": 0.02068,
+        "mAP50_95": 0.016435
+      },
+      "WBC": {
+        "class_id": 2,
+        "instances": 6,
+        "precision": 1.0,
+        "recall": 0.0,
+        "mAP50": 0.0,
+        "mAP50_95": 0.0
+      }
+    },
+    "inference_speed_ms_per_image": {
+      "preprocess": 1.365,
+      "inference": 48.128,
+      "loss": 0.0,
+      "postprocess": 13.706
+    }
+  },
+  "generated_artifacts": {
+    "experiment_directory": "D:\\smartcell\\results\\yolo_malaria_run",
+    "smoke_test_directory": "D:\\smartcell\\results\\yolo_smoke_test",
+    "best_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+    "last_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\last.pt",
+    "training_results_csv": "D:\\smartcell\\results\\yolo_malaria_run\\results.csv",
+    "training_curves_plot": "D:\\smartcell\\results\\yolo_malaria_run\\results.png",
+    "val_evaluation_directory": "D:\\smartcell\\results\\yolo_malaria_run\\val_eval",
+    "val_confusion_matrix": "D:\\smartcell\\results\\yolo_malaria_run\\val_eval\\confusion_matrix.png",
+    "val_confusion_matrix_normalized": "D:\\smartcell\\results\\yolo_malaria_run\\val_eval\\confusion_matrix_normalized.png",
+    "test_evaluation_directory": "D:\\smartcell\\results\\yolo_malaria_run\\test_eval",
+    "test_confusion_matrix": "D:\\smartcell\\results\\yolo_malaria_run\\test_eval\\confusion_matrix.png",
+    "test_confusion_matrix_normalized": "D:\\smartcell\\results\\yolo_malaria_run\\test_eval\\confusion_matrix_normalized.png",
+    "prediction_visualizations_directory": "D:\\smartcell\\results\\yolo_malaria_run\\predictions",
+    "prediction_visualization_files": [
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\comparison_full_IMG_20150819_133447.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\pred_overview_IMG_20150819_133447.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20150819_133447_roi1.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20150819_133447_roi2.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\comparison_full_IMG_20150728_121350.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\pred_overview_IMG_20150728_121350.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20150728_121350_roi1.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\comparison_full_IMG_20151207_114444.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\pred_overview_IMG_20151207_114444.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20151207_114444_roi1.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\comparison_full_IMG_20151207_114605.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\pred_overview_IMG_20151207_114605.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20151207_114605_roi1.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\comparison_full_IMG_20151207_114345.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\pred_overview_IMG_20151207_114345.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20151207_114345_roi1.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\comparison_full_IMG_20151207_114653.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\pred_overview_IMG_20151207_114653.jpg",
+      "D:\\smartcell\\results\\yolo_malaria_run\\predictions\\crop_compare_IMG_20151207_114653_roi1.jpg"
+    ]
+  },
+  "warnings_and_resolutions": [
+    "Max detections warning: Dataset images contain up to 313 cells (exceeding Ultralytics default max_det=300). Resolved by explicitly setting max_det=350 during training, validation, testing, and prediction.",
+    "Environment isolation: Created D:\\smartcell\\venv_yolo (Python 3.13.3 with torch 2.14.0+cpu and ultralytics 8.4.160) to prevent any package conflict with D:\\smartcell\\venv (Python 3.11.9 with TensorFlow 2.21.0).",
+    "Aspect ratio optimization: Enabled rectangular training (rect=True, 640x384) to match the native 16:9 (5312x2988) aspect ratio, eliminating 40% letterbox padding overhead and preventing 2x2 mosaic downscaling of tiny parasites."
+  ],
+  "known_limitations": [
+    "Severe Class Imbalance: Uninfected RBCs account for 96.52% (33,071) of annotations, whereas Parasitized RBCs account for 3.33% (1,142) and WBCs only 0.15% (51 total; 37 train, 8 val, 6 test).",
+    "Resolution Downscaling: Downsampling 5312x2988 microscopic fields to 640x384 reduces average RBC diameter from ~130px to ~15px, making subtle intracellular Plasmodium ring inclusions difficult to distinguish from uninfected RBCs at the detection stage alone.",
+    "Limited Test Partition Size: The test set contains 25 images from 5 patients (with only 6 WBC instances and 376 Parasitized RBC instances), introducing statistical variance in per-class mAP estimates.",
+    "Two-Stage Pipeline Necessity: High Uninfected RBC localization recall confirms YOLOv8n works effectively as a Stage-1 cell localizer and counter, while confirming why SmartCell uses the Stage-2 Baseline CNN (95.04% accuracy at 224x224 per cell crop) for definitive infection classification."
+  ]
+}

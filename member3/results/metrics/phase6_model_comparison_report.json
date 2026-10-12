@@ -1,0 +1,2049 @@
+{
+  "phase": "Phase 6 \u2014 CNN Domain Adaptation and Classification Strategy Comparison",
+  "execution_environment": {
+    "stage2_tensorflow_env": "D:\\smartcell\\venv (Python 3.11.9, TensorFlow 2.21.0 CPU)",
+    "note": "TensorFlow >= 2.11 native Windows builds execute on CPU; Stage 1 YOLO executes on RTX 2050 GPU in venv_yolo_gpu."
+  },
+  "models": {
+    "original_cnn": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+    "finetuned_raw_cnn": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+    "finetuned_masked_cnn": "D:\\smartcell\\models\\malaria_cnn_finetuned_masked_best.keras"
+  },
+  "training_summaries": {
+    "finetuned_raw": {
+      "crop_mode": "raw",
+      "checkpoint_path": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+      "best_epoch": 4,
+      "best_val_parasitized_f1": 0.734568,
+      "learning_rate": 8e-05,
+      "class_weight": {
+        "0": 2.2,
+        "1": 1.0
+      },
+      "training_time_seconds": 299.83,
+      "epochs_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.203082,
+          "train_accuracy": 0.96715,
+          "val_loss": 0.052962,
+          "val_accuracy": 0.984157,
+          "val_parasitized_precision": 0.679739,
+          "val_parasitized_recall_sensitivity": 0.748201,
+          "val_uninfected_specificity": 0.990509,
+          "val_parasitized_f1": 0.712329,
+          "val_macro_f1": 0.852091,
+          "val_tp": 104,
+          "val_fp": 49,
+          "val_tn": 5114,
+          "val_fn": 35
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.081401,
+          "train_accuracy": 0.982781,
+          "val_loss": 0.047604,
+          "val_accuracy": 0.985854,
+          "val_parasitized_precision": 0.707792,
+          "val_parasitized_recall_sensitivity": 0.784173,
+          "val_uninfected_specificity": 0.991284,
+          "val_parasitized_f1": 0.744027,
+          "val_macro_f1": 0.868377,
+          "val_tp": 109,
+          "val_fp": 45,
+          "val_tn": 5118,
+          "val_fn": 30
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.065696,
+          "train_accuracy": 0.985481,
+          "val_loss": 0.048786,
+          "val_accuracy": 0.985666,
+          "val_parasitized_precision": 0.698113,
+          "val_parasitized_recall_sensitivity": 0.798561,
+          "val_uninfected_specificity": 0.990703,
+          "val_parasitized_f1": 0.744966,
+          "val_macro_f1": 0.868796,
+          "val_tp": 111,
+          "val_fp": 48,
+          "val_tn": 5115,
+          "val_fn": 28
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.052444,
+          "train_accuracy": 0.986767,
+          "val_loss": 0.059955,
+          "val_accuracy": 0.98378,
+          "val_parasitized_precision": 0.643243,
+          "val_parasitized_recall_sensitivity": 0.856115,
+          "val_uninfected_specificity": 0.987217,
+          "val_parasitized_f1": 0.734568,
+          "val_macro_f1": 0.863101,
+          "val_tp": 119,
+          "val_fp": 66,
+          "val_tn": 5097,
+          "val_fn": 20
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.050386,
+          "train_accuracy": 0.987878,
+          "val_loss": 0.051334,
+          "val_accuracy": 0.987175,
+          "val_parasitized_precision": 0.732026,
+          "val_parasitized_recall_sensitivity": 0.805755,
+          "val_uninfected_specificity": 0.992059,
+          "val_parasitized_f1": 0.767123,
+          "val_macro_f1": 0.880265,
+          "val_tp": 112,
+          "val_fp": 41,
+          "val_tn": 5122,
+          "val_fn": 27
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.042092,
+          "train_accuracy": 0.989143,
+          "val_loss": 0.059795,
+          "val_accuracy": 0.985477,
+          "val_parasitized_precision": 0.691358,
+          "val_parasitized_recall_sensitivity": 0.805755,
+          "val_uninfected_specificity": 0.990316,
+          "val_parasitized_f1": 0.744186,
+          "val_macro_f1": 0.868356,
+          "val_tp": 112,
+          "val_fp": 50,
+          "val_tn": 5113,
+          "val_fn": 27
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.034577,
+          "train_accuracy": 0.990907,
+          "val_loss": 0.057574,
+          "val_accuracy": 0.985477,
+          "val_parasitized_precision": 0.686747,
+          "val_parasitized_recall_sensitivity": 0.820144,
+          "val_uninfected_specificity": 0.989928,
+          "val_parasitized_f1": 0.747541,
+          "val_macro_f1": 0.870032,
+          "val_tp": 114,
+          "val_fp": 52,
+          "val_tn": 5111,
+          "val_fn": 25
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.035571,
+          "train_accuracy": 0.990907,
+          "val_loss": 0.071624,
+          "val_accuracy": 0.981894,
+          "val_parasitized_precision": 0.605911,
+          "val_parasitized_recall_sensitivity": 0.884892,
+          "val_uninfected_specificity": 0.984505,
+          "val_parasitized_f1": 0.719298,
+          "val_macro_f1": 0.854972,
+          "val_tp": 123,
+          "val_fp": 80,
+          "val_tn": 5083,
+          "val_fn": 16
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.03377,
+          "train_accuracy": 0.991863,
+          "val_loss": 0.062251,
+          "val_accuracy": 0.986609,
+          "val_parasitized_precision": 0.726667,
+          "val_parasitized_recall_sensitivity": 0.784173,
+          "val_uninfected_specificity": 0.992059,
+          "val_parasitized_f1": 0.754325,
+          "val_macro_f1": 0.873721,
+          "val_tp": 109,
+          "val_fp": 41,
+          "val_tn": 5122,
+          "val_fn": 30
+        }
+      ]
+    },
+    "finetuned_masked": {
+      "crop_mode": "masked",
+      "checkpoint_path": "D:\\smartcell\\models\\malaria_cnn_finetuned_masked_best.keras",
+      "best_epoch": 0,
+      "best_val_parasitized_f1": 0.714286,
+      "learning_rate": 8e-05,
+      "class_weight": {
+        "0": 1.4,
+        "1": 1.0
+      },
+      "training_time_seconds": 167.33,
+      "epochs_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.113505,
+          "train_accuracy": 0.974793,
+          "val_loss": 0.054647,
+          "val_accuracy": 0.985854,
+          "val_parasitized_precision": 0.707792,
+          "val_parasitized_recall_sensitivity": 0.784173,
+          "val_uninfected_specificity": 0.991284,
+          "val_parasitized_f1": 0.744027,
+          "val_macro_f1": 0.868377,
+          "val_tp": 109,
+          "val_fp": 45,
+          "val_tn": 5118,
+          "val_fn": 30
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.084124,
+          "train_accuracy": 0.980867,
+          "val_loss": 0.047654,
+          "val_accuracy": 0.985477,
+          "val_parasitized_precision": 0.698718,
+          "val_parasitized_recall_sensitivity": 0.784173,
+          "val_uninfected_specificity": 0.990897,
+          "val_parasitized_f1": 0.738983,
+          "val_macro_f1": 0.865757,
+          "val_tp": 109,
+          "val_fp": 47,
+          "val_tn": 5116,
+          "val_fn": 30
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.075348,
+          "train_accuracy": 0.981346,
+          "val_loss": 0.050065,
+          "val_accuracy": 0.985289,
+          "val_parasitized_precision": 0.687117,
+          "val_parasitized_recall_sensitivity": 0.805755,
+          "val_uninfected_specificity": 0.990122,
+          "val_parasitized_f1": 0.741722,
+          "val_macro_f1": 0.867075,
+          "val_tp": 112,
+          "val_fp": 51,
+          "val_tn": 5112,
+          "val_fn": 27
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.067865,
+          "train_accuracy": 0.983259,
+          "val_loss": 0.057904,
+          "val_accuracy": 0.983025,
+          "val_parasitized_precision": 0.63388,
+          "val_parasitized_recall_sensitivity": 0.834532,
+          "val_uninfected_specificity": 0.987023,
+          "val_parasitized_f1": 0.720497,
+          "val_macro_f1": 0.855872,
+          "val_tp": 116,
+          "val_fp": 67,
+          "val_tn": 5096,
+          "val_fn": 23
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.060589,
+          "train_accuracy": 0.984684,
+          "val_loss": 0.061523,
+          "val_accuracy": 0.983402,
+          "val_parasitized_precision": 0.640884,
+          "val_parasitized_recall_sensitivity": 0.834532,
+          "val_uninfected_specificity": 0.98741,
+          "val_parasitized_f1": 0.725,
+          "val_macro_f1": 0.858222,
+          "val_tp": 116,
+          "val_fp": 65,
+          "val_tn": 5098,
+          "val_fn": 23
+        }
+      ]
+    }
+  },
+  "strategies_evaluation": {
+    "A_Orig_CNN_Raw": {
+      "label": "Strategy A: Existing CNN (Raw Crops)",
+      "checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+      "crop_mode": "raw",
+      "val": {
+        "total_samples": 5302,
+        "uninfected_support": 5163,
+        "parasitized_support": 139,
+        "accuracy": 0.949264,
+        "parasitized_precision": 0.339109,
+        "parasitized_recall_sensitivity": 0.985612,
+        "parasitized_f1": 0.504604,
+        "uninfected_precision": 0.999592,
+        "uninfected_recall_specificity": 0.948286,
+        "uninfected_f1": 0.973263,
+        "macro_f1": 0.738934,
+        "weighted_f1": 0.960976,
+        "true_positives": 137,
+        "false_positives": 267,
+        "true_negatives": 4896,
+        "false_negatives": 2,
+        "confusion_matrix": [
+          [
+            4896,
+            267
+          ],
+          [
+            2,
+            137
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9996    0.9483    0.9733      5163\n Parasitized     0.3391    0.9856    0.5046       139\n\n    accuracy                         0.9493      5302\n   macro avg     0.6694    0.9669    0.7389      5302\nweighted avg     0.9823    0.9493    0.9610      5302\n"
+      },
+      "val_non_overlapping_only": {
+        "total_samples": 5206,
+        "uninfected_support": 5068,
+        "parasitized_support": 138,
+        "accuracy": 0.949866,
+        "parasitized_precision": 0.344304,
+        "parasitized_recall_sensitivity": 0.985507,
+        "parasitized_f1": 0.510319,
+        "uninfected_precision": 0.999584,
+        "uninfected_recall_specificity": 0.948895,
+        "uninfected_f1": 0.97358,
+        "macro_f1": 0.74195,
+        "weighted_f1": 0.9613,
+        "true_positives": 136,
+        "false_positives": 259,
+        "true_negatives": 4809,
+        "false_negatives": 2,
+        "confusion_matrix": [
+          [
+            4809,
+            259
+          ],
+          [
+            2,
+            136
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9996    0.9489    0.9736      5068\n Parasitized     0.3443    0.9855    0.5103       138\n\n    accuracy                         0.9499      5206\n   macro avg     0.6719    0.9672    0.7419      5206\nweighted avg     0.9822    0.9499    0.9613      5206\n"
+      },
+      "val_per_patient": {
+        "153C52P13thinF": {
+          "total_samples": 916,
+          "uninfected_support": 886,
+          "parasitized_support": 30,
+          "accuracy": 0.970524,
+          "parasitized_precision": 0.527273,
+          "parasitized_recall_sensitivity": 0.966667,
+          "parasitized_f1": 0.682353,
+          "uninfected_precision": 0.998839,
+          "uninfected_recall_specificity": 0.970655,
+          "uninfected_f1": 0.984545,
+          "macro_f1": 0.833449,
+          "weighted_f1": 0.974648,
+          "true_positives": 29,
+          "false_positives": 26,
+          "true_negatives": 860,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              860,
+              26
+            ],
+            [
+              1,
+              29
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 3.2751,
+          "predicted_parasitized_count": 55,
+          "predicted_parasitemia_percent": 6.0044
+        },
+        "236C94P55ThinF": {
+          "total_samples": 1262,
+          "uninfected_support": 1252,
+          "parasitized_support": 10,
+          "accuracy": 0.931062,
+          "parasitized_precision": 0.103093,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.186916,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.930511,
+          "uninfected_f1": 0.964005,
+          "macro_f1": 0.57546,
+          "weighted_f1": 0.957847,
+          "true_positives": 10,
+          "false_positives": 87,
+          "true_negatives": 1165,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1165,
+              87
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.7924,
+          "predicted_parasitized_count": 97,
+          "predicted_parasitemia_percent": 7.6862
+        },
+        "263C115P76ThinF": {
+          "total_samples": 1204,
+          "uninfected_support": 1191,
+          "parasitized_support": 13,
+          "accuracy": 0.92608,
+          "parasitized_precision": 0.12,
+          "parasitized_recall_sensitivity": 0.923077,
+          "parasitized_f1": 0.212389,
+          "uninfected_precision": 0.999094,
+          "uninfected_recall_specificity": 0.926113,
+          "uninfected_f1": 0.96122,
+          "macro_f1": 0.586805,
+          "weighted_f1": 0.953135,
+          "true_positives": 12,
+          "false_positives": 88,
+          "true_negatives": 1103,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              1103,
+              88
+            ],
+            [
+              1,
+              12
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.0797,
+          "predicted_parasitized_count": 100,
+          "predicted_parasitemia_percent": 8.3056
+        },
+        "276C128P89ThinF": {
+          "total_samples": 839,
+          "uninfected_support": 753,
+          "parasitized_support": 86,
+          "accuracy": 0.941597,
+          "parasitized_precision": 0.637037,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.778281,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.934927,
+          "uninfected_f1": 0.966369,
+          "macro_f1": 0.872325,
+          "weighted_f1": 0.94709,
+          "true_positives": 86,
+          "false_positives": 49,
+          "true_negatives": 704,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              704,
+              49
+            ],
+            [
+              0,
+              86
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 10.2503,
+          "predicted_parasitized_count": 135,
+          "predicted_parasitemia_percent": 16.0906
+        },
+        "323C231ThinF": {
+          "total_samples": 1081,
+          "uninfected_support": 1081,
+          "parasitized_support": 0,
+          "accuracy": 0.984274,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.984274,
+          "uninfected_f1": 0.992075,
+          "macro_f1": 0.496037,
+          "weighted_f1": 0.992075,
+          "true_positives": 0,
+          "false_positives": 17,
+          "true_negatives": 1064,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1064,
+              17
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 17,
+          "predicted_parasitemia_percent": 1.5726
+        }
+      },
+      "test": {
+        "total_samples": 4794,
+        "uninfected_support": 4418,
+        "parasitized_support": 376,
+        "accuracy": 0.918023,
+        "parasitized_precision": 0.488918,
+        "parasitized_recall_sensitivity": 0.99734,
+        "parasitized_f1": 0.656168,
+        "uninfected_precision": 0.999752,
+        "uninfected_recall_specificity": 0.911272,
+        "uninfected_f1": 0.953464,
+        "macro_f1": 0.804816,
+        "weighted_f1": 0.930146,
+        "true_positives": 375,
+        "false_positives": 392,
+        "true_negatives": 4026,
+        "false_negatives": 1,
+        "confusion_matrix": [
+          [
+            4026,
+            392
+          ],
+          [
+            1,
+            375
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9998    0.9113    0.9535      4418\n Parasitized     0.4889    0.9973    0.6562       376\n\n    accuracy                         0.9180      4794\n   macro avg     0.7443    0.9543    0.8048      4794\nweighted avg     0.9597    0.9180    0.9301      4794\n"
+      },
+      "test_non_overlapping_only": {
+        "total_samples": 4668,
+        "uninfected_support": 4298,
+        "parasitized_support": 370,
+        "accuracy": 0.925021,
+        "parasitized_precision": 0.513928,
+        "parasitized_recall_sensitivity": 0.997297,
+        "parasitized_f1": 0.678309,
+        "uninfected_precision": 0.999747,
+        "uninfected_recall_specificity": 0.918799,
+        "uninfected_f1": 0.957565,
+        "macro_f1": 0.817937,
+        "weighted_f1": 0.935431,
+        "true_positives": 369,
+        "false_positives": 349,
+        "true_negatives": 3949,
+        "false_negatives": 1,
+        "confusion_matrix": [
+          [
+            3949,
+            349
+          ],
+          [
+            1,
+            369
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9997    0.9188    0.9576      4298\n Parasitized     0.5139    0.9973    0.6783       370\n\n    accuracy                         0.9250      4668\n   macro avg     0.7568    0.9580    0.8179      4668\nweighted avg     0.9612    0.9250    0.9354      4668\n"
+      },
+      "test_per_patient": {
+        "156C55P16thinF": {
+          "total_samples": 896,
+          "uninfected_support": 893,
+          "parasitized_support": 3,
+          "accuracy": 0.958705,
+          "parasitized_precision": 0.075,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.139535,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.958567,
+          "uninfected_f1": 0.978845,
+          "macro_f1": 0.55919,
+          "weighted_f1": 0.976035,
+          "true_positives": 3,
+          "false_positives": 37,
+          "true_negatives": 856,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              856,
+              37
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.3348,
+          "predicted_parasitized_count": 40,
+          "predicted_parasitemia_percent": 4.4643
+        },
+        "209C68P29N_ThinF": {
+          "total_samples": 992,
+          "uninfected_support": 643,
+          "parasitized_support": 349,
+          "accuracy": 0.818548,
+          "parasitized_precision": 0.660342,
+          "parasitized_recall_sensitivity": 0.997135,
+          "parasitized_f1": 0.794521,
+          "uninfected_precision": 0.997849,
+          "uninfected_recall_specificity": 0.721617,
+          "uninfected_f1": 0.837545,
+          "macro_f1": 0.816033,
+          "weighted_f1": 0.822408,
+          "true_positives": 348,
+          "false_positives": 179,
+          "true_negatives": 464,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              464,
+              179
+            ],
+            [
+              1,
+              348
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 35.1815,
+          "predicted_parasitized_count": 527,
+          "predicted_parasitemia_percent": 53.125
+        },
+        "212C71P32_ThinF": {
+          "total_samples": 1169,
+          "uninfected_support": 1159,
+          "parasitized_support": 10,
+          "accuracy": 0.94953,
+          "parasitized_precision": 0.144928,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.253165,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.949094,
+          "uninfected_f1": 0.973882,
+          "macro_f1": 0.613523,
+          "weighted_f1": 0.967717,
+          "true_positives": 10,
+          "false_positives": 59,
+          "true_negatives": 1100,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1100,
+              59
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.8554,
+          "predicted_parasitized_count": 69,
+          "predicted_parasitemia_percent": 5.9025
+        },
+        "372C187P148NThinF": {
+          "total_samples": 794,
+          "uninfected_support": 780,
+          "parasitized_support": 14,
+          "accuracy": 0.928212,
+          "parasitized_precision": 0.197183,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.329412,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.926923,
+          "uninfected_f1": 0.962076,
+          "macro_f1": 0.645744,
+          "weighted_f1": 0.950921,
+          "true_positives": 14,
+          "false_positives": 57,
+          "true_negatives": 723,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              723,
+              57
+            ],
+            [
+              0,
+              14
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.7632,
+          "predicted_parasitized_count": 71,
+          "predicted_parasitemia_percent": 8.9421
+        },
+        "377C238NThinF": {
+          "total_samples": 943,
+          "uninfected_support": 943,
+          "parasitized_support": 0,
+          "accuracy": 0.936373,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.936373,
+          "uninfected_f1": 0.967141,
+          "macro_f1": 0.483571,
+          "weighted_f1": 0.967141,
+          "true_positives": 0,
+          "false_positives": 60,
+          "true_negatives": 883,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              883,
+              60
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 60,
+          "predicted_parasitemia_percent": 6.3627
+        }
+      }
+    },
+    "B_Orig_CNN_Masked": {
+      "label": "Strategy B: Existing CNN (Elliptical-Masked Crops)",
+      "checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+      "crop_mode": "masked",
+      "val": {
+        "total_samples": 5302,
+        "uninfected_support": 5163,
+        "parasitized_support": 139,
+        "accuracy": 0.981894,
+        "parasitized_precision": 0.609137,
+        "parasitized_recall_sensitivity": 0.863309,
+        "parasitized_f1": 0.714286,
+        "uninfected_precision": 0.996278,
+        "uninfected_recall_specificity": 0.985086,
+        "uninfected_f1": 0.990651,
+        "macro_f1": 0.852468,
+        "weighted_f1": 0.983405,
+        "true_positives": 120,
+        "false_positives": 77,
+        "true_negatives": 5086,
+        "false_negatives": 19,
+        "confusion_matrix": [
+          [
+            5086,
+            77
+          ],
+          [
+            19,
+            120
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9963    0.9851    0.9907      5163\n Parasitized     0.6091    0.8633    0.7143       139\n\n    accuracy                         0.9819      5302\n   macro avg     0.8027    0.9242    0.8525      5302\nweighted avg     0.9861    0.9819    0.9834      5302\n"
+      },
+      "val_non_overlapping_only": {
+        "total_samples": 5206,
+        "uninfected_support": 5068,
+        "parasitized_support": 138,
+        "accuracy": 0.982136,
+        "parasitized_precision": 0.615385,
+        "parasitized_recall_sensitivity": 0.869565,
+        "parasitized_f1": 0.720721,
+        "uninfected_precision": 0.996408,
+        "uninfected_recall_specificity": 0.985201,
+        "uninfected_f1": 0.990773,
+        "macro_f1": 0.855747,
+        "weighted_f1": 0.983614,
+        "true_positives": 120,
+        "false_positives": 75,
+        "true_negatives": 4993,
+        "false_negatives": 18,
+        "confusion_matrix": [
+          [
+            4993,
+            75
+          ],
+          [
+            18,
+            120
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9964    0.9852    0.9908      5068\n Parasitized     0.6154    0.8696    0.7207       138\n\n    accuracy                         0.9821      5206\n   macro avg     0.8059    0.9274    0.8557      5206\nweighted avg     0.9863    0.9821    0.9836      5206\n"
+      },
+      "val_per_patient": {
+        "153C52P13thinF": {
+          "total_samples": 916,
+          "uninfected_support": 886,
+          "parasitized_support": 30,
+          "accuracy": 0.99345,
+          "parasitized_precision": 0.928571,
+          "parasitized_recall_sensitivity": 0.866667,
+          "parasitized_f1": 0.896552,
+          "uninfected_precision": 0.995495,
+          "uninfected_recall_specificity": 0.997743,
+          "uninfected_f1": 0.996618,
+          "macro_f1": 0.946585,
+          "weighted_f1": 0.993341,
+          "true_positives": 26,
+          "false_positives": 2,
+          "true_negatives": 884,
+          "false_negatives": 4,
+          "confusion_matrix": [
+            [
+              884,
+              2
+            ],
+            [
+              4,
+              26
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 3.2751,
+          "predicted_parasitized_count": 28,
+          "predicted_parasitemia_percent": 3.0568
+        },
+        "236C94P55ThinF": {
+          "total_samples": 1262,
+          "uninfected_support": 1252,
+          "parasitized_support": 10,
+          "accuracy": 0.980983,
+          "parasitized_precision": 0.294118,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.454545,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.980831,
+          "uninfected_f1": 0.990323,
+          "macro_f1": 0.722434,
+          "weighted_f1": 0.986077,
+          "true_positives": 10,
+          "false_positives": 24,
+          "true_negatives": 1228,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1228,
+              24
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.7924,
+          "predicted_parasitized_count": 34,
+          "predicted_parasitemia_percent": 2.6941
+        },
+        "263C115P76ThinF": {
+          "total_samples": 1204,
+          "uninfected_support": 1191,
+          "parasitized_support": 13,
+          "accuracy": 0.971761,
+          "parasitized_precision": 0.111111,
+          "parasitized_recall_sensitivity": 0.230769,
+          "parasitized_f1": 0.15,
+          "uninfected_precision": 0.991504,
+          "uninfected_recall_specificity": 0.979849,
+          "uninfected_f1": 0.985642,
+          "macro_f1": 0.567821,
+          "weighted_f1": 0.976619,
+          "true_positives": 3,
+          "false_positives": 24,
+          "true_negatives": 1167,
+          "false_negatives": 10,
+          "confusion_matrix": [
+            [
+              1167,
+              24
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.0797,
+          "predicted_parasitized_count": 27,
+          "predicted_parasitemia_percent": 2.2425
+        },
+        "276C128P89ThinF": {
+          "total_samples": 839,
+          "uninfected_support": 753,
+          "parasitized_support": 86,
+          "accuracy": 0.97497,
+          "parasitized_precision": 0.835052,
+          "parasitized_recall_sensitivity": 0.94186,
+          "parasitized_f1": 0.885246,
+          "uninfected_precision": 0.993261,
+          "uninfected_recall_specificity": 0.978752,
+          "uninfected_f1": 0.985953,
+          "macro_f1": 0.9356,
+          "weighted_f1": 0.97563,
+          "true_positives": 81,
+          "false_positives": 16,
+          "true_negatives": 737,
+          "false_negatives": 5,
+          "confusion_matrix": [
+            [
+              737,
+              16
+            ],
+            [
+              5,
+              81
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 10.2503,
+          "predicted_parasitized_count": 97,
+          "predicted_parasitemia_percent": 11.5614
+        },
+        "323C231ThinF": {
+          "total_samples": 1081,
+          "uninfected_support": 1081,
+          "parasitized_support": 0,
+          "accuracy": 0.989824,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.989824,
+          "uninfected_f1": 0.994886,
+          "macro_f1": 0.497443,
+          "weighted_f1": 0.994886,
+          "true_positives": 0,
+          "false_positives": 11,
+          "true_negatives": 1070,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1070,
+              11
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 11,
+          "predicted_parasitemia_percent": 1.0176
+        }
+      },
+      "test": {
+        "total_samples": 4794,
+        "uninfected_support": 4418,
+        "parasitized_support": 376,
+        "accuracy": 0.981018,
+        "parasitized_precision": 0.813187,
+        "parasitized_recall_sensitivity": 0.984043,
+        "parasitized_f1": 0.890493,
+        "uninfected_precision": 0.998617,
+        "uninfected_recall_specificity": 0.980761,
+        "uninfected_f1": 0.989608,
+        "macro_f1": 0.940051,
+        "weighted_f1": 0.981835,
+        "true_positives": 370,
+        "false_positives": 85,
+        "true_negatives": 4333,
+        "false_negatives": 6,
+        "confusion_matrix": [
+          [
+            4333,
+            85
+          ],
+          [
+            6,
+            370
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9986    0.9808    0.9896      4418\n Parasitized     0.8132    0.9840    0.8905       376\n\n    accuracy                         0.9810      4794\n   macro avg     0.9059    0.9824    0.9401      4794\nweighted avg     0.9841    0.9810    0.9818      4794\n"
+      },
+      "test_non_overlapping_only": {
+        "total_samples": 4668,
+        "uninfected_support": 4298,
+        "parasitized_support": 370,
+        "accuracy": 0.982219,
+        "parasitized_precision": 0.825397,
+        "parasitized_recall_sensitivity": 0.983784,
+        "parasitized_f1": 0.897657,
+        "uninfected_precision": 0.998581,
+        "uninfected_recall_specificity": 0.982085,
+        "uninfected_f1": 0.990264,
+        "macro_f1": 0.943961,
+        "weighted_f1": 0.982924,
+        "true_positives": 364,
+        "false_positives": 77,
+        "true_negatives": 4221,
+        "false_negatives": 6,
+        "confusion_matrix": [
+          [
+            4221,
+            77
+          ],
+          [
+            6,
+            364
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9986    0.9821    0.9903      4298\n Parasitized     0.8254    0.9838    0.8977       370\n\n    accuracy                         0.9822      4668\n   macro avg     0.9120    0.9829    0.9440      4668\nweighted avg     0.9849    0.9822    0.9829      4668\n"
+      },
+      "test_per_patient": {
+        "156C55P16thinF": {
+          "total_samples": 896,
+          "uninfected_support": 893,
+          "parasitized_support": 3,
+          "accuracy": 0.996652,
+          "parasitized_precision": 0.5,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.666667,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.996641,
+          "uninfected_f1": 0.998317,
+          "macro_f1": 0.832492,
+          "weighted_f1": 0.997207,
+          "true_positives": 3,
+          "false_positives": 3,
+          "true_negatives": 890,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              890,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.3348,
+          "predicted_parasitized_count": 6,
+          "predicted_parasitemia_percent": 0.6696
+        },
+        "209C68P29N_ThinF": {
+          "total_samples": 992,
+          "uninfected_support": 643,
+          "parasitized_support": 349,
+          "accuracy": 0.948589,
+          "parasitized_precision": 0.876263,
+          "parasitized_recall_sensitivity": 0.994269,
+          "parasitized_f1": 0.931544,
+          "uninfected_precision": 0.996644,
+          "uninfected_recall_specificity": 0.923795,
+          "uninfected_f1": 0.958838,
+          "macro_f1": 0.945191,
+          "weighted_f1": 0.949235,
+          "true_positives": 347,
+          "false_positives": 49,
+          "true_negatives": 594,
+          "false_negatives": 2,
+          "confusion_matrix": [
+            [
+              594,
+              49
+            ],
+            [
+              2,
+              347
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 35.1815,
+          "predicted_parasitized_count": 396,
+          "predicted_parasitemia_percent": 39.9194
+        },
+        "212C71P32_ThinF": {
+          "total_samples": 1169,
+          "uninfected_support": 1159,
+          "parasitized_support": 10,
+          "accuracy": 0.976048,
+          "parasitized_precision": 0.25,
+          "parasitized_recall_sensitivity": 0.9,
+          "parasitized_f1": 0.391304,
+          "uninfected_precision": 0.999117,
+          "uninfected_recall_specificity": 0.976704,
+          "uninfected_f1": 0.987784,
+          "macro_f1": 0.689544,
+          "weighted_f1": 0.982681,
+          "true_positives": 9,
+          "false_positives": 27,
+          "true_negatives": 1132,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              1132,
+              27
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.8554,
+          "predicted_parasitized_count": 36,
+          "predicted_parasitemia_percent": 3.0796
+        },
+        "372C187P148NThinF": {
+          "total_samples": 794,
+          "uninfected_support": 780,
+          "parasitized_support": 14,
+          "accuracy": 0.994962,
+          "parasitized_precision": 0.916667,
+          "parasitized_recall_sensitivity": 0.785714,
+          "parasitized_f1": 0.846154,
+          "uninfected_precision": 0.996164,
+          "uninfected_recall_specificity": 0.998718,
+          "uninfected_f1": 0.997439,
+          "macro_f1": 0.921797,
+          "weighted_f1": 0.994772,
+          "true_positives": 11,
+          "false_positives": 1,
+          "true_negatives": 779,
+          "false_negatives": 3,
+          "confusion_matrix": [
+            [
+              779,
+              1
+            ],
+            [
+              3,
+              11
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.7632,
+          "predicted_parasitized_count": 12,
+          "predicted_parasitemia_percent": 1.5113
+        },
+        "377C238NThinF": {
+          "total_samples": 943,
+          "uninfected_support": 943,
+          "parasitized_support": 0,
+          "accuracy": 0.994698,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.994698,
+          "uninfected_f1": 0.997342,
+          "macro_f1": 0.498671,
+          "weighted_f1": 0.997342,
+          "true_positives": 0,
+          "false_positives": 5,
+          "true_negatives": 938,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              938,
+              5
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 5,
+          "predicted_parasitemia_percent": 0.5302
+        }
+      }
+    },
+    "C_Finetuned_CNN_Raw": {
+      "label": "Strategy C: Fine-Tuned CNN (Raw Crops)",
+      "checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+      "crop_mode": "raw",
+      "val": {
+        "total_samples": 5302,
+        "uninfected_support": 5163,
+        "parasitized_support": 139,
+        "accuracy": 0.98378,
+        "parasitized_precision": 0.643243,
+        "parasitized_recall_sensitivity": 0.856115,
+        "parasitized_f1": 0.734568,
+        "uninfected_precision": 0.996091,
+        "uninfected_recall_specificity": 0.987217,
+        "uninfected_f1": 0.991634,
+        "macro_f1": 0.863101,
+        "weighted_f1": 0.984895,
+        "true_positives": 119,
+        "false_positives": 66,
+        "true_negatives": 5097,
+        "false_negatives": 20,
+        "confusion_matrix": [
+          [
+            5097,
+            66
+          ],
+          [
+            20,
+            119
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9961    0.9872    0.9916      5163\n Parasitized     0.6432    0.8561    0.7346       139\n\n    accuracy                         0.9838      5302\n   macro avg     0.8197    0.9217    0.8631      5302\nweighted avg     0.9868    0.9838    0.9849      5302\n"
+      },
+      "val_non_overlapping_only": {
+        "total_samples": 5206,
+        "uninfected_support": 5068,
+        "parasitized_support": 138,
+        "accuracy": 0.983865,
+        "parasitized_precision": 0.646739,
+        "parasitized_recall_sensitivity": 0.862319,
+        "parasitized_f1": 0.73913,
+        "uninfected_precision": 0.996217,
+        "uninfected_recall_specificity": 0.987174,
+        "uninfected_f1": 0.991675,
+        "macro_f1": 0.865403,
+        "weighted_f1": 0.984981,
+        "true_positives": 119,
+        "false_positives": 65,
+        "true_negatives": 5003,
+        "false_negatives": 19,
+        "confusion_matrix": [
+          [
+            5003,
+            65
+          ],
+          [
+            19,
+            119
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9962    0.9872    0.9917      5068\n Parasitized     0.6467    0.8623    0.7391       138\n\n    accuracy                         0.9839      5206\n   macro avg     0.8215    0.9247    0.8654      5206\nweighted avg     0.9870    0.9839    0.9850      5206\n"
+      },
+      "val_per_patient": {
+        "153C52P13thinF": {
+          "total_samples": 916,
+          "uninfected_support": 886,
+          "parasitized_support": 30,
+          "accuracy": 0.99345,
+          "parasitized_precision": 0.928571,
+          "parasitized_recall_sensitivity": 0.866667,
+          "parasitized_f1": 0.896552,
+          "uninfected_precision": 0.995495,
+          "uninfected_recall_specificity": 0.997743,
+          "uninfected_f1": 0.996618,
+          "macro_f1": 0.946585,
+          "weighted_f1": 0.993341,
+          "true_positives": 26,
+          "false_positives": 2,
+          "true_negatives": 884,
+          "false_negatives": 4,
+          "confusion_matrix": [
+            [
+              884,
+              2
+            ],
+            [
+              4,
+              26
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 3.2751,
+          "predicted_parasitized_count": 28,
+          "predicted_parasitemia_percent": 3.0568
+        },
+        "236C94P55ThinF": {
+          "total_samples": 1262,
+          "uninfected_support": 1252,
+          "parasitized_support": 10,
+          "accuracy": 0.979398,
+          "parasitized_precision": 0.264706,
+          "parasitized_recall_sensitivity": 0.9,
+          "parasitized_f1": 0.409091,
+          "uninfected_precision": 0.999186,
+          "uninfected_recall_specificity": 0.980032,
+          "uninfected_f1": 0.989516,
+          "macro_f1": 0.699304,
+          "weighted_f1": 0.984917,
+          "true_positives": 9,
+          "false_positives": 25,
+          "true_negatives": 1227,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              1227,
+              25
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.7924,
+          "predicted_parasitized_count": 34,
+          "predicted_parasitemia_percent": 2.6941
+        },
+        "263C115P76ThinF": {
+          "total_samples": 1204,
+          "uninfected_support": 1191,
+          "parasitized_support": 13,
+          "accuracy": 0.974252,
+          "parasitized_precision": 0.125,
+          "parasitized_recall_sensitivity": 0.230769,
+          "parasitized_f1": 0.162162,
+          "uninfected_precision": 0.991525,
+          "uninfected_recall_specificity": 0.982368,
+          "uninfected_f1": 0.986925,
+          "macro_f1": 0.574544,
+          "weighted_f1": 0.97802,
+          "true_positives": 3,
+          "false_positives": 21,
+          "true_negatives": 1170,
+          "false_negatives": 10,
+          "confusion_matrix": [
+            [
+              1170,
+              21
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.0797,
+          "predicted_parasitized_count": 24,
+          "predicted_parasitemia_percent": 1.9934
+        },
+        "276C128P89ThinF": {
+          "total_samples": 839,
+          "uninfected_support": 753,
+          "parasitized_support": 86,
+          "accuracy": 0.978546,
+          "parasitized_precision": 0.861702,
+          "parasitized_recall_sensitivity": 0.94186,
+          "parasitized_f1": 0.9,
+          "uninfected_precision": 0.993289,
+          "uninfected_recall_specificity": 0.982736,
+          "uninfected_f1": 0.987984,
+          "macro_f1": 0.943992,
+          "weighted_f1": 0.978965,
+          "true_positives": 81,
+          "false_positives": 13,
+          "true_negatives": 740,
+          "false_negatives": 5,
+          "confusion_matrix": [
+            [
+              740,
+              13
+            ],
+            [
+              5,
+              81
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 10.2503,
+          "predicted_parasitized_count": 94,
+          "predicted_parasitemia_percent": 11.2038
+        },
+        "323C231ThinF": {
+          "total_samples": 1081,
+          "uninfected_support": 1081,
+          "parasitized_support": 0,
+          "accuracy": 0.995375,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.995375,
+          "uninfected_f1": 0.997682,
+          "macro_f1": 0.498841,
+          "weighted_f1": 0.997682,
+          "true_positives": 0,
+          "false_positives": 5,
+          "true_negatives": 1076,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1076,
+              5
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 5,
+          "predicted_parasitemia_percent": 0.4625
+        }
+      },
+      "test": {
+        "total_samples": 4794,
+        "uninfected_support": 4418,
+        "parasitized_support": 376,
+        "accuracy": 0.983521,
+        "parasitized_precision": 0.847775,
+        "parasitized_recall_sensitivity": 0.962766,
+        "parasitized_f1": 0.901619,
+        "uninfected_precision": 0.996794,
+        "uninfected_recall_specificity": 0.985287,
+        "uninfected_f1": 0.991007,
+        "macro_f1": 0.946313,
+        "weighted_f1": 0.983997,
+        "true_positives": 362,
+        "false_positives": 65,
+        "true_negatives": 4353,
+        "false_negatives": 14,
+        "confusion_matrix": [
+          [
+            4353,
+            65
+          ],
+          [
+            14,
+            362
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9968    0.9853    0.9910      4418\n Parasitized     0.8478    0.9628    0.9016       376\n\n    accuracy                         0.9835      4794\n   macro avg     0.9223    0.9740    0.9463      4794\nweighted avg     0.9851    0.9835    0.9840      4794\n"
+      },
+      "test_non_overlapping_only": {
+        "total_samples": 4668,
+        "uninfected_support": 4298,
+        "parasitized_support": 370,
+        "accuracy": 0.983933,
+        "parasitized_precision": 0.853717,
+        "parasitized_recall_sensitivity": 0.962162,
+        "parasitized_f1": 0.904701,
+        "uninfected_precision": 0.996707,
+        "uninfected_recall_specificity": 0.985807,
+        "uninfected_f1": 0.991227,
+        "macro_f1": 0.947964,
+        "weighted_f1": 0.984369,
+        "true_positives": 356,
+        "false_positives": 61,
+        "true_negatives": 4237,
+        "false_negatives": 14,
+        "confusion_matrix": [
+          [
+            4237,
+            61
+          ],
+          [
+            14,
+            356
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9967    0.9858    0.9912      4298\n Parasitized     0.8537    0.9622    0.9047       370\n\n    accuracy                         0.9839      4668\n   macro avg     0.9252    0.9740    0.9480      4668\nweighted avg     0.9854    0.9839    0.9844      4668\n"
+      },
+      "test_per_patient": {
+        "156C55P16thinF": {
+          "total_samples": 896,
+          "uninfected_support": 893,
+          "parasitized_support": 3,
+          "accuracy": 0.997768,
+          "parasitized_precision": 0.6,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.75,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.99776,
+          "uninfected_f1": 0.998879,
+          "macro_f1": 0.874439,
+          "weighted_f1": 0.998046,
+          "true_positives": 3,
+          "false_positives": 2,
+          "true_negatives": 891,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              891,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.3348,
+          "predicted_parasitized_count": 5,
+          "predicted_parasitemia_percent": 0.558
+        },
+        "209C68P29N_ThinF": {
+          "total_samples": 992,
+          "uninfected_support": 643,
+          "parasitized_support": 349,
+          "accuracy": 0.954637,
+          "parasitized_precision": 0.9,
+          "parasitized_recall_sensitivity": 0.979943,
+          "parasitized_f1": 0.938272,
+          "uninfected_precision": 0.988562,
+          "uninfected_recall_specificity": 0.940902,
+          "uninfected_f1": 0.964143,
+          "macro_f1": 0.951208,
+          "weighted_f1": 0.955041,
+          "true_positives": 342,
+          "false_positives": 38,
+          "true_negatives": 605,
+          "false_negatives": 7,
+          "confusion_matrix": [
+            [
+              605,
+              38
+            ],
+            [
+              7,
+              342
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 35.1815,
+          "predicted_parasitized_count": 380,
+          "predicted_parasitemia_percent": 38.3065
+        },
+        "212C71P32_ThinF": {
+          "total_samples": 1169,
+          "uninfected_support": 1159,
+          "parasitized_support": 10,
+          "accuracy": 0.980325,
+          "parasitized_precision": 0.290323,
+          "parasitized_recall_sensitivity": 0.9,
+          "parasitized_f1": 0.439024,
+          "uninfected_precision": 0.999121,
+          "uninfected_recall_specificity": 0.981018,
+          "uninfected_f1": 0.989987,
+          "macro_f1": 0.714506,
+          "weighted_f1": 0.985274,
+          "true_positives": 9,
+          "false_positives": 22,
+          "true_negatives": 1137,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              1137,
+              22
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.8554,
+          "predicted_parasitized_count": 31,
+          "predicted_parasitemia_percent": 2.6518
+        },
+        "372C187P148NThinF": {
+          "total_samples": 794,
+          "uninfected_support": 780,
+          "parasitized_support": 14,
+          "accuracy": 0.992443,
+          "parasitized_precision": 1.0,
+          "parasitized_recall_sensitivity": 0.571429,
+          "parasitized_f1": 0.727273,
+          "uninfected_precision": 0.992366,
+          "uninfected_recall_specificity": 1.0,
+          "uninfected_f1": 0.996169,
+          "macro_f1": 0.861721,
+          "weighted_f1": 0.991427,
+          "true_positives": 8,
+          "false_positives": 0,
+          "true_negatives": 780,
+          "false_negatives": 6,
+          "confusion_matrix": [
+            [
+              780,
+              0
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.7632,
+          "predicted_parasitized_count": 8,
+          "predicted_parasitemia_percent": 1.0076
+        },
+        "377C238NThinF": {
+          "total_samples": 943,
+          "uninfected_support": 943,
+          "parasitized_support": 0,
+          "accuracy": 0.996819,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.996819,
+          "uninfected_f1": 0.998407,
+          "macro_f1": 0.499203,
+          "weighted_f1": 0.998407,
+          "true_positives": 0,
+          "false_positives": 3,
+          "true_negatives": 940,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              940,
+              3
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 3,
+          "predicted_parasitemia_percent": 0.3181
+        }
+      }
+    },
+    "D_Finetuned_CNN_Masked": {
+      "label": "Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops)",
+      "checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_masked_best.keras",
+      "crop_mode": "masked",
+      "val": {
+        "total_samples": 5302,
+        "uninfected_support": 5163,
+        "parasitized_support": 139,
+        "accuracy": 0.981894,
+        "parasitized_precision": 0.609137,
+        "parasitized_recall_sensitivity": 0.863309,
+        "parasitized_f1": 0.714286,
+        "uninfected_precision": 0.996278,
+        "uninfected_recall_specificity": 0.985086,
+        "uninfected_f1": 0.990651,
+        "macro_f1": 0.852468,
+        "weighted_f1": 0.983405,
+        "true_positives": 120,
+        "false_positives": 77,
+        "true_negatives": 5086,
+        "false_negatives": 19,
+        "confusion_matrix": [
+          [
+            5086,
+            77
+          ],
+          [
+            19,
+            120
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9963    0.9851    0.9907      5163\n Parasitized     0.6091    0.8633    0.7143       139\n\n    accuracy                         0.9819      5302\n   macro avg     0.8027    0.9242    0.8525      5302\nweighted avg     0.9861    0.9819    0.9834      5302\n"
+      },
+      "val_non_overlapping_only": {
+        "total_samples": 5206,
+        "uninfected_support": 5068,
+        "parasitized_support": 138,
+        "accuracy": 0.982136,
+        "parasitized_precision": 0.615385,
+        "parasitized_recall_sensitivity": 0.869565,
+        "parasitized_f1": 0.720721,
+        "uninfected_precision": 0.996408,
+        "uninfected_recall_specificity": 0.985201,
+        "uninfected_f1": 0.990773,
+        "macro_f1": 0.855747,
+        "weighted_f1": 0.983614,
+        "true_positives": 120,
+        "false_positives": 75,
+        "true_negatives": 4993,
+        "false_negatives": 18,
+        "confusion_matrix": [
+          [
+            4993,
+            75
+          ],
+          [
+            18,
+            120
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9964    0.9852    0.9908      5068\n Parasitized     0.6154    0.8696    0.7207       138\n\n    accuracy                         0.9821      5206\n   macro avg     0.8059    0.9274    0.8557      5206\nweighted avg     0.9863    0.9821    0.9836      5206\n"
+      },
+      "val_per_patient": {
+        "153C52P13thinF": {
+          "total_samples": 916,
+          "uninfected_support": 886,
+          "parasitized_support": 30,
+          "accuracy": 0.99345,
+          "parasitized_precision": 0.928571,
+          "parasitized_recall_sensitivity": 0.866667,
+          "parasitized_f1": 0.896552,
+          "uninfected_precision": 0.995495,
+          "uninfected_recall_specificity": 0.997743,
+          "uninfected_f1": 0.996618,
+          "macro_f1": 0.946585,
+          "weighted_f1": 0.993341,
+          "true_positives": 26,
+          "false_positives": 2,
+          "true_negatives": 884,
+          "false_negatives": 4,
+          "confusion_matrix": [
+            [
+              884,
+              2
+            ],
+            [
+              4,
+              26
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 3.2751,
+          "predicted_parasitized_count": 28,
+          "predicted_parasitemia_percent": 3.0568
+        },
+        "236C94P55ThinF": {
+          "total_samples": 1262,
+          "uninfected_support": 1252,
+          "parasitized_support": 10,
+          "accuracy": 0.980983,
+          "parasitized_precision": 0.294118,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.454545,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.980831,
+          "uninfected_f1": 0.990323,
+          "macro_f1": 0.722434,
+          "weighted_f1": 0.986077,
+          "true_positives": 10,
+          "false_positives": 24,
+          "true_negatives": 1228,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1228,
+              24
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.7924,
+          "predicted_parasitized_count": 34,
+          "predicted_parasitemia_percent": 2.6941
+        },
+        "263C115P76ThinF": {
+          "total_samples": 1204,
+          "uninfected_support": 1191,
+          "parasitized_support": 13,
+          "accuracy": 0.971761,
+          "parasitized_precision": 0.111111,
+          "parasitized_recall_sensitivity": 0.230769,
+          "parasitized_f1": 0.15,
+          "uninfected_precision": 0.991504,
+          "uninfected_recall_specificity": 0.979849,
+          "uninfected_f1": 0.985642,
+          "macro_f1": 0.567821,
+          "weighted_f1": 0.976619,
+          "true_positives": 3,
+          "false_positives": 24,
+          "true_negatives": 1167,
+          "false_negatives": 10,
+          "confusion_matrix": [
+            [
+              1167,
+              24
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.0797,
+          "predicted_parasitized_count": 27,
+          "predicted_parasitemia_percent": 2.2425
+        },
+        "276C128P89ThinF": {
+          "total_samples": 839,
+          "uninfected_support": 753,
+          "parasitized_support": 86,
+          "accuracy": 0.97497,
+          "parasitized_precision": 0.835052,
+          "parasitized_recall_sensitivity": 0.94186,
+          "parasitized_f1": 0.885246,
+          "uninfected_precision": 0.993261,
+          "uninfected_recall_specificity": 0.978752,
+          "uninfected_f1": 0.985953,
+          "macro_f1": 0.9356,
+          "weighted_f1": 0.97563,
+          "true_positives": 81,
+          "false_positives": 16,
+          "true_negatives": 737,
+          "false_negatives": 5,
+          "confusion_matrix": [
+            [
+              737,
+              16
+            ],
+            [
+              5,
+              81
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 10.2503,
+          "predicted_parasitized_count": 97,
+          "predicted_parasitemia_percent": 11.5614
+        },
+        "323C231ThinF": {
+          "total_samples": 1081,
+          "uninfected_support": 1081,
+          "parasitized_support": 0,
+          "accuracy": 0.989824,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.989824,
+          "uninfected_f1": 0.994886,
+          "macro_f1": 0.497443,
+          "weighted_f1": 0.994886,
+          "true_positives": 0,
+          "false_positives": 11,
+          "true_negatives": 1070,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              1070,
+              11
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 11,
+          "predicted_parasitemia_percent": 1.0176
+        }
+      },
+      "test": {
+        "total_samples": 4794,
+        "uninfected_support": 4418,
+        "parasitized_support": 376,
+        "accuracy": 0.981018,
+        "parasitized_precision": 0.813187,
+        "parasitized_recall_sensitivity": 0.984043,
+        "parasitized_f1": 0.890493,
+        "uninfected_precision": 0.998617,
+        "uninfected_recall_specificity": 0.980761,
+        "uninfected_f1": 0.989608,
+        "macro_f1": 0.940051,
+        "weighted_f1": 0.981835,
+        "true_positives": 370,
+        "false_positives": 85,
+        "true_negatives": 4333,
+        "false_negatives": 6,
+        "confusion_matrix": [
+          [
+            4333,
+            85
+          ],
+          [
+            6,
+            370
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9986    0.9808    0.9896      4418\n Parasitized     0.8132    0.9840    0.8905       376\n\n    accuracy                         0.9810      4794\n   macro avg     0.9059    0.9824    0.9401      4794\nweighted avg     0.9841    0.9810    0.9818      4794\n"
+      },
+      "test_non_overlapping_only": {
+        "total_samples": 4668,
+        "uninfected_support": 4298,
+        "parasitized_support": 370,
+        "accuracy": 0.982219,
+        "parasitized_precision": 0.825397,
+        "parasitized_recall_sensitivity": 0.983784,
+        "parasitized_f1": 0.897657,
+        "uninfected_precision": 0.998581,
+        "uninfected_recall_specificity": 0.982085,
+        "uninfected_f1": 0.990264,
+        "macro_f1": 0.943961,
+        "weighted_f1": 0.982924,
+        "true_positives": 364,
+        "false_positives": 77,
+        "true_negatives": 4221,
+        "false_negatives": 6,
+        "confusion_matrix": [
+          [
+            4221,
+            77
+          ],
+          [
+            6,
+            364
+          ]
+        ],
+        "classification_report_text": "              precision    recall  f1-score   support\n\n  Uninfected     0.9986    0.9821    0.9903      4298\n Parasitized     0.8254    0.9838    0.8977       370\n\n    accuracy                         0.9822      4668\n   macro avg     0.9120    0.9829    0.9440      4668\nweighted avg     0.9849    0.9822    0.9829      4668\n"
+      },
+      "test_per_patient": {
+        "156C55P16thinF": {
+          "total_samples": 896,
+          "uninfected_support": 893,
+          "parasitized_support": 3,
+          "accuracy": 0.996652,
+          "parasitized_precision": 0.5,
+          "parasitized_recall_sensitivity": 1.0,
+          "parasitized_f1": 0.666667,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.996641,
+          "uninfected_f1": 0.998317,
+          "macro_f1": 0.832492,
+          "weighted_f1": 0.997207,
+          "true_positives": 3,
+          "false_positives": 3,
+          "true_negatives": 890,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              890,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.3348,
+          "predicted_parasitized_count": 6,
+          "predicted_parasitemia_percent": 0.6696
+        },
+        "209C68P29N_ThinF": {
+          "total_samples": 992,
+          "uninfected_support": 643,
+          "parasitized_support": 349,
+          "accuracy": 0.948589,
+          "parasitized_precision": 0.876263,
+          "parasitized_recall_sensitivity": 0.994269,
+          "parasitized_f1": 0.931544,
+          "uninfected_precision": 0.996644,
+          "uninfected_recall_specificity": 0.923795,
+          "uninfected_f1": 0.958838,
+          "macro_f1": 0.945191,
+          "weighted_f1": 0.949235,
+          "true_positives": 347,
+          "false_positives": 49,
+          "true_negatives": 594,
+          "false_negatives": 2,
+          "confusion_matrix": [
+            [
+              594,
+              49
+            ],
+            [
+              2,
+              347
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 35.1815,
+          "predicted_parasitized_count": 396,
+          "predicted_parasitemia_percent": 39.9194
+        },
+        "212C71P32_ThinF": {
+          "total_samples": 1169,
+          "uninfected_support": 1159,
+          "parasitized_support": 10,
+          "accuracy": 0.976048,
+          "parasitized_precision": 0.25,
+          "parasitized_recall_sensitivity": 0.9,
+          "parasitized_f1": 0.391304,
+          "uninfected_precision": 0.999117,
+          "uninfected_recall_specificity": 0.976704,
+          "uninfected_f1": 0.987784,
+          "macro_f1": 0.689544,
+          "weighted_f1": 0.982681,
+          "true_positives": 9,
+          "false_positives": 27,
+          "true_negatives": 1132,
+          "false_negatives": 1,
+          "confusion_matrix": [
+            [
+              1132,
+              27
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.8554,
+          "predicted_parasitized_count": 36,
+          "predicted_parasitemia_percent": 3.0796
+        },
+        "372C187P148NThinF": {
+          "total_samples": 794,
+          "uninfected_support": 780,
+          "parasitized_support": 14,
+          "accuracy": 0.994962,
+          "parasitized_precision": 0.916667,
+          "parasitized_recall_sensitivity": 0.785714,
+          "parasitized_f1": 0.846154,
+          "uninfected_precision": 0.996164,
+          "uninfected_recall_specificity": 0.998718,
+          "uninfected_f1": 0.997439,
+          "macro_f1": 0.921797,
+          "weighted_f1": 0.994772,
+          "true_positives": 11,
+          "false_positives": 1,
+          "true_negatives": 779,
+          "false_negatives": 3,
+          "confusion_matrix": [
+            [
+              779,
+              1
+            ],
+            [
+              3,
+              11
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 1.7632,
+          "predicted_parasitized_count": 12,
+          "predicted_parasitemia_percent": 1.5113
+        },
+        "377C238NThinF": {
+          "total_samples": 943,
+          "uninfected_support": 943,
+          "parasitized_support": 0,
+          "accuracy": 0.994698,
+          "parasitized_precision": 0.0,
+          "parasitized_recall_sensitivity": 0.0,
+          "parasitized_f1": 0.0,
+          "uninfected_precision": 1.0,
+          "uninfected_recall_specificity": 0.994698,
+          "uninfected_f1": 0.997342,
+          "macro_f1": 0.498671,
+          "weighted_f1": 0.997342,
+          "true_positives": 0,
+          "false_positives": 5,
+          "true_negatives": 938,
+          "false_negatives": 0,
+          "confusion_matrix": [
+            [
+              938,
+              5
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "images_count": 5,
+          "gt_parasitemia_percent": 0.0,
+          "predicted_parasitized_count": 5,
+          "predicted_parasitemia_percent": 0.5302
+        }
+      }
+    }
+  },
+  "total_runtime_seconds": 989.18
+}

@@ -1,0 +1,394 @@
+{
+  "evaluated_images": [
+    {
+      "stem": "IMG_20150819_133447",
+      "gt_uninfected": 135,
+      "gt_parasitized": 71,
+      "gt_wbc": 3,
+      "gt_total_rbc": 206,
+      "gt_parasitemia_pct": 34.47,
+      "valid_rbcs": 195,
+      "raw_par": 108,
+      "raw_uninf": 87,
+      "raw_pct": 55.3846,
+      "masked_par": 81,
+      "masked_uninf": 114,
+      "masked_pct": 41.5385,
+      "time_s": 48.5807
+    },
+    {
+      "stem": "IMG_20150819_133236",
+      "gt_uninfected": 134,
+      "gt_parasitized": 84,
+      "gt_wbc": 0,
+      "gt_total_rbc": 218,
+      "gt_parasitemia_pct": 38.53,
+      "valid_rbcs": 214,
+      "raw_par": 110,
+      "raw_uninf": 104,
+      "raw_pct": 51.4019,
+      "masked_par": 90,
+      "masked_uninf": 124,
+      "masked_pct": 42.0561,
+      "time_s": 49.4068
+    },
+    {
+      "stem": "IMG_20151203_152841",
+      "gt_uninfected": 164,
+      "gt_parasitized": 1,
+      "gt_wbc": 0,
+      "gt_total_rbc": 165,
+      "gt_parasitemia_pct": 0.61,
+      "valid_rbcs": 169,
+      "raw_par": 17,
+      "raw_uninf": 152,
+      "raw_pct": 10.0592,
+      "masked_par": 1,
+      "masked_uninf": 168,
+      "masked_pct": 0.5917,
+      "time_s": 40.7178
+    },
+    {
+      "stem": "IMG_20151207_114038",
+      "gt_uninfected": 208,
+      "gt_parasitized": 0,
+      "gt_wbc": 0,
+      "gt_total_rbc": 208,
+      "gt_parasitemia_pct": 0.0,
+      "valid_rbcs": 210,
+      "raw_par": 5,
+      "raw_uninf": 205,
+      "raw_pct": 2.381,
+      "masked_par": 1,
+      "masked_uninf": 209,
+      "masked_pct": 0.4762,
+      "time_s": 24.977
+    }
+  ],
+  "full_summaries": [
+    {
+      "stem": "IMG_20150819_133447",
+      "gt_counts": {
+        "Uninfected RBC": 135,
+        "Parasitized RBC": 71,
+        "WBC": 3
+      },
+      "summary": {
+        "disclaimer": "EXPERIMENTAL RESEARCH PROTOTYPE ONLY \u2014 NOT A CLINICALLY VALIDATED DIAGNOSTIC SYSTEM",
+        "image_filename": "IMG_20150819_133447.jpg",
+        "image_path": "D:\\smartcell\\yolo_malaria\\images\\test\\IMG_20150819_133447.jpg",
+        "image_dimensions": {
+          "width": 5312,
+          "height": 2988
+        },
+        "models": {
+          "stage1_yolo_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+          "stage2_cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+          "cnn_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "cnn_internal_rescaling": "1.0 / 255.0",
+          "cnn_class_mapping": {
+            "0": "Uninfected",
+            "1": "Parasitized"
+          },
+          "primary_crop_preprocessing_mode": "raw"
+        },
+        "thresholds_and_parameters": {
+          "yolo_confidence_threshold": 0.25,
+          "yolo_nms_iou_threshold": 0.45,
+          "deduplication_iou_threshold": 0.5,
+          "yolo_max_det": 350,
+          "crop_padding_pixels": 4,
+          "min_box_size_pixels": 16,
+          "cnn_parasitized_threshold": 0.5
+        },
+        "counts": {
+          "raw_yolo_detections": 195,
+          "valid_candidate_rbc_crops": 195,
+          "cnn_parasitized_rbc_count": 108,
+          "cnn_uninfected_rbc_count": 87,
+          "cnn_raw_crop_parasitized_count": 108,
+          "cnn_raw_crop_uninfected_count": 87,
+          "cnn_ellipse_masked_parasitized_count": 81,
+          "cnn_ellipse_masked_uninfected_count": 114,
+          "excluded_wbc_detections": 0,
+          "rejected_or_duplicate_boxes": 0
+        },
+        "parasitemia_estimate": {
+          "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+          "primary_mode": "raw",
+          "estimated_parasitemia_percent": 55.3846,
+          "calculation_fraction": "108 / 195 classified RBCs",
+          "raw_crop_parasitemia_percent": 55.3846,
+          "ellipse_masked_parasitemia_percent": 41.5385
+        },
+        "Domain_Mismatch_Analysis": {
+          "observation": "The NIH single-cell CNN dataset (D:\\smartcell\\dataset) contains segmented cells on a black [0,0,0] background, whereas raw rectangular crops from full smears contain bright pink plasma corners and neighboring cell edges.",
+          "raw_rectangular_crops_parasitized_flagged": 108,
+          "ellipse_masked_crops_parasitized_flagged": 81
+        },
+        "processing_time_seconds": {
+          "stage1_yolo_detection_and_cropping": 21.9178,
+          "stage2_cnn_classification": 26.6629,
+          "total_pipeline_seconds": 48.5807
+        },
+        "output_files": {
+          "output_directory": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447",
+          "annotated_full_image": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\annotated_IMG_20150819_133447.jpg",
+          "contact_sheet_image": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\contact_sheet_IMG_20150819_133447.jpg",
+          "crops_directory": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\crops",
+          "cell_predictions_csv": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\cell_predictions_IMG_20150819_133447.csv",
+          "rejected_and_excluded_json": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\rejected_and_excluded_IMG_20150819_133447.json",
+          "field_summary_json": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\field_summary_IMG_20150819_133447.json",
+          "field_summary_txt": "D:\\smartcell\\results\\smartcell_pipeline\\single_image_test_IMG_20150819_133447\\field_summary_IMG_20150819_133447.txt"
+        }
+      }
+    },
+    {
+      "stem": "IMG_20150819_133236",
+      "gt_counts": {
+        "Uninfected RBC": 134,
+        "Parasitized RBC": 84,
+        "WBC": 0
+      },
+      "summary": {
+        "disclaimer": "EXPERIMENTAL RESEARCH PROTOTYPE ONLY \u2014 NOT A CLINICALLY VALIDATED DIAGNOSTIC SYSTEM",
+        "image_filename": "IMG_20150819_133236.jpg",
+        "image_path": "D:\\smartcell\\yolo_malaria\\images\\test\\IMG_20150819_133236.jpg",
+        "image_dimensions": {
+          "width": 5312,
+          "height": 2988
+        },
+        "models": {
+          "stage1_yolo_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+          "stage2_cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+          "cnn_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "cnn_internal_rescaling": "1.0 / 255.0",
+          "cnn_class_mapping": {
+            "0": "Uninfected",
+            "1": "Parasitized"
+          },
+          "primary_crop_preprocessing_mode": "raw"
+        },
+        "thresholds_and_parameters": {
+          "yolo_confidence_threshold": 0.25,
+          "yolo_nms_iou_threshold": 0.45,
+          "deduplication_iou_threshold": 0.5,
+          "yolo_max_det": 350,
+          "crop_padding_pixels": 4,
+          "min_box_size_pixels": 16,
+          "cnn_parasitized_threshold": 0.5
+        },
+        "counts": {
+          "raw_yolo_detections": 214,
+          "valid_candidate_rbc_crops": 214,
+          "cnn_parasitized_rbc_count": 110,
+          "cnn_uninfected_rbc_count": 104,
+          "cnn_raw_crop_parasitized_count": 110,
+          "cnn_raw_crop_uninfected_count": 104,
+          "cnn_ellipse_masked_parasitized_count": 90,
+          "cnn_ellipse_masked_uninfected_count": 124,
+          "excluded_wbc_detections": 0,
+          "rejected_or_duplicate_boxes": 0
+        },
+        "parasitemia_estimate": {
+          "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+          "primary_mode": "raw",
+          "estimated_parasitemia_percent": 51.4019,
+          "calculation_fraction": "110 / 214 classified RBCs",
+          "raw_crop_parasitemia_percent": 51.4019,
+          "ellipse_masked_parasitemia_percent": 42.0561
+        },
+        "Domain_Mismatch_Analysis": {
+          "observation": "The NIH single-cell CNN dataset (D:\\smartcell\\dataset) contains segmented cells on a black [0,0,0] background, whereas raw rectangular crops from full smears contain bright pink plasma corners and neighboring cell edges.",
+          "raw_rectangular_crops_parasitized_flagged": 110,
+          "ellipse_masked_crops_parasitized_flagged": 90
+        },
+        "processing_time_seconds": {
+          "stage1_yolo_detection_and_cropping": 16.0857,
+          "stage2_cnn_classification": 33.3211,
+          "total_pipeline_seconds": 49.4068
+        },
+        "output_files": {
+          "output_directory": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236",
+          "annotated_full_image": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\annotated_IMG_20150819_133236.jpg",
+          "contact_sheet_image": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\contact_sheet_IMG_20150819_133236.jpg",
+          "crops_directory": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\crops",
+          "cell_predictions_csv": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\cell_predictions_IMG_20150819_133236.csv",
+          "rejected_and_excluded_json": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\rejected_and_excluded_IMG_20150819_133236.json",
+          "field_summary_json": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\field_summary_IMG_20150819_133236.json",
+          "field_summary_txt": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20150819_133236\\field_summary_IMG_20150819_133236.txt"
+        }
+      }
+    },
+    {
+      "stem": "IMG_20151203_152841",
+      "gt_counts": {
+        "Uninfected RBC": 164,
+        "Parasitized RBC": 1,
+        "WBC": 0
+      },
+      "summary": {
+        "disclaimer": "EXPERIMENTAL RESEARCH PROTOTYPE ONLY \u2014 NOT A CLINICALLY VALIDATED DIAGNOSTIC SYSTEM",
+        "image_filename": "IMG_20151203_152841.jpg",
+        "image_path": "D:\\smartcell\\yolo_malaria\\images\\test\\IMG_20151203_152841.jpg",
+        "image_dimensions": {
+          "width": 5312,
+          "height": 2988
+        },
+        "models": {
+          "stage1_yolo_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+          "stage2_cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+          "cnn_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "cnn_internal_rescaling": "1.0 / 255.0",
+          "cnn_class_mapping": {
+            "0": "Uninfected",
+            "1": "Parasitized"
+          },
+          "primary_crop_preprocessing_mode": "raw"
+        },
+        "thresholds_and_parameters": {
+          "yolo_confidence_threshold": 0.25,
+          "yolo_nms_iou_threshold": 0.45,
+          "deduplication_iou_threshold": 0.5,
+          "yolo_max_det": 350,
+          "crop_padding_pixels": 4,
+          "min_box_size_pixels": 16,
+          "cnn_parasitized_threshold": 0.5
+        },
+        "counts": {
+          "raw_yolo_detections": 169,
+          "valid_candidate_rbc_crops": 169,
+          "cnn_parasitized_rbc_count": 17,
+          "cnn_uninfected_rbc_count": 152,
+          "cnn_raw_crop_parasitized_count": 17,
+          "cnn_raw_crop_uninfected_count": 152,
+          "cnn_ellipse_masked_parasitized_count": 1,
+          "cnn_ellipse_masked_uninfected_count": 168,
+          "excluded_wbc_detections": 0,
+          "rejected_or_duplicate_boxes": 0
+        },
+        "parasitemia_estimate": {
+          "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+          "primary_mode": "raw",
+          "estimated_parasitemia_percent": 10.0592,
+          "calculation_fraction": "17 / 169 classified RBCs",
+          "raw_crop_parasitemia_percent": 10.0592,
+          "ellipse_masked_parasitemia_percent": 0.5917
+        },
+        "Domain_Mismatch_Analysis": {
+          "observation": "The NIH single-cell CNN dataset (D:\\smartcell\\dataset) contains segmented cells on a black [0,0,0] background, whereas raw rectangular crops from full smears contain bright pink plasma corners and neighboring cell edges.",
+          "raw_rectangular_crops_parasitized_flagged": 17,
+          "ellipse_masked_crops_parasitized_flagged": 1
+        },
+        "processing_time_seconds": {
+          "stage1_yolo_detection_and_cropping": 12.5112,
+          "stage2_cnn_classification": 28.2066,
+          "total_pipeline_seconds": 40.7178
+        },
+        "output_files": {
+          "output_directory": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841",
+          "annotated_full_image": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\annotated_IMG_20151203_152841.jpg",
+          "contact_sheet_image": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\contact_sheet_IMG_20151203_152841.jpg",
+          "crops_directory": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\crops",
+          "cell_predictions_csv": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\cell_predictions_IMG_20151203_152841.csv",
+          "rejected_and_excluded_json": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\rejected_and_excluded_IMG_20151203_152841.json",
+          "field_summary_json": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\field_summary_IMG_20151203_152841.json",
+          "field_summary_txt": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151203_152841\\field_summary_IMG_20151203_152841.txt"
+        }
+      }
+    },
+    {
+      "stem": "IMG_20151207_114038",
+      "gt_counts": {
+        "Uninfected RBC": 208,
+        "Parasitized RBC": 0,
+        "WBC": 0
+      },
+      "summary": {
+        "disclaimer": "EXPERIMENTAL RESEARCH PROTOTYPE ONLY \u2014 NOT A CLINICALLY VALIDATED DIAGNOSTIC SYSTEM",
+        "image_filename": "IMG_20151207_114038.jpg",
+        "image_path": "D:\\smartcell\\yolo_malaria\\images\\test\\IMG_20151207_114038.jpg",
+        "image_dimensions": {
+          "width": 5312,
+          "height": 2988
+        },
+        "models": {
+          "stage1_yolo_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+          "stage2_cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+          "cnn_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "cnn_internal_rescaling": "1.0 / 255.0",
+          "cnn_class_mapping": {
+            "0": "Uninfected",
+            "1": "Parasitized"
+          },
+          "primary_crop_preprocessing_mode": "raw"
+        },
+        "thresholds_and_parameters": {
+          "yolo_confidence_threshold": 0.25,
+          "yolo_nms_iou_threshold": 0.45,
+          "deduplication_iou_threshold": 0.5,
+          "yolo_max_det": 350,
+          "crop_padding_pixels": 4,
+          "min_box_size_pixels": 16,
+          "cnn_parasitized_threshold": 0.5
+        },
+        "counts": {
+          "raw_yolo_detections": 210,
+          "valid_candidate_rbc_crops": 210,
+          "cnn_parasitized_rbc_count": 5,
+          "cnn_uninfected_rbc_count": 205,
+          "cnn_raw_crop_parasitized_count": 5,
+          "cnn_raw_crop_uninfected_count": 205,
+          "cnn_ellipse_masked_parasitized_count": 1,
+          "cnn_ellipse_masked_uninfected_count": 209,
+          "excluded_wbc_detections": 0,
+          "rejected_or_duplicate_boxes": 0
+        },
+        "parasitemia_estimate": {
+          "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+          "primary_mode": "raw",
+          "estimated_parasitemia_percent": 2.381,
+          "calculation_fraction": "5 / 210 classified RBCs",
+          "raw_crop_parasitemia_percent": 2.381,
+          "ellipse_masked_parasitemia_percent": 0.4762
+        },
+        "Domain_Mismatch_Analysis": {
+          "observation": "The NIH single-cell CNN dataset (D:\\smartcell\\dataset) contains segmented cells on a black [0,0,0] background, whereas raw rectangular crops from full smears contain bright pink plasma corners and neighboring cell edges.",
+          "raw_rectangular_crops_parasitized_flagged": 5,
+          "ellipse_masked_crops_parasitized_flagged": 1
+        },
+        "processing_time_seconds": {
+          "stage1_yolo_detection_and_cropping": 14.9416,
+          "stage2_cnn_classification": 10.0354,
+          "total_pipeline_seconds": 24.977
+        },
+        "output_files": {
+          "output_directory": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038",
+          "annotated_full_image": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\annotated_IMG_20151207_114038.jpg",
+          "contact_sheet_image": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\contact_sheet_IMG_20151207_114038.jpg",
+          "crops_directory": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\crops",
+          "cell_predictions_csv": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\cell_predictions_IMG_20151207_114038.csv",
+          "rejected_and_excluded_json": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\rejected_and_excluded_IMG_20151207_114038.json",
+          "field_summary_json": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\field_summary_IMG_20151207_114038.json",
+          "field_summary_txt": "D:\\smartcell\\results\\smartcell_pipeline\\batch_test\\IMG_20151207_114038\\field_summary_IMG_20151207_114038.txt"
+        }
+      }
+    }
+  ]
+}

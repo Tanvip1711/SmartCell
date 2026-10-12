@@ -1,0 +1,33 @@
+{
+  "project_name": "SmartCell",
+  "task": "Malaria Blood Cell Classification",
+  "python_version": "3.11.9",
+  "framework": "TensorFlow",
+  "framework_version": "2.21.0",
+  "keras_version": "3.15.1",
+  "opencv_version": "5.0.0",
+  "scikit_learn_version": "1.9.1",
+  "numpy_version": "2.4.6",
+  "matplotlib_version": "3.11.2",
+  "pillow_version": "12.3.0",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 2050 (4096 MiB)",
+    "driver_version": "592.27",
+    "cuda_driver_version": "13.1",
+    "execution_device": "CPU (oneDNN optimized, native Windows TF >= 2.11)"
+  },
+  "random_seed": 42,
+  "image_size": [224, 224, 3],
+  "batch_size": 32,
+  "epochs": 15,
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "augmentation": {
+    "rotation_range": 0.05,
+    "zoom_range": 0.1,
+    "horizontal_flip": true,
+    "vertical_flip": true,
+    "translation": 0.05
+  },
+  "cuda_availability": false
+}

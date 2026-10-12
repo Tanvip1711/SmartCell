@@ -1,0 +1,11 @@
+# SmartCell YOLO Malaria Dataset Configuration
+# Source: NIH-NLM Thin Blood Smears Pf (Polygon Set)
+path: D:/smartcell/yolo_malaria
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: Uninfected RBC
+  1: Parasitized RBC
+  2: WBC

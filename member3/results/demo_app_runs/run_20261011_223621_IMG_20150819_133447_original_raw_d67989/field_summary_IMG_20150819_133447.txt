@@ -1,0 +1,60 @@
+==============================================================================
+SMARTCELL TWO-STAGE BLOOD SMEAR ANALYSIS REPORT (EXPERIMENTAL)
+==============================================================================
+DISCLAIMER: Experimental research prototype only. Not a clinical diagnosis.
+
+Image Filename:               IMG_20150819_133447.jpg
+Image Path:                   D:\smartcell\yolo_malaria\images\test\IMG_20150819_133447.jpg
+Original Dimensions:          5312 x 2988 px
+Stage 1 Detector (YOLOv8n):   D:\smartcell\results\yolo_malaria_run\weights\best.pt
+Stage 1 Hardware Device:      NVIDIA GeForce RTX 2050 (CUDA device=0, PyTorch 2.14.1+cu130) (Peak VRAM: 23.73 MB)
+Stage 2 Classifier (CNN):     D:\smartcell\models\malaria_cnn_best.keras (Variant: original)
+Stage 2 Hardware Device:      CPU (TensorFlow 2.21.0 native Windows)
+Primary Crop Mode:            raw
+
+------------------------------------------------------------------------------
+1. DETECTION & CLASSIFICATION COUNTS
+------------------------------------------------------------------------------
+  Total Raw YOLO Detections:          195
+  Valid Candidate RBC Crops:          195
+  Excluded WBC Detections:            0
+  Rejected / Duplicate Boxes:         0
+
+  CNN Classified Parasitized RBCs:    108 (Primary mode: raw)
+  CNN Classified Uninfected RBCs:     87
+  [Audit] Raw Unmasked Crop Par:      108 / 195 (55.38%)
+  [Audit] Ellipse-Masked Crop Par:    81 / 195 (41.54%)
+
+------------------------------------------------------------------------------
+2. EXPERIMENTAL IMAGE-LEVEL PARASITEMIA ESTIMATE
+------------------------------------------------------------------------------
+  Formula:                            CNN Parasitized RBCs / Total Classified RBCs * 100
+  Fraction:                           108 / 195 classified RBCs
+  Estimated Parasitemia (Primary):    55.38%
+  Estimated Parasitemia (Raw Crop):   55.38%
+  Estimated Parasitemia (Masked):     41.54%
+  *NOTE: Experimental image-level AI screening estimate, NOT a clinical measurement.*
+
+------------------------------------------------------------------------------
+3. THRESHOLDS & TIMING
+------------------------------------------------------------------------------
+  YOLO Confidence Threshold:          0.25
+  YOLO NMS IoU Threshold:             0.45
+  Deduplication IoU Threshold:        0.5
+  CNN Sigmoid Threshold:              0.5
+  Crop Padding:                       4 px
+  Stage 1 (YOLO + Cropping) Time:     7.685 s
+  Stage 2 (CNN + Reporting) Time:     9.390 s
+  Total End-to-End Processing Time:   17.075 s
+
+------------------------------------------------------------------------------
+4. GENERATED OUTPUT FILES
+------------------------------------------------------------------------------
+  Annotated Image:     D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\annotated_IMG_20150819_133447.jpg
+  Contact Sheet:       D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\contact_sheet_IMG_20150819_133447.jpg
+  Crops Directory:     D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\crops
+  Predictions CSV:     D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\cell_predictions_IMG_20150819_133447.csv
+  Rejected/Excl JSON:  D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\rejected_and_excluded_IMG_20150819_133447.json
+  Summary JSON:        D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\field_summary_IMG_20150819_133447.json
+  Summary TXT:         D:\smartcell\results\demo_app_runs\run_20261011_223621_IMG_20150819_133447_original_raw_d67989\field_summary_IMG_20150819_133447.txt
+==============================================================================

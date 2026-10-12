@@ -1,0 +1,21 @@
+strategy_key,strategy_label,crop_mode,patient_id,images_count,total_rbcs,gt_uninfected,gt_parasitized,gt_parasitemia_pct,pred_parasitized,pred_parasitemia_pct,tp,fp,tn,fn,accuracy,parasitized_precision,parasitized_sensitivity,uninfected_specificity,parasitized_f1
+A_Orig_CNN_Raw,Strategy A: Existing CNN (Raw Crops),raw,156C55P16thinF,5,896,893,3,0.3348,40,4.4643,3,37,856,0,0.958705,0.075,1.0,0.958567,0.139535
+A_Orig_CNN_Raw,Strategy A: Existing CNN (Raw Crops),raw,209C68P29N_ThinF,5,992,643,349,35.1815,527,53.125,348,179,464,1,0.818548,0.660342,0.997135,0.721617,0.794521
+A_Orig_CNN_Raw,Strategy A: Existing CNN (Raw Crops),raw,212C71P32_ThinF,5,1169,1159,10,0.8554,69,5.9025,10,59,1100,0,0.94953,0.144928,1.0,0.949094,0.253165
+A_Orig_CNN_Raw,Strategy A: Existing CNN (Raw Crops),raw,372C187P148NThinF,5,794,780,14,1.7632,71,8.9421,14,57,723,0,0.928212,0.197183,1.0,0.926923,0.329412
+A_Orig_CNN_Raw,Strategy A: Existing CNN (Raw Crops),raw,377C238NThinF,5,943,943,0,0.0,60,6.3627,0,60,883,0,0.936373,0.0,0.0,0.936373,0.0
+B_Orig_CNN_Masked,Strategy B: Existing CNN (Elliptical-Masked Crops),masked,156C55P16thinF,5,896,893,3,0.3348,6,0.6696,3,3,890,0,0.996652,0.5,1.0,0.996641,0.666667
+B_Orig_CNN_Masked,Strategy B: Existing CNN (Elliptical-Masked Crops),masked,209C68P29N_ThinF,5,992,643,349,35.1815,396,39.9194,347,49,594,2,0.948589,0.876263,0.994269,0.923795,0.931544
+B_Orig_CNN_Masked,Strategy B: Existing CNN (Elliptical-Masked Crops),masked,212C71P32_ThinF,5,1169,1159,10,0.8554,36,3.0796,9,27,1132,1,0.976048,0.25,0.9,0.976704,0.391304
+B_Orig_CNN_Masked,Strategy B: Existing CNN (Elliptical-Masked Crops),masked,372C187P148NThinF,5,794,780,14,1.7632,12,1.5113,11,1,779,3,0.994962,0.916667,0.785714,0.998718,0.846154
+B_Orig_CNN_Masked,Strategy B: Existing CNN (Elliptical-Masked Crops),masked,377C238NThinF,5,943,943,0,0.0,5,0.5302,0,5,938,0,0.994698,0.0,0.0,0.994698,0.0
+C_Finetuned_CNN_Raw,Strategy C: Fine-Tuned CNN (Raw Crops),raw,156C55P16thinF,5,896,893,3,0.3348,5,0.558,3,2,891,0,0.997768,0.6,1.0,0.99776,0.75
+C_Finetuned_CNN_Raw,Strategy C: Fine-Tuned CNN (Raw Crops),raw,209C68P29N_ThinF,5,992,643,349,35.1815,380,38.3065,342,38,605,7,0.954637,0.9,0.979943,0.940902,0.938272
+C_Finetuned_CNN_Raw,Strategy C: Fine-Tuned CNN (Raw Crops),raw,212C71P32_ThinF,5,1169,1159,10,0.8554,31,2.6518,9,22,1137,1,0.980325,0.290323,0.9,0.981018,0.439024
+C_Finetuned_CNN_Raw,Strategy C: Fine-Tuned CNN (Raw Crops),raw,372C187P148NThinF,5,794,780,14,1.7632,8,1.0076,8,0,780,6,0.992443,1.0,0.571429,1.0,0.727273
+C_Finetuned_CNN_Raw,Strategy C: Fine-Tuned CNN (Raw Crops),raw,377C238NThinF,5,943,943,0,0.0,3,0.3181,0,3,940,0,0.996819,0.0,0.0,0.996819,0.0
+D_Finetuned_CNN_Masked,Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops),masked,156C55P16thinF,5,896,893,3,0.3348,6,0.6696,3,3,890,0,0.996652,0.5,1.0,0.996641,0.666667
+D_Finetuned_CNN_Masked,Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops),masked,209C68P29N_ThinF,5,992,643,349,35.1815,396,39.9194,347,49,594,2,0.948589,0.876263,0.994269,0.923795,0.931544
+D_Finetuned_CNN_Masked,Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops),masked,212C71P32_ThinF,5,1169,1159,10,0.8554,36,3.0796,9,27,1132,1,0.976048,0.25,0.9,0.976704,0.391304
+D_Finetuned_CNN_Masked,Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops),masked,372C187P148NThinF,5,794,780,14,1.7632,12,1.5113,11,1,779,3,0.994962,0.916667,0.785714,0.998718,0.846154
+D_Finetuned_CNN_Masked,Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops),masked,377C238NThinF,5,943,943,0,0.0,5,0.5302,0,5,938,0,0.994698,0.0,0.0,0.994698,0.0

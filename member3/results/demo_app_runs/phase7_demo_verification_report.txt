@@ -1,0 +1,28 @@
+================================================================================
+SMARTCELL PHASE 7: INTERACTIVE DEMONSTRATION APP VERIFICATION REPORT
+================================================================================
+Timestamp:        2026-10-11T22:35:41
+Test Server URL:  http://127.0.0.1:8517
+Disclaimer Check: True
+GPU Verified:     NVIDIA GeForce RTX 2050
+
+1. SINGLE-IMAGE UPLOAD TEST (IMG_20150819_133447.jpg | finetuned_raw + raw | GPU:0)
+   Run Directory:        D:\smartcell\results\demo_app_runs\run_20261011_223548_20261011_223548_IMG_20150819_133447_finetuned_raw_raw_11dc3f
+   Stage 1 Hardware:     NVIDIA GeForce RTX 2050 (CUDA device=0, PyTorch 2.14.1+cu130) (Peak VRAM: 23.73 MB)
+   Stage 2 Checkpoint:   D:\smartcell\models\malaria_cnn_finetuned_raw_best.keras
+   Valid RBC Crops:      195
+   Predicted Parasitized:74
+   Predicted Uninfected: 121
+   Est. Parasitemia:     37.95%
+   UI/JSON/CSV Match:    True
+
+2. MODEL & CROP MODE SWITCHING VERIFICATION (IMG_20150819_133447.jpg, GT = 71/206 [34.47%])
+   - original__raw             : Par=108/195 (55.38%) | Checkpoint=malaria_cnn_best.keras | Match=True
+   - original__masked          : Par=81/195 (41.54%) | Checkpoint=malaria_cnn_best.keras | Match=True
+   - finetuned_masked__masked  : Par=81/195 (41.54%) | Checkpoint=malaria_cnn_finetuned_masked_best.keras | Match=True
+
+3. EDGE CASES & FALLBACKS
+   - Corrupted Upload:   HTTP 400 (InvalidImageError)
+   - Zero Detections:    Valid RBCs=0 | Est=0 / 0 (Zero-denominator handled safely: no valid candidate RBCs detected)
+   - WBC/Rejected + CPU: Stage1=CPU (PyTorch 2.14.0+cpu) | Excluded WBCs=1 | Rejected=2
+================================================================================

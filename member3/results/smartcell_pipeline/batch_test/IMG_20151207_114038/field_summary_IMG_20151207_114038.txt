@@ -1,0 +1,58 @@
+==============================================================================
+SMARTCELL PHASE 5: TWO-STAGE BLOOD SMEAR ANALYSIS REPORT (EXPERIMENTAL)
+==============================================================================
+DISCLAIMER: Experimental research prototype only. Not a clinical diagnosis.
+
+Image Filename:               IMG_20151207_114038.jpg
+Image Path:                   D:\smartcell\yolo_malaria\images\test\IMG_20151207_114038.jpg
+Original Dimensions:          5312 x 2988 px
+Stage 1 Detector (YOLOv8n):   D:\smartcell\results\yolo_malaria_run\weights\best.pt
+Stage 2 Classifier (CNN):     D:\smartcell\models\malaria_cnn_best.keras
+Primary Crop Mode:            raw
+
+------------------------------------------------------------------------------
+1. DETECTION & CLASSIFICATION COUNTS
+------------------------------------------------------------------------------
+  Total Raw YOLO Detections:          210
+  Valid Candidate RBC Crops:          210
+  Excluded WBC Detections:            0
+  Rejected / Duplicate Boxes:         0
+
+  CNN Classified Parasitized RBCs:    5 (Primary mode: raw)
+  CNN Classified Uninfected RBCs:     205
+  [Audit] Raw Unmasked Crop Par:      5 / 210 (2.38%)
+  [Audit] Ellipse-Masked Crop Par:    1 / 210 (0.48%)
+
+------------------------------------------------------------------------------
+2. EXPERIMENTAL IMAGE-LEVEL PARASITEMIA ESTIMATE
+------------------------------------------------------------------------------
+  Formula:                            CNN Parasitized RBCs / Total Classified RBCs * 100
+  Fraction:                           5 / 210 classified RBCs
+  Estimated Parasitemia (Primary):    2.38%
+  Estimated Parasitemia (Raw Crop):   2.38%
+  Estimated Parasitemia (Masked):     0.48%
+  *NOTE: Experimental image-level AI screening estimate, NOT a clinical measurement.*
+
+------------------------------------------------------------------------------
+3. THRESHOLDS & TIMING
+------------------------------------------------------------------------------
+  YOLO Confidence Threshold:          0.25
+  YOLO NMS IoU Threshold:             0.45
+  Deduplication IoU Threshold:        0.5
+  CNN Sigmoid Threshold:              0.5
+  Crop Padding:                       4 px
+  Stage 1 (YOLO + Cropping) Time:     14.942 s
+  Stage 2 (CNN + Reporting) Time:     10.035 s
+  Total End-to-End Processing Time:   24.977 s
+
+------------------------------------------------------------------------------
+4. GENERATED OUTPUT FILES
+------------------------------------------------------------------------------
+  Annotated Image:     D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\annotated_IMG_20151207_114038.jpg
+  Contact Sheet:       D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\contact_sheet_IMG_20151207_114038.jpg
+  Crops Directory:     D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\crops
+  Predictions CSV:     D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\cell_predictions_IMG_20151207_114038.csv
+  Rejected/Excl JSON:  D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\rejected_and_excluded_IMG_20151207_114038.json
+  Summary JSON:        D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\field_summary_IMG_20151207_114038.json
+  Summary TXT:         D:\smartcell\results\smartcell_pipeline\batch_test\IMG_20151207_114038\field_summary_IMG_20151207_114038.txt
+==============================================================================

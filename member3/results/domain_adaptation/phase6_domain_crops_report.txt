@@ -1,0 +1,51 @@
+==============================================================================
+SMARTCELL PHASE 6: DOMAIN-MATCHED RBC CROP DATASET PREPARATION REPORT
+==============================================================================
+Output Dataset Root:  D:\smartcell\results\domain_adaptation\crops_dataset
+CSV Manifest Path:    D:\smartcell\results\domain_adaptation\crops_dataset\domain_crops_manifest.csv
+JSON Report Path:     D:\smartcell\results\metrics\phase6_domain_crops_report.json
+Crop Padding:         4 px (clipped to 5312x2988 image bounds)
+Crop Variants Saved:  1) raw (unmodified rectangular RGB)
+                      2) masked (elliptical black-corner masked RGB)
+Class Mapping:        0 = Uninfected, 1 = Parasitized (WBC class 2 excluded)
+Patient Leakage:      0 overlapping patients across train/val/test (VERIFIED)
+
+------------------------------------------------------------------------------
+PARTITION SUMMARY (UNIQUE RBC CROPS PER VARIANT)
+------------------------------------------------------------------------------
+  [TRAIN]
+    Patients / Images:           23 patients / 115 images
+    Total Raw YOLO Annotations:  24154
+    Valid RBC Crops Extracted:   24112 (saved in both 'raw' and 'masked')
+      - Uninfected (0):          23485 (97.40%)
+      - Parasitized (1):         627 (2.60%)
+    Excluded WBCs (Class 2):     37
+    Duplicate Boxes Suppressed:  5 (IoU >= 0.8)
+    Invalid / Tiny Boxes:        0
+    Ambiguous Overlaps Flagged:  same-class=589, cross-class=54 (IoU >= 0.2)
+
+  [VAL]
+    Patients / Images:           5 patients / 25 images
+    Total Raw YOLO Annotations:  5310
+    Valid RBC Crops Extracted:   5302 (saved in both 'raw' and 'masked')
+      - Uninfected (0):          5163 (97.38%)
+      - Parasitized (1):         139 (2.62%)
+    Excluded WBCs (Class 2):     8
+    Duplicate Boxes Suppressed:  0 (IoU >= 0.8)
+    Invalid / Tiny Boxes:        0
+    Ambiguous Overlaps Flagged:  same-class=94, cross-class=2 (IoU >= 0.2)
+
+  [TEST]
+    Patients / Images:           5 patients / 25 images
+    Total Raw YOLO Annotations:  4800
+    Valid RBC Crops Extracted:   4794 (saved in both 'raw' and 'masked')
+      - Uninfected (0):          4418 (92.16%)
+      - Parasitized (1):         376 (7.84%)
+    Excluded WBCs (Class 2):     6
+    Duplicate Boxes Suppressed:  0 (IoU >= 0.8)
+    Invalid / Tiny Boxes:        0
+    Ambiguous Overlaps Flagged:  same-class=114, cross-class=12 (IoU >= 0.2)
+
+Total PNG Crop Files Saved:      68416 (34208 raw + 34208 masked)
+Total Processing Time:           225.21 s
+==============================================================================
