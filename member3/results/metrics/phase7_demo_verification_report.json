@@ -1,0 +1,253 @@
+{
+  "timestamp": "2026-10-11T22:35:41",
+  "server_url": "http://127.0.0.1:8517",
+  "tests": {
+    "0_ui_and_environment_status": {
+      "http_status_index": 200,
+      "prototype_disclaimer_present": true,
+      "http_status_api": 200,
+      "gpu_environment": {
+        "venv_yolo_gpu_exists": true,
+        "venv_yolo_cpu_exists": true,
+        "venv_tf_exists": true,
+        "cuda_available": true,
+        "gpu_name": "NVIDIA GeForce RTX 2050",
+        "pytorch_version": "2.14.1+cu130",
+        "free_vram_mb": 3299.7,
+        "total_vram_mb": 4095.5,
+        "yolo_checkpoint_exists": true,
+        "yolo_checkpoint_path": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt"
+      },
+      "available_cnn_models": [
+        "finetuned_raw",
+        "finetuned_masked",
+        "original"
+      ],
+      "preset_test_images_count": 25
+    },
+    "1_single_image_upload_finetuned_raw": {
+      "http_status": 200,
+      "run_id": "run_20261011_223548_20261011_223548_IMG_20150819_133447_finetuned_raw_raw_11dc3f",
+      "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_223548_20261011_223548_IMG_20150819_133447_finetuned_raw_raw_11dc3f",
+      "verified_model_variant": "finetuned_raw",
+      "verified_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+      "verified_crop_mode": "raw",
+      "stage1_device": "NVIDIA GeForce RTX 2050 (CUDA device=0, PyTorch 2.14.1+cu130)",
+      "stage1_peak_vram_mb": 23.73,
+      "counts": {
+        "raw_yolo_detections": 195,
+        "valid_candidate_rbc_crops": 195,
+        "cnn_parasitized_rbc_count": 74,
+        "cnn_uninfected_rbc_count": 121,
+        "cnn_raw_crop_parasitized_count": 74,
+        "cnn_raw_crop_uninfected_count": 121,
+        "cnn_ellipse_masked_parasitized_count": 71,
+        "cnn_ellipse_masked_uninfected_count": 124,
+        "excluded_wbc_detections": 0,
+        "rejected_or_duplicate_boxes": 0
+      },
+      "parasitemia_estimate": {
+        "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+        "primary_mode": "raw",
+        "estimated_parasitemia_percent": 37.9487,
+        "calculation_fraction": "74 / 195 classified RBCs",
+        "raw_crop_parasitemia_percent": 37.9487,
+        "ellipse_masked_parasitemia_percent": 36.4103
+      },
+      "confidence_statistics": {
+        "yolo_detection_confidence": {
+          "count": 195,
+          "mean": 0.6355,
+          "median": 0.6477,
+          "min": 0.2504,
+          "max": 0.9234
+        },
+        "cnn_overall_confidence": {
+          "count": 195,
+          "mean": 0.9718,
+          "median": 0.9996,
+          "min": 0.6371,
+          "max": 1.0
+        },
+        "cnn_parasitized_confidence": {
+          "count": 74,
+          "mean": 0.9597,
+          "median": 0.9994,
+          "min": 0.6371,
+          "max": 1.0
+        },
+        "cnn_uninfected_confidence": {
+          "count": 121,
+          "mean": 0.9791,
+          "median": 0.9996,
+          "min": 0.6763,
+          "max": 1.0
+        }
+      },
+      "processing_time_seconds": {
+        "stage1_yolo_detection_and_cropping": 6.836,
+        "stage2_cnn_classification": 9.2731,
+        "total_pipeline_seconds": 16.1091
+      },
+      "report_consistency_checks": {
+        "ui_matches_disk_summary_json": true,
+        "csv_row_count_matches_valid_rbcs": true,
+        "csv_parasitized_matches_summary": true,
+        "csv_uninfected_matches_summary": true,
+        "excluded_wbc_matches_rejected_json": true,
+        "rejected_boxes_matches_rejected_json": true
+      },
+      "exports_verified": {
+        "csv_download_status": 200,
+        "csv_bytes": 57147,
+        "json_download_status": 200,
+        "json_bytes": 5041,
+        "annotated_image_status": 200,
+        "annotated_image_bytes": 288894
+      }
+    },
+    "2_model_and_crop_mode_switching": {
+      "original__raw": {
+        "run_id": "run_20261011_223621_IMG_20150819_133447_original_raw_d67989",
+        "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_223621_IMG_20150819_133447_original_raw_d67989",
+        "verified_model_variant": "original",
+        "verified_checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+        "verified_crop_mode": "raw",
+        "parasitized_count": 108,
+        "uninfected_count": 87,
+        "estimated_parasitemia_percent": 55.3846,
+        "report_consistency_passed": true
+      },
+      "original__masked": {
+        "run_id": "run_20261011_223654_IMG_20150819_133447_original_masked_e6e0c7",
+        "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_223654_IMG_20150819_133447_original_masked_e6e0c7",
+        "verified_model_variant": "original",
+        "verified_checkpoint": "D:\\smartcell\\models\\malaria_cnn_best.keras",
+        "verified_crop_mode": "masked",
+        "parasitized_count": 81,
+        "uninfected_count": 114,
+        "estimated_parasitemia_percent": 41.5385,
+        "report_consistency_passed": true
+      },
+      "finetuned_masked__masked": {
+        "run_id": "run_20261011_223727_IMG_20150819_133447_finetuned_masked_masked_9f9aaf",
+        "run_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_223727_IMG_20150819_133447_finetuned_masked_masked_9f9aaf",
+        "verified_model_variant": "finetuned_masked",
+        "verified_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_masked_best.keras",
+        "verified_crop_mode": "masked",
+        "parasitized_count": 81,
+        "uninfected_count": 114,
+        "estimated_parasitemia_percent": 41.5385,
+        "report_consistency_passed": true
+      }
+    },
+    "3_edge_cases_and_fallbacks": {
+      "invalid_image_upload": {
+        "http_status": 400,
+        "error_type": "InvalidImageError",
+        "error_message": "Invalid or corrupted image file: UnidentifiedImageError: cannot identify image file 'D:\\\\smartcell\\\\results\\\\demo_app_runs\\\\_uploads\\\\20261011_223759_corrupted_not_an_image.jpg'"
+      },
+      "zero_detections": {
+        "http_status": 200,
+        "run_id": "run_20261011_223800_IMG_20150819_133447_finetuned_raw_raw_d9ca18",
+        "counts": {
+          "raw_yolo_detections": 0,
+          "valid_candidate_rbc_crops": 0,
+          "cnn_parasitized_rbc_count": 0,
+          "cnn_uninfected_rbc_count": 0,
+          "cnn_raw_crop_parasitized_count": 0,
+          "cnn_raw_crop_uninfected_count": 0,
+          "cnn_ellipse_masked_parasitized_count": 0,
+          "cnn_ellipse_masked_uninfected_count": 0,
+          "excluded_wbc_detections": 0,
+          "rejected_or_duplicate_boxes": 0
+        },
+        "parasitemia_estimate": {
+          "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+          "primary_mode": "raw",
+          "estimated_parasitemia_percent": 0.0,
+          "calculation_fraction": "0 / 0 (Zero-denominator handled safely: no valid candidate RBCs detected)",
+          "raw_crop_parasitemia_percent": 0.0,
+          "ellipse_masked_parasitemia_percent": 0.0
+        },
+        "report_consistency_passed": true
+      },
+      "excluded_wbc_rejected_and_cpu_fallback": {
+        "http_status": 200,
+        "run_id": "run_20261011_223818_IMG_20150819_133447_finetuned_raw_raw_b95757",
+        "stage1_device": "CPU (PyTorch 2.14.0+cpu)",
+        "counts": {
+          "raw_yolo_detections": 198,
+          "valid_candidate_rbc_crops": 195,
+          "cnn_parasitized_rbc_count": 74,
+          "cnn_uninfected_rbc_count": 121,
+          "cnn_raw_crop_parasitized_count": 74,
+          "cnn_raw_crop_uninfected_count": 121,
+          "cnn_ellipse_masked_parasitized_count": 71,
+          "cnn_ellipse_masked_uninfected_count": 124,
+          "excluded_wbc_detections": 1,
+          "rejected_or_duplicate_boxes": 2
+        },
+        "excluded_wbcs": [
+          {
+            "reason": "WBC detection excluded from RBC malaria classification stage",
+            "yolo_class_id": 2,
+            "yolo_class_name": "WBC",
+            "yolo_confidence": 0.85,
+            "clipped_bbox": [
+              500,
+              500,
+              720,
+              720
+            ]
+          }
+        ],
+        "rejected_boxes": [
+          {
+            "reason": "Invalid or too-small bounding box after clipping (5x4 px < 16 px)",
+            "detection": {
+              "raw_index": 999001,
+              "yolo_class_id": 0,
+              "yolo_class_name": "Uninfected RBC",
+              "yolo_confidence": 0.99,
+              "raw_bbox": [
+                100.0,
+                100.0,
+                105.0,
+                104.0
+              ]
+            },
+            "clipped_bbox": [
+              100,
+              100,
+              105,
+              104
+            ]
+          },
+          {
+            "reason": "Invalid or too-small bounding box after clipping (0x0 px < 16 px)",
+            "detection": {
+              "raw_index": 999002,
+              "yolo_class_id": 0,
+              "yolo_class_name": "Uninfected RBC",
+              "yolo_confidence": 0.98,
+              "raw_bbox": [
+                -50.0,
+                -50.0,
+                -10.0,
+                -10.0
+              ]
+            },
+            "clipped_bbox": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "report_consistency_passed": true
+      }
+    }
+  }
+}

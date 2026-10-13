@@ -1,0 +1,530 @@
+{
+  "generated_at": "2026-10-11T22:58:20.296668",
+  "project_root": "D:\\smartcell",
+  "summary": {
+    "total_files_inventoried": 65,
+    "all_files_verified_present": true,
+    "total_directories_inventoried": 21,
+    "all_directories_verified_present": true
+  },
+  "files": [
+    {
+      "relative_path": "README.md",
+      "exists": true,
+      "size_bytes": 117478,
+      "modified_at": "2026-10-11T22:57:54.723340"
+    },
+    {
+      "relative_path": "ReadMe.pdf",
+      "exists": true,
+      "size_bytes": 200526,
+      "modified_at": "2026-10-03T09:07:18.939572"
+    },
+    {
+      "relative_path": "Dataset_statistics.xlsx",
+      "exists": true,
+      "size_bytes": 66112,
+      "modified_at": "2026-10-03T09:06:34.361933"
+    },
+    {
+      "relative_path": "requirements.txt",
+      "exists": true,
+      "size_bytes": 107,
+      "modified_at": "2026-10-03T15:43:38.761563"
+    },
+    {
+      "relative_path": "launch_smartcell_demo.bat",
+      "exists": true,
+      "size_bytes": 774,
+      "modified_at": "2026-10-11T22:34:25.418086"
+    },
+    {
+      "relative_path": "yolov8n.pt",
+      "exists": true,
+      "size_bytes": 6549796,
+      "modified_at": "2026-10-11T16:04:47.596804"
+    },
+    {
+      "relative_path": "docs/DEMO_GUIDE.md",
+      "exists": true,
+      "size_bytes": 11514,
+      "modified_at": "2026-10-11T22:52:30.479244"
+    },
+    {
+      "relative_path": "models/malaria_cnn_best.keras",
+      "exists": true,
+      "size_bytes": 22257316,
+      "modified_at": "2026-10-03T23:45:12.012211"
+    },
+    {
+      "relative_path": "models/malaria_mobilenetv2_best.keras",
+      "exists": true,
+      "size_bytes": 19307715,
+      "modified_at": "2026-10-04T15:32:48.159428"
+    },
+    {
+      "relative_path": "models/malaria_cnn_finetuned_raw_best.keras",
+      "exists": true,
+      "size_bytes": 22256757,
+      "modified_at": "2026-10-11T22:03:39.255037"
+    },
+    {
+      "relative_path": "models/malaria_cnn_finetuned_masked_best.keras",
+      "exists": true,
+      "size_bytes": 22256757,
+      "modified_at": "2026-10-11T22:08:27.593939"
+    },
+    {
+      "relative_path": "models/malaria_class_names.json",
+      "exists": true,
+      "size_bytes": 46,
+      "modified_at": "2026-10-03T15:40:40.197597"
+    },
+    {
+      "relative_path": "results/yolo_malaria_run/weights/best.pt",
+      "exists": true,
+      "size_bytes": 6227690,
+      "modified_at": "2026-10-11T18:13:17.425711"
+    },
+    {
+      "relative_path": "results/yolo_malaria_run/weights/last.pt",
+      "exists": true,
+      "size_bytes": 6227690,
+      "modified_at": "2026-10-11T18:13:17.223503"
+    },
+    {
+      "relative_path": "yolo_malaria/data.yaml",
+      "exists": true,
+      "size_bytes": 255,
+      "modified_at": "2026-10-10T23:14:22.130038"
+    },
+    {
+      "relative_path": "scripts/check_dataset.py",
+      "exists": true,
+      "size_bytes": 873,
+      "modified_at": "2026-10-03T15:13:28.189749"
+    },
+    {
+      "relative_path": "scripts/check_duplicates.py",
+      "exists": true,
+      "size_bytes": 1205,
+      "modified_at": "2026-10-03T15:20:39.760734"
+    },
+    {
+      "relative_path": "scripts/split_dataset.py",
+      "exists": true,
+      "size_bytes": 1901,
+      "modified_at": "2026-10-03T15:26:27.979564"
+    },
+    {
+      "relative_path": "scripts/train_cnn.py",
+      "exists": true,
+      "size_bytes": 9764,
+      "modified_at": "2026-10-03T20:21:53.356789"
+    },
+    {
+      "relative_path": "scripts/evaluate_cnn.py",
+      "exists": true,
+      "size_bytes": 6390,
+      "modified_at": "2026-10-03T23:23:34.704008"
+    },
+    {
+      "relative_path": "scripts/train_mobilenetv2.py",
+      "exists": true,
+      "size_bytes": 9697,
+      "modified_at": "2026-10-04T13:43:45.054702"
+    },
+    {
+      "relative_path": "scripts/evaluate_mobilenetv2.py",
+      "exists": true,
+      "size_bytes": 7002,
+      "modified_at": "2026-10-04T15:39:46.829378"
+    },
+    {
+      "relative_path": "scripts/compare_models.py",
+      "exists": true,
+      "size_bytes": 4215,
+      "modified_at": "2026-10-04T15:47:03.074966"
+    },
+    {
+      "relative_path": "scripts/error_analysis.py",
+      "exists": true,
+      "size_bytes": 6140,
+      "modified_at": "2026-10-03T23:28:11.874341"
+    },
+    {
+      "relative_path": "scripts/predict_malaria.py",
+      "exists": true,
+      "size_bytes": 3560,
+      "modified_at": "2026-10-03T23:41:42.628144"
+    },
+    {
+      "relative_path": "scripts/test_model.py",
+      "exists": true,
+      "size_bytes": 2939,
+      "modified_at": "2026-10-03T15:47:01.151402"
+    },
+    {
+      "relative_path": "scripts/prepare_yolo_malaria.py",
+      "exists": true,
+      "size_bytes": 18371,
+      "modified_at": "2026-10-10T23:13:52.682415"
+    },
+    {
+      "relative_path": "scripts/verify_yolo_labels.py",
+      "exists": true,
+      "size_bytes": 8673,
+      "modified_at": "2026-10-10T23:14:15.363310"
+    },
+    {
+      "relative_path": "scripts/preflight_check.py",
+      "exists": true,
+      "size_bytes": 7139,
+      "modified_at": "2026-10-10T23:21:04.958304"
+    },
+    {
+      "relative_path": "scripts/smoke_test_yolo.py",
+      "exists": true,
+      "size_bytes": 1239,
+      "modified_at": "2026-10-11T16:05:21.846680"
+    },
+    {
+      "relative_path": "scripts/train_yolo_malaria.py",
+      "exists": true,
+      "size_bytes": 2444,
+      "modified_at": "2026-10-11T16:18:06.778813"
+    },
+    {
+      "relative_path": "scripts/evaluate_yolo_malaria.py",
+      "exists": true,
+      "size_bytes": 27692,
+      "modified_at": "2026-10-11T16:20:59.654707"
+    },
+    {
+      "relative_path": "scripts/run_smartcell_pipeline.py",
+      "exists": true,
+      "size_bytes": 44124,
+      "modified_at": "2026-10-11T22:31:18.032855"
+    },
+    {
+      "relative_path": "scripts/prepare_domain_crops.py",
+      "exists": true,
+      "size_bytes": 22034,
+      "modified_at": "2026-10-11T19:13:26.979823"
+    },
+    {
+      "relative_path": "scripts/train_eval_domain_adaptation.py",
+      "exists": true,
+      "size_bytes": 35764,
+      "modified_at": "2026-10-11T21:49:22.437435"
+    },
+    {
+      "relative_path": "scripts/evaluate_two_stage_test_set.py",
+      "exists": true,
+      "size_bytes": 31298,
+      "modified_at": "2026-10-11T22:18:42.439443"
+    },
+    {
+      "relative_path": "scripts/smartcell_demo_app.py",
+      "exists": true,
+      "size_bytes": 56715,
+      "modified_at": "2026-10-11T22:39:29.838656"
+    },
+    {
+      "relative_path": "scripts/verify_phase7_demo.py",
+      "exists": true,
+      "size_bytes": 18445,
+      "modified_at": "2026-10-11T22:35:28.332651"
+    },
+    {
+      "relative_path": "scripts/verify_phase8_final.py",
+      "exists": true,
+      "size_bytes": 28847,
+      "modified_at": "2026-10-11T22:51:06.380656"
+    },
+    {
+      "relative_path": "results/metrics/cnn_metrics.json",
+      "exists": true,
+      "size_bytes": 376,
+      "modified_at": "2026-10-04T13:38:35.703252"
+    },
+    {
+      "relative_path": "results/metrics/cnn_history.json",
+      "exists": true,
+      "size_bytes": 310,
+      "modified_at": "2026-10-04T13:39:04.320079"
+    },
+    {
+      "relative_path": "results/metrics/cnn_classification_report.txt",
+      "exists": true,
+      "size_bytes": 428,
+      "modified_at": "2026-10-04T13:38:35.741910"
+    },
+    {
+      "relative_path": "results/metrics/cnn_test_predictions.csv",
+      "exists": true,
+      "size_bytes": 529859,
+      "modified_at": "2026-10-04T13:38:39.117114"
+    },
+    {
+      "relative_path": "results/metrics/mobilenet_metrics.json",
+      "exists": true,
+      "size_bytes": 440,
+      "modified_at": "2026-10-04T15:46:31.598952"
+    },
+    {
+      "relative_path": "results/metrics/mobilenet_history.json",
+      "exists": true,
+      "size_bytes": 689,
+      "modified_at": "2026-10-04T15:32:48.619270"
+    },
+    {
+      "relative_path": "results/metrics/mobilenet_classification_report.txt",
+      "exists": true,
+      "size_bytes": 426,
+      "modified_at": "2026-10-04T15:46:31.615964"
+    },
+    {
+      "relative_path": "results/metrics/mobilenet_test_predictions.csv",
+      "exists": true,
+      "size_bytes": 529696,
+      "modified_at": "2026-10-04T15:46:32.965910"
+    },
+    {
+      "relative_path": "results/metrics/model_comparison.csv",
+      "exists": true,
+      "size_bytes": 119,
+      "modified_at": "2026-10-04T15:47:14.571204"
+    },
+    {
+      "relative_path": "results/metrics/model_comparison.txt",
+      "exists": true,
+      "size_bytes": 1396,
+      "modified_at": "2026-10-04T15:47:14.573228"
+    },
+    {
+      "relative_path": "results/metrics/error_analysis.csv",
+      "exists": true,
+      "size_bytes": 26648,
+      "modified_at": "2026-10-04T13:39:33.078860"
+    },
+    {
+      "relative_path": "results/metrics/experiment_config.json",
+      "exists": true,
+      "size_bytes": 895,
+      "modified_at": "2026-10-03T16:25:37.329954"
+    },
+    {
+      "relative_path": "results/metrics/yolo_preparation_report.json",
+      "exists": true,
+      "size_bytes": 2312,
+      "modified_at": "2026-10-10T23:14:22.131036"
+    },
+    {
+      "relative_path": "results/metrics/yolo_malaria_training_report.json",
+      "exists": true,
+      "size_bytes": 11815,
+      "modified_at": "2026-10-11T18:15:16.049949"
+    },
+    {
+      "relative_path": "results/metrics/yolo_malaria_training_report.txt",
+      "exists": true,
+      "size_bytes": 3600,
+      "modified_at": "2026-10-11T18:15:16.053951"
+    },
+    {
+      "relative_path": "results/metrics/phase5_smartcell_pipeline_report.json",
+      "exists": true,
+      "size_bytes": 18422,
+      "modified_at": "2026-10-11T19:00:21.792897"
+    },
+    {
+      "relative_path": "results/metrics/phase6_domain_crops_report.json",
+      "exists": true,
+      "size_bytes": 18669,
+      "modified_at": "2026-10-11T19:17:33.145131"
+    },
+    {
+      "relative_path": "results/metrics/phase6_model_comparison_report.json",
+      "exists": true,
+      "size_bytes": 69185,
+      "modified_at": "2026-10-11T22:11:33.618446"
+    },
+    {
+      "relative_path": "results/metrics/phase6_two_stage_end_to_end_report.json",
+      "exists": true,
+      "size_bytes": 20934,
+      "modified_at": "2026-10-11T22:21:30.934160"
+    },
+    {
+      "relative_path": "results/metrics/phase7_demo_verification_report.json",
+      "exists": true,
+      "size_bytes": 9753,
+      "modified_at": "2026-10-11T22:38:50.316593"
+    },
+    {
+      "relative_path": "results/metrics/phase8_final_verification_report.json",
+      "exists": true,
+      "size_bytes": 11773,
+      "modified_at": "2026-10-11T22:54:41.456098"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/domain_crops_manifest.csv",
+      "exists": true,
+      "size_bytes": 14344272,
+      "modified_at": "2026-10-11T19:17:33.143131"
+    },
+    {
+      "relative_path": "results/domain_adaptation/per_patient_evaluation_test.csv",
+      "exists": true,
+      "size_bytes": 3566,
+      "modified_at": "2026-10-11T22:11:29.890109"
+    },
+    {
+      "relative_path": "results/domain_adaptation/two_stage_test_eval/two_stage_test_25images_comparison.csv",
+      "exists": true,
+      "size_bytes": 2695,
+      "modified_at": "2026-10-11T22:21:30.932163"
+    },
+    {
+      "relative_path": "results/demo_app_runs/phase7_demo_verification_report.txt",
+      "exists": true,
+      "size_bytes": 1752,
+      "modified_at": "2026-10-11T22:38:50.318597"
+    },
+    {
+      "relative_path": "results/demo_app_runs/phase8_final_verification_report.txt",
+      "exists": true,
+      "size_bytes": 2329,
+      "modified_at": "2026-10-11T22:54:41.456098"
+    }
+  ],
+  "directories": [
+    {
+      "relative_path": "cell_images",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-03T09:02:43.588061"
+    },
+    {
+      "relative_path": "dataset/train",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-03T15:27:58.363239"
+    },
+    {
+      "relative_path": "dataset/val",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-03T15:28:41.503458"
+    },
+    {
+      "relative_path": "dataset/test",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-03T15:28:45.658085"
+    },
+    {
+      "relative_path": "Polygon Set",
+      "exists": true,
+      "direct_entry_count": 33,
+      "modified_at": "2026-10-03T09:07:18.520650"
+    },
+    {
+      "relative_path": "Point Set",
+      "exists": true,
+      "direct_entry_count": 160,
+      "modified_at": "2026-10-03T09:07:06.378561"
+    },
+    {
+      "relative_path": "yolo_malaria/images/train",
+      "exists": true,
+      "direct_entry_count": 115,
+      "modified_at": "2026-10-10T23:14:22.023928"
+    },
+    {
+      "relative_path": "yolo_malaria/images/val",
+      "exists": true,
+      "direct_entry_count": 25,
+      "modified_at": "2026-10-10T23:14:21.798140"
+    },
+    {
+      "relative_path": "yolo_malaria/images/test",
+      "exists": true,
+      "direct_entry_count": 25,
+      "modified_at": "2026-10-10T23:14:22.123136"
+    },
+    {
+      "relative_path": "yolo_malaria/labels/train",
+      "exists": true,
+      "direct_entry_count": 115,
+      "modified_at": "2026-10-10T23:14:22.027941"
+    },
+    {
+      "relative_path": "yolo_malaria/labels/val",
+      "exists": true,
+      "direct_entry_count": 25,
+      "modified_at": "2026-10-10T23:14:21.802044"
+    },
+    {
+      "relative_path": "yolo_malaria/labels/test",
+      "exists": true,
+      "direct_entry_count": 25,
+      "modified_at": "2026-10-10T23:14:22.128036"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/raw/train",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-11T19:13:47.935061"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/raw/val",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-11T19:13:47.936058"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/raw/test",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-11T19:13:47.937057"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/masked/train",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-11T19:13:47.938068"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/masked/val",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-11T19:13:47.939158"
+    },
+    {
+      "relative_path": "results/domain_adaptation/crops_dataset/masked/test",
+      "exists": true,
+      "direct_entry_count": 2,
+      "modified_at": "2026-10-11T19:13:47.940185"
+    },
+    {
+      "relative_path": "venv",
+      "exists": true,
+      "direct_entry_count": 5,
+      "modified_at": "2026-10-03T16:20:07.374609"
+    },
+    {
+      "relative_path": "venv_yolo",
+      "exists": true,
+      "direct_entry_count": 5,
+      "modified_at": "2026-10-11T16:03:20.874829"
+    },
+    {
+      "relative_path": "venv_yolo_gpu",
+      "exists": true,
+      "direct_entry_count": 6,
+      "modified_at": "2026-10-11T19:44:35.484924"
+    }
+  ]
+}

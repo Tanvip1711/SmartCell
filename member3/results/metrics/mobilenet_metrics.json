@@ -1,0 +1,15 @@
+{
+    "model": "SmartCell_MobileNetV2",
+    "dataset": "NIH Malaria Cell Images",
+    "test_set_size": 4136,
+    "accuracy": 0.9206963249516441,
+    "precision": 0.9796030871003307,
+    "recall": 0.8592843326885881,
+    "f1_score": 0.9155074703760948,
+    "true_positives": 1777,
+    "true_negatives": 2031,
+    "false_positives": 37,
+    "false_negatives": 291,
+    "training_time_seconds": 6510.48,
+    "epochs_trained": 5
+}

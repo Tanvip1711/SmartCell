@@ -1,0 +1,63 @@
+{
+  "image_filename": "IMG_20150819_133447.jpg",
+  "excluded_wbc_count": 1,
+  "rejected_or_duplicate_count": 2,
+  "excluded_wbcs": [
+    {
+      "reason": "WBC detection excluded from RBC malaria classification stage",
+      "yolo_class_id": 2,
+      "yolo_class_name": "WBC",
+      "yolo_confidence": 0.85,
+      "clipped_bbox": [
+        500,
+        500,
+        720,
+        720
+      ]
+    }
+  ],
+  "rejected_boxes": [
+    {
+      "reason": "Invalid or too-small bounding box after clipping (5x4 px < 16 px)",
+      "detection": {
+        "raw_index": 999001,
+        "yolo_class_id": 0,
+        "yolo_class_name": "Uninfected RBC",
+        "yolo_confidence": 0.99,
+        "raw_bbox": [
+          100.0,
+          100.0,
+          105.0,
+          104.0
+        ]
+      },
+      "clipped_bbox": [
+        100,
+        100,
+        105,
+        104
+      ]
+    },
+    {
+      "reason": "Invalid or too-small bounding box after clipping (0x0 px < 16 px)",
+      "detection": {
+        "raw_index": 999002,
+        "yolo_class_id": 0,
+        "yolo_class_name": "Uninfected RBC",
+        "yolo_confidence": 0.98,
+        "raw_bbox": [
+          -50.0,
+          -50.0,
+          -10.0,
+          -10.0
+        ]
+      },
+      "clipped_bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

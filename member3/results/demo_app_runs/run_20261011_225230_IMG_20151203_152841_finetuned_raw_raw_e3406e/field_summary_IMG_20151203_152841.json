@@ -1,0 +1,111 @@
+{
+  "disclaimer": "EXPERIMENTAL RESEARCH PROTOTYPE ONLY \u2014 NOT A CLINICALLY VALIDATED DIAGNOSTIC SYSTEM",
+  "image_filename": "IMG_20151203_152841.jpg",
+  "image_path": "D:\\smartcell\\results\\demo_app_runs\\_uploads\\20261011_225229_0ee784\\IMG_20151203_152841.jpg",
+  "image_dimensions": {
+    "width": 5312,
+    "height": 2988
+  },
+  "hardware_execution": {
+    "stage1_device": "NVIDIA GeForce RTX 2050 (CUDA device=0, PyTorch 2.14.1+cu130)",
+    "stage1_peak_vram_mb": 23.73,
+    "gpu_fallback_triggered": false,
+    "gpu_fallback_reason": null,
+    "stage2_device": "CPU (TensorFlow 2.21.0 native Windows)"
+  },
+  "models": {
+    "stage1_yolo_checkpoint": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+    "stage2_cnn_variant": "finetuned_raw",
+    "stage2_cnn_checkpoint": "D:\\smartcell\\models\\malaria_cnn_finetuned_raw_best.keras",
+    "cnn_input_shape": [
+      224,
+      224,
+      3
+    ],
+    "cnn_internal_rescaling": "1.0 / 255.0",
+    "cnn_class_mapping": {
+      "0": "Uninfected",
+      "1": "Parasitized"
+    },
+    "primary_crop_preprocessing_mode": "raw"
+  },
+  "thresholds_and_parameters": {
+    "yolo_confidence_threshold": 0.25,
+    "yolo_nms_iou_threshold": 0.45,
+    "deduplication_iou_threshold": 0.5,
+    "yolo_max_det": 350,
+    "crop_padding_pixels": 4,
+    "min_box_size_pixels": 16,
+    "cnn_parasitized_threshold": 0.5
+  },
+  "counts": {
+    "raw_yolo_detections": 169,
+    "valid_candidate_rbc_crops": 169,
+    "cnn_parasitized_rbc_count": 1,
+    "cnn_uninfected_rbc_count": 168,
+    "cnn_raw_crop_parasitized_count": 1,
+    "cnn_raw_crop_uninfected_count": 168,
+    "cnn_ellipse_masked_parasitized_count": 1,
+    "cnn_ellipse_masked_uninfected_count": 168,
+    "excluded_wbc_detections": 0,
+    "rejected_or_duplicate_boxes": 0
+  },
+  "confidence_statistics": {
+    "yolo_detection_confidence": {
+      "count": 169,
+      "mean": 0.7753,
+      "median": 0.7933,
+      "min": 0.2865,
+      "max": 0.918
+    },
+    "cnn_overall_confidence": {
+      "count": 169,
+      "mean": 0.9999,
+      "median": 1.0,
+      "min": 0.9971,
+      "max": 1.0
+    },
+    "cnn_parasitized_confidence": {
+      "count": 1,
+      "mean": 0.9991,
+      "median": 0.9991,
+      "min": 0.9991,
+      "max": 0.9991
+    },
+    "cnn_uninfected_confidence": {
+      "count": 168,
+      "mean": 0.9999,
+      "median": 1.0,
+      "min": 0.9971,
+      "max": 1.0
+    }
+  },
+  "parasitemia_estimate": {
+    "note": "Experimental image-level estimate (CNN Parasitized RBCs / Total CNN-classified RBCs * 100). Not a clinical measurement.",
+    "primary_mode": "raw",
+    "estimated_parasitemia_percent": 0.5917,
+    "calculation_fraction": "1 / 169 classified RBCs",
+    "raw_crop_parasitemia_percent": 0.5917,
+    "ellipse_masked_parasitemia_percent": 0.5917
+  },
+  "Domain_Mismatch_Analysis": {
+    "observation": "The NIH single-cell CNN dataset (D:\\smartcell\\dataset) contains segmented cells on a black [0,0,0] background, whereas raw rectangular crops from full smears contain bright pink plasma corners and neighboring cell edges.",
+    "raw_rectangular_crops_parasitized_flagged": 1,
+    "ellipse_masked_crops_parasitized_flagged": 1
+  },
+  "processing_time_seconds": {
+    "stage1_yolo_detection_and_cropping": 7.3922,
+    "stage2_cnn_classification": 7.7927,
+    "total_pipeline_seconds": 15.1849
+  },
+  "output_files": {
+    "output_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e",
+    "annotated_full_image": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\annotated_IMG_20151203_152841.jpg",
+    "contact_sheet_image": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\contact_sheet_IMG_20151203_152841.jpg",
+    "crops_directory": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops",
+    "cell_predictions_csv": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\cell_predictions_IMG_20151203_152841.csv",
+    "rejected_and_excluded_json": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\rejected_and_excluded_IMG_20151203_152841.json",
+    "field_summary_json": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\field_summary_IMG_20151203_152841.json",
+    "field_summary_txt": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\field_summary_IMG_20151203_152841.txt"
+  }
+}

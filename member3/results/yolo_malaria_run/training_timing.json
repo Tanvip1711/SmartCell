@@ -1,0 +1,12 @@
+{
+  "training_duration_seconds": 6903.9,
+  "training_duration_minutes": 115.07,
+  "training_duration_hours": 1.9178,
+  "device": "cpu",
+  "epochs": 50,
+  "imgsz": 640,
+  "batch": 4,
+  "rect": true,
+  "max_det": 350,
+  "seed": 42
+}

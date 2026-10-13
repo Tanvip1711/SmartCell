@@ -1,0 +1,36 @@
+==================================================================================
+SMARTCELL PHASE 8: FINAL VERIFICATION, REPRODUCIBILITY & RELIABILITY REPORT
+==================================================================================
+Timestamp:                   2026-10-11T22:51:22
+Server Binding Verified:     127.0.0.1 (Localhost Research Prototype)
+
+1. REPRODUCIBILITY CHECK (Run 1 vs Run 2 on IMG_20150819_133447.jpg | finetuned_raw + raw)
+   Run 1 ID:                 run_20261011_225123_IMG_20150819_133447_finetuned_raw_raw_17530a
+   Run 2 ID:                 run_20261011_225156_IMG_20150819_133447_finetuned_raw_raw_2e21ef
+   Valid RBC Detections:     195 vs 195 (Identical: True)
+   Parasitized / Uninfected: 74/121 vs 74/121 (Identical: True)
+   Estimated Parasitemia:    37.9487% vs 37.9487% (Identical: True)
+   CSV SHA-256 Byte Match:   True (9d3e3fd6fc207291...)
+   Annotated JPG Byte Match: True (f1bbe8bb21286e37...)
+   Contact Sheet Byte Match: True (b658d59290146c5e...)
+   JSON Deterministic Match: True (Differing metadata keys: ['image_path', 'processing_time_seconds', 'output_files'])
+   Max Per-Cell Prob Diff:   0.00000000
+
+2. ADDITIONAL HELD-OUT TEST IMAGES VERIFIED
+   - IMG_20151203_152841.jpg (Patient 372C187P148NThinF, GT=1/165 [0.61%]): Detected=169 RBCs | Pred Par=1 (0.59%) | ExportIsolated=True
+   - IMG_20151207_114038.jpg (Patient 377C238NThinF, GT=0/208 [0.0%]): Detected=210 RBCs | Pred Par=1 (0.48%) | ExportIsolated=True
+
+3. COMPLETE 3x2 MODEL & CROP MODE MATRIX ON IMG_20150819_133447.jpg (GT = 71/206 [34.47%])
+   - finetuned_raw    + raw   : Par=74/195  (37.95%) [Verified in Phase 7 & 8]
+   - finetuned_raw    + masked: Par=71/195  (36.41%) [Verified in Phase 8]
+   - finetuned_masked + masked: Par=81/195  (41.54%) [Verified in Phase 7]
+   - finetuned_masked + raw   : Par=108/195 (55.38%) [Verified in Phase 8]
+   - original         + raw   : Par=108/195 (55.38%) [Verified in Phase 7]
+   - original         + masked: Par=81/195  (41.54%) [Verified in Phase 7]
+
+4. RELIABILITY, SECURITY & HYGIENE
+   - Missing Image HTTP 400:      True
+   - Invalid Variant HTTP 400:    True
+   - Path Traversal Block (404):  True
+   - Zero Orphaned Subprocesses:  True
+==================================================================================

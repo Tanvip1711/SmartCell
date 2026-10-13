@@ -1,0 +1,59 @@
+==========================================================================================
+SMARTCELL PHASE 6: GROUND-TRUTH CROP CLASSIFICATION STRATEGY COMPARISON (A, B, C, D)
+==========================================================================================
+DISCLAIMER: Experimental research prototype evaluation on 33 patients (23 train, 5 val, 5 test).
+
+SUMMARY TABLE — HELD-OUT TEST SET (5 PATIENTS, 25 IMAGES, 4,794 GROUND-TRUTH RBC CROPS):
+  Ground Truth: 4,418 Uninfected RBCs (92.16%), 376 Parasitized RBCs (7.84%)
+------------------------------------------------------------------------------------------
+Strategy                                   |    Acc |   Prec |   Sens |   Spec | Par F1 |   TP   FP   TN  FN
+------------------------------------------------------------------------------------------
+Strategy A: Existing CNN (Raw Crops)       | 91.80% | 48.89% | 99.73% | 91.13% | 0.6562 |  375  392 4026   1
+Strategy B: Existing CNN (Elliptical-Masked Crops) | 98.10% | 81.32% | 98.40% | 98.08% | 0.8905 |  370   85 4333   6
+Strategy C: Fine-Tuned CNN (Raw Crops)     | 98.35% | 84.78% | 96.28% | 98.53% | 0.9016 |  362   65 4353  14
+Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops) | 98.10% | 81.32% | 98.40% | 98.08% | 0.8905 |  370   85 4333   6
+------------------------------------------------------------------------------------------
+
+SUMMARY TABLE — VALIDATION SET (5 PATIENTS, 25 IMAGES, 5,302 GROUND-TRUTH RBC CROPS):
+  Ground Truth: 5,163 Uninfected RBCs (97.38%), 139 Parasitized RBCs (2.62%)
+------------------------------------------------------------------------------------------
+Strategy                                   |    Acc |   Prec |   Sens |   Spec | Par F1 |   TP   FP   TN  FN
+------------------------------------------------------------------------------------------
+Strategy A: Existing CNN (Raw Crops)       | 94.93% | 33.91% | 98.56% | 94.83% | 0.5046 |  137  267 4896   2
+Strategy B: Existing CNN (Elliptical-Masked Crops) | 98.19% | 60.91% | 86.33% | 98.51% | 0.7143 |  120   77 5086  19
+Strategy C: Fine-Tuned CNN (Raw Crops)     | 98.38% | 64.32% | 85.61% | 98.72% | 0.7346 |  119   66 5097  20
+Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops) | 98.19% | 60.91% | 86.33% | 98.51% | 0.7143 |  120   77 5086  19
+------------------------------------------------------------------------------------------
+
+PER-PATIENT BREAKDOWN ON HELD-OUT TEST SET (5 PATIENTS, 5 IMAGES PER PATIENT):
+
+  [Strategy A: Existing CNN (Raw Crops)]
+    Patient 156C55P16thinF         | GT RBCs:  896 (Par:   3 [ 0.33%]) | Pred Par:  40 [ 4.46%] | TP=  3 FP= 37 TN= 856 FN= 0 | Sens=100.0% Spec= 95.9%
+    Patient 209C68P29N_ThinF       | GT RBCs:  992 (Par: 349 [35.18%]) | Pred Par: 527 [53.12%] | TP=348 FP=179 TN= 464 FN= 1 | Sens= 99.7% Spec= 72.2%
+    Patient 212C71P32_ThinF        | GT RBCs: 1169 (Par:  10 [ 0.86%]) | Pred Par:  69 [ 5.90%] | TP= 10 FP= 59 TN=1100 FN= 0 | Sens=100.0% Spec= 94.9%
+    Patient 372C187P148NThinF      | GT RBCs:  794 (Par:  14 [ 1.76%]) | Pred Par:  71 [ 8.94%] | TP= 14 FP= 57 TN= 723 FN= 0 | Sens=100.0% Spec= 92.7%
+    Patient 377C238NThinF          | GT RBCs:  943 (Par:   0 [ 0.00%]) | Pred Par:  60 [ 6.36%] | TP=  0 FP= 60 TN= 883 FN= 0 | Sens=  0.0% Spec= 93.6%
+
+  [Strategy B: Existing CNN (Elliptical-Masked Crops)]
+    Patient 156C55P16thinF         | GT RBCs:  896 (Par:   3 [ 0.33%]) | Pred Par:   6 [ 0.67%] | TP=  3 FP=  3 TN= 890 FN= 0 | Sens=100.0% Spec= 99.7%
+    Patient 209C68P29N_ThinF       | GT RBCs:  992 (Par: 349 [35.18%]) | Pred Par: 396 [39.92%] | TP=347 FP= 49 TN= 594 FN= 2 | Sens= 99.4% Spec= 92.4%
+    Patient 212C71P32_ThinF        | GT RBCs: 1169 (Par:  10 [ 0.86%]) | Pred Par:  36 [ 3.08%] | TP=  9 FP= 27 TN=1132 FN= 1 | Sens= 90.0% Spec= 97.7%
+    Patient 372C187P148NThinF      | GT RBCs:  794 (Par:  14 [ 1.76%]) | Pred Par:  12 [ 1.51%] | TP= 11 FP=  1 TN= 779 FN= 3 | Sens= 78.6% Spec= 99.9%
+    Patient 377C238NThinF          | GT RBCs:  943 (Par:   0 [ 0.00%]) | Pred Par:   5 [ 0.53%] | TP=  0 FP=  5 TN= 938 FN= 0 | Sens=  0.0% Spec= 99.5%
+
+  [Strategy C: Fine-Tuned CNN (Raw Crops)]
+    Patient 156C55P16thinF         | GT RBCs:  896 (Par:   3 [ 0.33%]) | Pred Par:   5 [ 0.56%] | TP=  3 FP=  2 TN= 891 FN= 0 | Sens=100.0% Spec= 99.8%
+    Patient 209C68P29N_ThinF       | GT RBCs:  992 (Par: 349 [35.18%]) | Pred Par: 380 [38.31%] | TP=342 FP= 38 TN= 605 FN= 7 | Sens= 98.0% Spec= 94.1%
+    Patient 212C71P32_ThinF        | GT RBCs: 1169 (Par:  10 [ 0.86%]) | Pred Par:  31 [ 2.65%] | TP=  9 FP= 22 TN=1137 FN= 1 | Sens= 90.0% Spec= 98.1%
+    Patient 372C187P148NThinF      | GT RBCs:  794 (Par:  14 [ 1.76%]) | Pred Par:   8 [ 1.01%] | TP=  8 FP=  0 TN= 780 FN= 6 | Sens= 57.1% Spec=100.0%
+    Patient 377C238NThinF          | GT RBCs:  943 (Par:   0 [ 0.00%]) | Pred Par:   3 [ 0.32%] | TP=  0 FP=  3 TN= 940 FN= 0 | Sens=  0.0% Spec= 99.7%
+
+  [Strategy D: Fine-Tuned CNN (Elliptical-Masked Crops)]
+    Patient 156C55P16thinF         | GT RBCs:  896 (Par:   3 [ 0.33%]) | Pred Par:   6 [ 0.67%] | TP=  3 FP=  3 TN= 890 FN= 0 | Sens=100.0% Spec= 99.7%
+    Patient 209C68P29N_ThinF       | GT RBCs:  992 (Par: 349 [35.18%]) | Pred Par: 396 [39.92%] | TP=347 FP= 49 TN= 594 FN= 2 | Sens= 99.4% Spec= 92.4%
+    Patient 212C71P32_ThinF        | GT RBCs: 1169 (Par:  10 [ 0.86%]) | Pred Par:  36 [ 3.08%] | TP=  9 FP= 27 TN=1132 FN= 1 | Sens= 90.0% Spec= 97.7%
+    Patient 372C187P148NThinF      | GT RBCs:  794 (Par:  14 [ 1.76%]) | Pred Par:  12 [ 1.51%] | TP= 11 FP=  1 TN= 779 FN= 3 | Sens= 78.6% Spec= 99.9%
+    Patient 377C238NThinF          | GT RBCs:  943 (Par:   0 [ 0.00%]) | Pred Par:   5 [ 0.53%] | TP=  0 FP=  5 TN= 938 FN= 0 | Sens=  0.0% Spec= 99.5%
+
+Total Evaluation Runtime: 989.18 s
+==========================================================================================

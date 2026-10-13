@@ -1,0 +1,4254 @@
+{
+  "image_path": "D:\\smartcell\\results\\demo_app_runs\\_uploads\\20261011_225229_0ee784\\IMG_20151203_152841.jpg",
+  "image_filename": "IMG_20151203_152841.jpg",
+  "image_stem": "IMG_20151203_152841",
+  "image_width": 5312,
+  "image_height": 2988,
+  "yolo_weights": "D:\\smartcell\\results\\yolo_malaria_run\\weights\\best.pt",
+  "stage1_device": "NVIDIA GeForce RTX 2050 (CUDA device=0, PyTorch 2.14.1+cu130)",
+  "stage1_peak_vram_mb": 23.73,
+  "gpu_fallback_triggered": false,
+  "gpu_fallback_reason": null,
+  "yolo_conf_threshold": 0.25,
+  "yolo_iou_threshold": 0.45,
+  "dedup_iou_threshold": 0.5,
+  "max_det": 350,
+  "pad_px": 4,
+  "min_box_size": 16,
+  "stage1_processing_time_seconds": 7.3922,
+  "counts": {
+    "raw_yolo_detections": 169,
+    "valid_candidate_rbc_crops": 169,
+    "excluded_wbc_detections": 0,
+    "rejected_or_duplicate_boxes": 0
+  },
+  "candidate_rbcs": [
+    {
+      "raw_index": 165,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.394322,
+      "bbox": [
+        2877,
+        1,
+        3016,
+        95
+      ],
+      "bbox_width": 139,
+      "bbox_height": 94,
+      "crop_id": "IMG_20151203_152841_cell_0001",
+      "padded_bbox": [
+        2873,
+        0,
+        3020,
+        99
+      ],
+      "crop_width": 147,
+      "crop_height": 99,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0001.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0001.png"
+    },
+    {
+      "raw_index": 42,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.852275,
+      "bbox": [
+        2843,
+        65,
+        2974,
+        185
+      ],
+      "bbox_width": 131,
+      "bbox_height": 120,
+      "crop_id": "IMG_20151203_152841_cell_0002",
+      "padded_bbox": [
+        2839,
+        61,
+        2978,
+        189
+      ],
+      "crop_width": 139,
+      "crop_height": 128,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0002.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0002.png"
+    },
+    {
+      "raw_index": 164,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.399446,
+      "bbox": [
+        3258,
+        86,
+        3375,
+        188
+      ],
+      "bbox_width": 117,
+      "bbox_height": 102,
+      "crop_id": "IMG_20151203_152841_cell_0003",
+      "padded_bbox": [
+        3254,
+        82,
+        3379,
+        192
+      ],
+      "crop_width": 125,
+      "crop_height": 110,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0003.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0003.png"
+    },
+    {
+      "raw_index": 101,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.777876,
+      "bbox": [
+        2754,
+        125,
+        2877,
+        250
+      ],
+      "bbox_width": 123,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151203_152841_cell_0004",
+      "padded_bbox": [
+        2750,
+        121,
+        2881,
+        254
+      ],
+      "crop_width": 131,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0004.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0004.png"
+    },
+    {
+      "raw_index": 97,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.783314,
+      "bbox": [
+        2472,
+        145,
+        2590,
+        295
+      ],
+      "bbox_width": 118,
+      "bbox_height": 150,
+      "crop_id": "IMG_20151203_152841_cell_0005",
+      "padded_bbox": [
+        2468,
+        141,
+        2594,
+        299
+      ],
+      "crop_width": 126,
+      "crop_height": 158,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0005.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0005.png"
+    },
+    {
+      "raw_index": 124,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.750948,
+      "bbox": [
+        3018,
+        212,
+        3120,
+        349
+      ],
+      "bbox_width": 102,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151203_152841_cell_0006",
+      "padded_bbox": [
+        3014,
+        208,
+        3124,
+        353
+      ],
+      "crop_width": 110,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0006.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0006.png"
+    },
+    {
+      "raw_index": 90,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.789532,
+      "bbox": [
+        2609,
+        221,
+        2743,
+        353
+      ],
+      "bbox_width": 134,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151203_152841_cell_0007",
+      "padded_bbox": [
+        2605,
+        217,
+        2747,
+        357
+      ],
+      "crop_width": 142,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0007.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0007.png"
+    },
+    {
+      "raw_index": 84,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.793308,
+      "bbox": [
+        2921,
+        289,
+        3029,
+        404
+      ],
+      "bbox_width": 108,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151203_152841_cell_0008",
+      "padded_bbox": [
+        2917,
+        285,
+        3033,
+        408
+      ],
+      "crop_width": 116,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0008.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0008.png"
+    },
+    {
+      "raw_index": 98,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.782937,
+      "bbox": [
+        3147,
+        296,
+        3281,
+        435
+      ],
+      "bbox_width": 134,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151203_152841_cell_0009",
+      "padded_bbox": [
+        3143,
+        292,
+        3285,
+        439
+      ],
+      "crop_width": 142,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0009.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0009.png"
+    },
+    {
+      "raw_index": 60,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.826422,
+      "bbox": [
+        2461,
+        334,
+        2574,
+        461
+      ],
+      "bbox_width": 113,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0010",
+      "padded_bbox": [
+        2457,
+        330,
+        2578,
+        465
+      ],
+      "crop_width": 121,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0010.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0010.png"
+    },
+    {
+      "raw_index": 158,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.563019,
+      "bbox": [
+        2513,
+        411,
+        2684,
+        539
+      ],
+      "bbox_width": 171,
+      "bbox_height": 128,
+      "crop_id": "IMG_20151203_152841_cell_0011",
+      "padded_bbox": [
+        2509,
+        407,
+        2688,
+        543
+      ],
+      "crop_width": 179,
+      "crop_height": 136,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0011.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0011.png"
+    },
+    {
+      "raw_index": 102,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.777034,
+      "bbox": [
+        2784,
+        452,
+        2898,
+        569
+      ],
+      "bbox_width": 114,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0012",
+      "padded_bbox": [
+        2780,
+        448,
+        2902,
+        573
+      ],
+      "crop_width": 122,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0012.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0012.png"
+    },
+    {
+      "raw_index": 118,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.75731,
+      "bbox": [
+        2369,
+        463,
+        2505,
+        582
+      ],
+      "bbox_width": 136,
+      "bbox_height": 119,
+      "crop_id": "IMG_20151203_152841_cell_0013",
+      "padded_bbox": [
+        2365,
+        459,
+        2509,
+        586
+      ],
+      "crop_width": 144,
+      "crop_height": 127,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0013.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0013.png"
+    },
+    {
+      "raw_index": 45,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.847879,
+      "bbox": [
+        2588,
+        527,
+        2703,
+        623
+      ],
+      "bbox_width": 115,
+      "bbox_height": 96,
+      "crop_id": "IMG_20151203_152841_cell_0014",
+      "padded_bbox": [
+        2584,
+        523,
+        2707,
+        627
+      ],
+      "crop_width": 123,
+      "crop_height": 104,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0014.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0014.png"
+    },
+    {
+      "raw_index": 23,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.867185,
+      "bbox": [
+        2408,
+        589,
+        2530,
+        721
+      ],
+      "bbox_width": 122,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151203_152841_cell_0015",
+      "padded_bbox": [
+        2404,
+        585,
+        2534,
+        725
+      ],
+      "crop_width": 130,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0015.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0015.png"
+    },
+    {
+      "raw_index": 107,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.772296,
+      "bbox": [
+        2755,
+        590,
+        2874,
+        714
+      ],
+      "bbox_width": 119,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0016",
+      "padded_bbox": [
+        2751,
+        586,
+        2878,
+        718
+      ],
+      "crop_width": 127,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0016.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0016.png"
+    },
+    {
+      "raw_index": 163,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.425809,
+      "bbox": [
+        2539,
+        593,
+        2625,
+        696
+      ],
+      "bbox_width": 86,
+      "bbox_height": 103,
+      "crop_id": "IMG_20151203_152841_cell_0017",
+      "padded_bbox": [
+        2535,
+        589,
+        2629,
+        700
+      ],
+      "crop_width": 94,
+      "crop_height": 111,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0017.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0017.png"
+    },
+    {
+      "raw_index": 147,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.687329,
+      "bbox": [
+        3861,
+        595,
+        4003,
+        722
+      ],
+      "bbox_width": 142,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0018",
+      "padded_bbox": [
+        3857,
+        591,
+        4007,
+        726
+      ],
+      "crop_width": 150,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0018.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0018.png"
+    },
+    {
+      "raw_index": 104,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.773388,
+      "bbox": [
+        2257,
+        598,
+        2377,
+        722
+      ],
+      "bbox_width": 120,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0019",
+      "padded_bbox": [
+        2253,
+        594,
+        2381,
+        726
+      ],
+      "crop_width": 128,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0019.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0019.png"
+    },
+    {
+      "raw_index": 70,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.81708,
+      "bbox": [
+        2648,
+        665,
+        2771,
+        783
+      ],
+      "bbox_width": 123,
+      "bbox_height": 118,
+      "crop_id": "IMG_20151203_152841_cell_0020",
+      "padded_bbox": [
+        2644,
+        661,
+        2775,
+        787
+      ],
+      "crop_width": 131,
+      "crop_height": 126,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0020.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0020.png"
+    },
+    {
+      "raw_index": 137,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.728352,
+      "bbox": [
+        3112,
+        691,
+        3237,
+        818
+      ],
+      "bbox_width": 125,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0021",
+      "padded_bbox": [
+        3108,
+        687,
+        3241,
+        822
+      ],
+      "crop_width": 133,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0021.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0021.png"
+    },
+    {
+      "raw_index": 22,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.868548,
+      "bbox": [
+        3369,
+        700,
+        3486,
+        845
+      ],
+      "bbox_width": 117,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151203_152841_cell_0022",
+      "padded_bbox": [
+        3365,
+        696,
+        3490,
+        849
+      ],
+      "crop_width": 125,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0022.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0022.png"
+    },
+    {
+      "raw_index": 18,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.874046,
+      "bbox": [
+        3492,
+        708,
+        3606,
+        833
+      ],
+      "bbox_width": 114,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151203_152841_cell_0023",
+      "padded_bbox": [
+        3488,
+        704,
+        3610,
+        837
+      ],
+      "crop_width": 122,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0023.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0023.png"
+    },
+    {
+      "raw_index": 37,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.854544,
+      "bbox": [
+        2300,
+        709,
+        2428,
+        854
+      ],
+      "bbox_width": 128,
+      "bbox_height": 145,
+      "crop_id": "IMG_20151203_152841_cell_0024",
+      "padded_bbox": [
+        2296,
+        705,
+        2432,
+        858
+      ],
+      "crop_width": 136,
+      "crop_height": 153,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0024.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0024.png"
+    },
+    {
+      "raw_index": 140,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.713216,
+      "bbox": [
+        2450,
+        727,
+        2573,
+        842
+      ],
+      "bbox_width": 123,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151203_152841_cell_0025",
+      "padded_bbox": [
+        2446,
+        723,
+        2577,
+        846
+      ],
+      "crop_width": 131,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0025.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0025.png"
+    },
+    {
+      "raw_index": 19,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.870878,
+      "bbox": [
+        2159,
+        728,
+        2279,
+        853
+      ],
+      "bbox_width": 120,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151203_152841_cell_0026",
+      "padded_bbox": [
+        2155,
+        724,
+        2283,
+        857
+      ],
+      "crop_width": 128,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0026.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0026.png"
+    },
+    {
+      "raw_index": 141,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.712875,
+      "bbox": [
+        1986,
+        738,
+        2112,
+        861
+      ],
+      "bbox_width": 126,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0027",
+      "padded_bbox": [
+        1982,
+        734,
+        2116,
+        865
+      ],
+      "crop_width": 134,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0027.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0027.png"
+    },
+    {
+      "raw_index": 155,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.612243,
+      "bbox": [
+        2568,
+        759,
+        2681,
+        892
+      ],
+      "bbox_width": 113,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151203_152841_cell_0028",
+      "padded_bbox": [
+        2564,
+        755,
+        2685,
+        896
+      ],
+      "crop_width": 121,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0028.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0028.png"
+    },
+    {
+      "raw_index": 129,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.738275,
+      "bbox": [
+        2706,
+        762,
+        2834,
+        891
+      ],
+      "bbox_width": 128,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0029",
+      "padded_bbox": [
+        2702,
+        758,
+        2838,
+        895
+      ],
+      "crop_width": 136,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0029.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0029.png"
+    },
+    {
+      "raw_index": 53,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.837689,
+      "bbox": [
+        3232,
+        818,
+        3361,
+        950
+      ],
+      "bbox_width": 129,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151203_152841_cell_0030",
+      "padded_bbox": [
+        3228,
+        814,
+        3365,
+        954
+      ],
+      "crop_width": 137,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0030.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0030.png"
+    },
+    {
+      "raw_index": 138,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.728057,
+      "bbox": [
+        2388,
+        832,
+        2511,
+        943
+      ],
+      "bbox_width": 123,
+      "bbox_height": 111,
+      "crop_id": "IMG_20151203_152841_cell_0031",
+      "padded_bbox": [
+        2384,
+        828,
+        2515,
+        947
+      ],
+      "crop_width": 131,
+      "crop_height": 119,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0031.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0031.png"
+    },
+    {
+      "raw_index": 65,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.822119,
+      "bbox": [
+        2051,
+        836,
+        2190,
+        965
+      ],
+      "bbox_width": 139,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0032",
+      "padded_bbox": [
+        2047,
+        832,
+        2194,
+        969
+      ],
+      "crop_width": 147,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0032.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0032.png"
+    },
+    {
+      "raw_index": 156,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.608148,
+      "bbox": [
+        3861,
+        847,
+        3958,
+        978
+      ],
+      "bbox_width": 97,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151203_152841_cell_0033",
+      "padded_bbox": [
+        3857,
+        843,
+        3962,
+        982
+      ],
+      "crop_width": 105,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0033.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0033.png"
+    },
+    {
+      "raw_index": 115,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.766016,
+      "bbox": [
+        4194,
+        868,
+        4333,
+        1009
+      ],
+      "bbox_width": 139,
+      "bbox_height": 141,
+      "crop_id": "IMG_20151203_152841_cell_0034",
+      "padded_bbox": [
+        4190,
+        864,
+        4337,
+        1013
+      ],
+      "crop_width": 147,
+      "crop_height": 149,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0034.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0034.png"
+    },
+    {
+      "raw_index": 113,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.768906,
+      "bbox": [
+        3464,
+        880,
+        3562,
+        1026
+      ],
+      "bbox_width": 98,
+      "bbox_height": 146,
+      "crop_id": "IMG_20151203_152841_cell_0035",
+      "padded_bbox": [
+        3460,
+        876,
+        3566,
+        1030
+      ],
+      "crop_width": 106,
+      "crop_height": 154,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0035.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0035.png"
+    },
+    {
+      "raw_index": 64,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.822416,
+      "bbox": [
+        1778,
+        881,
+        1898,
+        995
+      ],
+      "bbox_width": 120,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0036",
+      "padded_bbox": [
+        1774,
+        877,
+        1902,
+        999
+      ],
+      "crop_width": 128,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0036.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0036.png"
+    },
+    {
+      "raw_index": 142,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.712797,
+      "bbox": [
+        2504,
+        886,
+        2603,
+        1001
+      ],
+      "bbox_width": 99,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151203_152841_cell_0037",
+      "padded_bbox": [
+        2500,
+        882,
+        2607,
+        1005
+      ],
+      "crop_width": 107,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0037.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0037.png"
+    },
+    {
+      "raw_index": 167,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.286731,
+      "bbox": [
+        1440,
+        901,
+        1569,
+        1040
+      ],
+      "bbox_width": 129,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151203_152841_cell_0038",
+      "padded_bbox": [
+        1436,
+        897,
+        1573,
+        1044
+      ],
+      "crop_width": 137,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0038.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0038.png"
+    },
+    {
+      "raw_index": 117,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.759427,
+      "bbox": [
+        2271,
+        901,
+        2376,
+        1017
+      ],
+      "bbox_width": 105,
+      "bbox_height": 116,
+      "crop_id": "IMG_20151203_152841_cell_0039",
+      "padded_bbox": [
+        2267,
+        897,
+        2380,
+        1021
+      ],
+      "crop_width": 113,
+      "crop_height": 124,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0039.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0039.png"
+    },
+    {
+      "raw_index": 144,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.709859,
+      "bbox": [
+        2603,
+        907,
+        2700,
+        999
+      ],
+      "bbox_width": 97,
+      "bbox_height": 92,
+      "crop_id": "IMG_20151203_152841_cell_0040",
+      "padded_bbox": [
+        2599,
+        903,
+        2704,
+        1003
+      ],
+      "crop_width": 105,
+      "crop_height": 100,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0040.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0040.png"
+    },
+    {
+      "raw_index": 127,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.74462,
+      "bbox": [
+        1955,
+        930,
+        2092,
+        1056
+      ],
+      "bbox_width": 137,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0041",
+      "padded_bbox": [
+        1951,
+        926,
+        2096,
+        1060
+      ],
+      "crop_width": 145,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0041.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0041.png"
+    },
+    {
+      "raw_index": 35,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.856262,
+      "bbox": [
+        2425,
+        943,
+        2520,
+        1033
+      ],
+      "bbox_width": 95,
+      "bbox_height": 90,
+      "crop_id": "IMG_20151203_152841_cell_0042",
+      "padded_bbox": [
+        2421,
+        939,
+        2524,
+        1037
+      ],
+      "crop_width": 103,
+      "crop_height": 98,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0042.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0042.png"
+    },
+    {
+      "raw_index": 68,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.819219,
+      "bbox": [
+        3289,
+        965,
+        3409,
+        1096
+      ],
+      "bbox_width": 120,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151203_152841_cell_0043",
+      "padded_bbox": [
+        3285,
+        961,
+        3413,
+        1100
+      ],
+      "crop_width": 128,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0043.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0043.png"
+    },
+    {
+      "raw_index": 11,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.884815,
+      "bbox": [
+        2113,
+        966,
+        2235,
+        1080
+      ],
+      "bbox_width": 122,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0044",
+      "padded_bbox": [
+        2109,
+        962,
+        2239,
+        1084
+      ],
+      "crop_width": 130,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0044.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0044.png"
+    },
+    {
+      "raw_index": 159,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.550647,
+      "bbox": [
+        4307,
+        971,
+        4459,
+        1083
+      ],
+      "bbox_width": 152,
+      "bbox_height": 112,
+      "crop_id": "IMG_20151203_152841_cell_0045",
+      "padded_bbox": [
+        4303,
+        967,
+        4463,
+        1087
+      ],
+      "crop_width": 160,
+      "crop_height": 120,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0045.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0045.png"
+    },
+    {
+      "raw_index": 17,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.874059,
+      "bbox": [
+        2991,
+        977,
+        3103,
+        1097
+      ],
+      "bbox_width": 112,
+      "bbox_height": 120,
+      "crop_id": "IMG_20151203_152841_cell_0046",
+      "padded_bbox": [
+        2987,
+        973,
+        3107,
+        1101
+      ],
+      "crop_width": 120,
+      "crop_height": 128,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0046.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0046.png"
+    },
+    {
+      "raw_index": 108,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.770817,
+      "bbox": [
+        1570,
+        982,
+        1672,
+        1105
+      ],
+      "bbox_width": 102,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0047",
+      "padded_bbox": [
+        1566,
+        978,
+        1676,
+        1109
+      ],
+      "crop_width": 110,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0047.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0047.png"
+    },
+    {
+      "raw_index": 49,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.839492,
+      "bbox": [
+        3138,
+        982,
+        3235,
+        1093
+      ],
+      "bbox_width": 97,
+      "bbox_height": 111,
+      "crop_id": "IMG_20151203_152841_cell_0048",
+      "padded_bbox": [
+        3134,
+        978,
+        3239,
+        1097
+      ],
+      "crop_width": 105,
+      "crop_height": 119,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0048.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0048.png"
+    },
+    {
+      "raw_index": 100,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.77958,
+      "bbox": [
+        2828,
+        1001,
+        2958,
+        1130
+      ],
+      "bbox_width": 130,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0049",
+      "padded_bbox": [
+        2824,
+        997,
+        2962,
+        1134
+      ],
+      "crop_width": 138,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0049.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0049.png"
+    },
+    {
+      "raw_index": 145,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.708259,
+      "bbox": [
+        2303,
+        1032,
+        2405,
+        1158
+      ],
+      "bbox_width": 102,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0050",
+      "padded_bbox": [
+        2299,
+        1028,
+        2409,
+        1162
+      ],
+      "crop_width": 110,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0050.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0050.png"
+    },
+    {
+      "raw_index": 28,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.862172,
+      "bbox": [
+        4016,
+        1066,
+        4147,
+        1205
+      ],
+      "bbox_width": 131,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151203_152841_cell_0051",
+      "padded_bbox": [
+        4012,
+        1062,
+        4151,
+        1209
+      ],
+      "crop_width": 139,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0051.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0051.png"
+    },
+    {
+      "raw_index": 57,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.827786,
+      "bbox": [
+        1991,
+        1069,
+        2102,
+        1179
+      ],
+      "bbox_width": 111,
+      "bbox_height": 110,
+      "crop_id": "IMG_20151203_152841_cell_0052",
+      "padded_bbox": [
+        1987,
+        1065,
+        2106,
+        1183
+      ],
+      "crop_width": 119,
+      "crop_height": 118,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0052.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0052.png"
+    },
+    {
+      "raw_index": 16,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.875173,
+      "bbox": [
+        2402,
+        1083,
+        2518,
+        1203
+      ],
+      "bbox_width": 116,
+      "bbox_height": 120,
+      "crop_id": "IMG_20151203_152841_cell_0053",
+      "padded_bbox": [
+        2398,
+        1079,
+        2522,
+        1207
+      ],
+      "crop_width": 124,
+      "crop_height": 128,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0053.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0053.png"
+    },
+    {
+      "raw_index": 87,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.79205,
+      "bbox": [
+        2105,
+        1091,
+        2244,
+        1196
+      ],
+      "bbox_width": 139,
+      "bbox_height": 105,
+      "crop_id": "IMG_20151203_152841_cell_0054",
+      "padded_bbox": [
+        2101,
+        1087,
+        2248,
+        1200
+      ],
+      "crop_width": 147,
+      "crop_height": 113,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0054.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0054.png"
+    },
+    {
+      "raw_index": 149,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.682328,
+      "bbox": [
+        4383,
+        1110,
+        4522,
+        1240
+      ],
+      "bbox_width": 139,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0055",
+      "padded_bbox": [
+        4379,
+        1106,
+        4526,
+        1244
+      ],
+      "crop_width": 147,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0055.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0055.png"
+    },
+    {
+      "raw_index": 14,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.879027,
+      "bbox": [
+        2991,
+        1112,
+        3110,
+        1226
+      ],
+      "bbox_width": 119,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0056",
+      "padded_bbox": [
+        2987,
+        1108,
+        3114,
+        1230
+      ],
+      "crop_width": 127,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0056.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0056.png"
+    },
+    {
+      "raw_index": 44,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.851269,
+      "bbox": [
+        4211,
+        1129,
+        4350,
+        1262
+      ],
+      "bbox_width": 139,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151203_152841_cell_0057",
+      "padded_bbox": [
+        4207,
+        1125,
+        4354,
+        1266
+      ],
+      "crop_width": 147,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0057.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0057.png"
+    },
+    {
+      "raw_index": 50,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.839395,
+      "bbox": [
+        2475,
+        1171,
+        2600,
+        1288
+      ],
+      "bbox_width": 125,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0058",
+      "padded_bbox": [
+        2471,
+        1167,
+        2604,
+        1292
+      ],
+      "crop_width": 133,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0058.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0058.png"
+    },
+    {
+      "raw_index": 67,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.820349,
+      "bbox": [
+        1851,
+        1185,
+        1977,
+        1322
+      ],
+      "bbox_width": 126,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151203_152841_cell_0059",
+      "padded_bbox": [
+        1847,
+        1181,
+        1981,
+        1326
+      ],
+      "crop_width": 134,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0059.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0059.png"
+    },
+    {
+      "raw_index": 110,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.770236,
+      "bbox": [
+        2020,
+        1193,
+        2153,
+        1295
+      ],
+      "bbox_width": 133,
+      "bbox_height": 102,
+      "crop_id": "IMG_20151203_152841_cell_0060",
+      "padded_bbox": [
+        2016,
+        1189,
+        2157,
+        1299
+      ],
+      "crop_width": 141,
+      "crop_height": 110,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0060.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0060.png"
+    },
+    {
+      "raw_index": 154,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.630502,
+      "bbox": [
+        2165,
+        1197,
+        2284,
+        1309
+      ],
+      "bbox_width": 119,
+      "bbox_height": 112,
+      "crop_id": "IMG_20151203_152841_cell_0061",
+      "padded_bbox": [
+        2161,
+        1193,
+        2288,
+        1313
+      ],
+      "crop_width": 127,
+      "crop_height": 120,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0061.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0061.png"
+    },
+    {
+      "raw_index": 2,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.908659,
+      "bbox": [
+        2328,
+        1203,
+        2462,
+        1320
+      ],
+      "bbox_width": 134,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0062",
+      "padded_bbox": [
+        2324,
+        1199,
+        2466,
+        1324
+      ],
+      "crop_width": 142,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0062.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0062.png"
+    },
+    {
+      "raw_index": 135,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.729762,
+      "bbox": [
+        3361,
+        1218,
+        3474,
+        1325
+      ],
+      "bbox_width": 113,
+      "bbox_height": 107,
+      "crop_id": "IMG_20151203_152841_cell_0063",
+      "padded_bbox": [
+        3357,
+        1214,
+        3478,
+        1329
+      ],
+      "crop_width": 121,
+      "crop_height": 115,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0063.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0063.png"
+    },
+    {
+      "raw_index": 38,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.854264,
+      "bbox": [
+        2931,
+        1237,
+        3044,
+        1351
+      ],
+      "bbox_width": 113,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0064",
+      "padded_bbox": [
+        2927,
+        1233,
+        3048,
+        1355
+      ],
+      "crop_width": 121,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0064.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0064.png"
+    },
+    {
+      "raw_index": 32,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.858561,
+      "bbox": [
+        4269,
+        1250,
+        4391,
+        1364
+      ],
+      "bbox_width": 122,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0065",
+      "padded_bbox": [
+        4265,
+        1246,
+        4395,
+        1368
+      ],
+      "crop_width": 130,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0065.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0065.png"
+    },
+    {
+      "raw_index": 168,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.2865,
+      "bbox": [
+        4412,
+        1260,
+        4543,
+        1383
+      ],
+      "bbox_width": 131,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0066",
+      "padded_bbox": [
+        4408,
+        1256,
+        4547,
+        1387
+      ],
+      "crop_width": 139,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0066.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0066.png"
+    },
+    {
+      "raw_index": 106,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.772478,
+      "bbox": [
+        2545,
+        1271,
+        2656,
+        1381
+      ],
+      "bbox_width": 111,
+      "bbox_height": 110,
+      "crop_id": "IMG_20151203_152841_cell_0067",
+      "padded_bbox": [
+        2541,
+        1267,
+        2660,
+        1385
+      ],
+      "crop_width": 119,
+      "crop_height": 118,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0067.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0067.png"
+    },
+    {
+      "raw_index": 148,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.6841,
+      "bbox": [
+        3038,
+        1281,
+        3173,
+        1405
+      ],
+      "bbox_width": 135,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0068",
+      "padded_bbox": [
+        3034,
+        1277,
+        3177,
+        1409
+      ],
+      "crop_width": 143,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0068.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0068.png"
+    },
+    {
+      "raw_index": 55,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.834286,
+      "bbox": [
+        1702,
+        1300,
+        1826,
+        1430
+      ],
+      "bbox_width": 124,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0069",
+      "padded_bbox": [
+        1698,
+        1296,
+        1830,
+        1434
+      ],
+      "crop_width": 132,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0069.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0069.png"
+    },
+    {
+      "raw_index": 73,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.813134,
+      "bbox": [
+        2392,
+        1301,
+        2515,
+        1418
+      ],
+      "bbox_width": 123,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0070",
+      "padded_bbox": [
+        2388,
+        1297,
+        2519,
+        1422
+      ],
+      "crop_width": 131,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0070.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0070.png"
+    },
+    {
+      "raw_index": 56,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.828932,
+      "bbox": [
+        1399,
+        1303,
+        1521,
+        1432
+      ],
+      "bbox_width": 122,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0071",
+      "padded_bbox": [
+        1395,
+        1299,
+        1525,
+        1436
+      ],
+      "crop_width": 130,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0071.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0071.png"
+    },
+    {
+      "raw_index": 152,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.647167,
+      "bbox": [
+        3423,
+        1308,
+        3547,
+        1425
+      ],
+      "bbox_width": 124,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0072",
+      "padded_bbox": [
+        3419,
+        1304,
+        3551,
+        1429
+      ],
+      "crop_width": 132,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0072.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0072.png"
+    },
+    {
+      "raw_index": 105,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.773107,
+      "bbox": [
+        2678,
+        1316,
+        2814,
+        1431
+      ],
+      "bbox_width": 136,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151203_152841_cell_0073",
+      "padded_bbox": [
+        2674,
+        1312,
+        2818,
+        1435
+      ],
+      "crop_width": 144,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0073.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0073.png"
+    },
+    {
+      "raw_index": 95,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.784204,
+      "bbox": [
+        3886,
+        1321,
+        4025,
+        1443
+      ],
+      "bbox_width": 139,
+      "bbox_height": 122,
+      "crop_id": "IMG_20151203_152841_cell_0074",
+      "padded_bbox": [
+        3882,
+        1317,
+        4029,
+        1447
+      ],
+      "crop_width": 147,
+      "crop_height": 130,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0074.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0074.png"
+    },
+    {
+      "raw_index": 121,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.755868,
+      "bbox": [
+        2210,
+        1369,
+        2332,
+        1485
+      ],
+      "bbox_width": 122,
+      "bbox_height": 116,
+      "crop_id": "IMG_20151203_152841_cell_0075",
+      "padded_bbox": [
+        2206,
+        1365,
+        2336,
+        1489
+      ],
+      "crop_width": 130,
+      "crop_height": 124,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0075.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0075.png"
+    },
+    {
+      "raw_index": 130,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.736969,
+      "bbox": [
+        3262,
+        1381,
+        3386,
+        1498
+      ],
+      "bbox_width": 124,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0076",
+      "padded_bbox": [
+        3258,
+        1377,
+        3390,
+        1502
+      ],
+      "crop_width": 132,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0076.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0076.png"
+    },
+    {
+      "raw_index": 26,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.864695,
+      "bbox": [
+        1963,
+        1389,
+        2063,
+        1512
+      ],
+      "bbox_width": 100,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0077",
+      "padded_bbox": [
+        1959,
+        1385,
+        2067,
+        1516
+      ],
+      "crop_width": 108,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0077.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0077.png"
+    },
+    {
+      "raw_index": 157,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.60398,
+      "bbox": [
+        2549,
+        1397,
+        2671,
+        1507
+      ],
+      "bbox_width": 122,
+      "bbox_height": 110,
+      "crop_id": "IMG_20151203_152841_cell_0078",
+      "padded_bbox": [
+        2545,
+        1393,
+        2675,
+        1511
+      ],
+      "crop_width": 130,
+      "crop_height": 118,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0078.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0078.png"
+    },
+    {
+      "raw_index": 59,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.826585,
+      "bbox": [
+        2056,
+        1398,
+        2160,
+        1525
+      ],
+      "bbox_width": 104,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0079",
+      "padded_bbox": [
+        2052,
+        1394,
+        2164,
+        1529
+      ],
+      "crop_width": 112,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0079.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0079.png"
+    },
+    {
+      "raw_index": 24,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.867105,
+      "bbox": [
+        2859,
+        1398,
+        2985,
+        1525
+      ],
+      "bbox_width": 126,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0080",
+      "padded_bbox": [
+        2855,
+        1394,
+        2989,
+        1529
+      ],
+      "crop_width": 134,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0080.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0080.png"
+    },
+    {
+      "raw_index": 111,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.770172,
+      "bbox": [
+        3592,
+        1408,
+        3722,
+        1534
+      ],
+      "bbox_width": 130,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0081",
+      "padded_bbox": [
+        3588,
+        1404,
+        3726,
+        1538
+      ],
+      "crop_width": 138,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0081.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0081.png"
+    },
+    {
+      "raw_index": 85,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.792228,
+      "bbox": [
+        3025,
+        1417,
+        3157,
+        1543
+      ],
+      "bbox_width": 132,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0082",
+      "padded_bbox": [
+        3021,
+        1413,
+        3161,
+        1547
+      ],
+      "crop_width": 140,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0082.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0082.png"
+    },
+    {
+      "raw_index": 71,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.816915,
+      "bbox": [
+        4236,
+        1419,
+        4394,
+        1546
+      ],
+      "bbox_width": 158,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0083",
+      "padded_bbox": [
+        4232,
+        1415,
+        4398,
+        1550
+      ],
+      "crop_width": 166,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0083.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0083.png"
+    },
+    {
+      "raw_index": 10,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.887847,
+      "bbox": [
+        3999,
+        1462,
+        4103,
+        1562
+      ],
+      "bbox_width": 104,
+      "bbox_height": 100,
+      "crop_id": "IMG_20151203_152841_cell_0084",
+      "padded_bbox": [
+        3995,
+        1458,
+        4107,
+        1566
+      ],
+      "crop_width": 112,
+      "crop_height": 108,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0084.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0084.png"
+    },
+    {
+      "raw_index": 46,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.842711,
+      "bbox": [
+        2344,
+        1472,
+        2462,
+        1584
+      ],
+      "bbox_width": 118,
+      "bbox_height": 112,
+      "crop_id": "IMG_20151203_152841_cell_0085",
+      "padded_bbox": [
+        2340,
+        1468,
+        2466,
+        1588
+      ],
+      "crop_width": 126,
+      "crop_height": 120,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0085.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0085.png"
+    },
+    {
+      "raw_index": 162,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.452409,
+      "bbox": [
+        4459,
+        1496,
+        4574,
+        1613
+      ],
+      "bbox_width": 115,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0086",
+      "padded_bbox": [
+        4455,
+        1492,
+        4578,
+        1617
+      ],
+      "crop_width": 123,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0086.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0086.png"
+    },
+    {
+      "raw_index": 34,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.856425,
+      "bbox": [
+        2644,
+        1506,
+        2763,
+        1625
+      ],
+      "bbox_width": 119,
+      "bbox_height": 119,
+      "crop_id": "IMG_20151203_152841_cell_0087",
+      "padded_bbox": [
+        2640,
+        1502,
+        2767,
+        1629
+      ],
+      "crop_width": 127,
+      "crop_height": 127,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0087.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0087.png"
+    },
+    {
+      "raw_index": 47,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.840517,
+      "bbox": [
+        2445,
+        1520,
+        2565,
+        1642
+      ],
+      "bbox_width": 120,
+      "bbox_height": 122,
+      "crop_id": "IMG_20151203_152841_cell_0088",
+      "padded_bbox": [
+        2441,
+        1516,
+        2569,
+        1646
+      ],
+      "crop_width": 128,
+      "crop_height": 130,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0088.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0088.png"
+    },
+    {
+      "raw_index": 36,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.855054,
+      "bbox": [
+        2819,
+        1530,
+        2951,
+        1663
+      ],
+      "bbox_width": 132,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151203_152841_cell_0089",
+      "padded_bbox": [
+        2815,
+        1526,
+        2955,
+        1667
+      ],
+      "crop_width": 140,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0089.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0089.png"
+    },
+    {
+      "raw_index": 5,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.896279,
+      "bbox": [
+        1713,
+        1557,
+        1836,
+        1667
+      ],
+      "bbox_width": 123,
+      "bbox_height": 110,
+      "crop_id": "IMG_20151203_152841_cell_0090",
+      "padded_bbox": [
+        1709,
+        1553,
+        1840,
+        1671
+      ],
+      "crop_width": 131,
+      "crop_height": 118,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0090.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0090.png"
+    },
+    {
+      "raw_index": 6,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.895518,
+      "bbox": [
+        3684,
+        1564,
+        3813,
+        1675
+      ],
+      "bbox_width": 129,
+      "bbox_height": 111,
+      "crop_id": "IMG_20151203_152841_cell_0091",
+      "padded_bbox": [
+        3680,
+        1560,
+        3817,
+        1679
+      ],
+      "crop_width": 137,
+      "crop_height": 119,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0091.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0091.png"
+    },
+    {
+      "raw_index": 12,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.884149,
+      "bbox": [
+        3976,
+        1572,
+        4083,
+        1674
+      ],
+      "bbox_width": 107,
+      "bbox_height": 102,
+      "crop_id": "IMG_20151203_152841_cell_0092",
+      "padded_bbox": [
+        3972,
+        1568,
+        4087,
+        1678
+      ],
+      "crop_width": 115,
+      "crop_height": 110,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0092.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0092.png"
+    },
+    {
+      "raw_index": 43,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.851376,
+      "bbox": [
+        2004,
+        1573,
+        2106,
+        1703
+      ],
+      "bbox_width": 102,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0093",
+      "padded_bbox": [
+        2000,
+        1569,
+        2110,
+        1707
+      ],
+      "crop_width": 110,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0093.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0093.png"
+    },
+    {
+      "raw_index": 81,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.798678,
+      "bbox": [
+        4343,
+        1573,
+        4482,
+        1703
+      ],
+      "bbox_width": 139,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0094",
+      "padded_bbox": [
+        4339,
+        1569,
+        4486,
+        1707
+      ],
+      "crop_width": 147,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0094.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0094.png"
+    },
+    {
+      "raw_index": 114,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.768691,
+      "bbox": [
+        3226,
+        1618,
+        3347,
+        1752
+      ],
+      "bbox_width": 121,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151203_152841_cell_0095",
+      "padded_bbox": [
+        3222,
+        1614,
+        3351,
+        1756
+      ],
+      "crop_width": 129,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0095.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0095.png"
+    },
+    {
+      "raw_index": 21,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.869247,
+      "bbox": [
+        2739,
+        1629,
+        2849,
+        1735
+      ],
+      "bbox_width": 110,
+      "bbox_height": 106,
+      "crop_id": "IMG_20151203_152841_cell_0096",
+      "padded_bbox": [
+        2735,
+        1625,
+        2853,
+        1739
+      ],
+      "crop_width": 118,
+      "crop_height": 114,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0096.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0096.png"
+    },
+    {
+      "raw_index": 89,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.790115,
+      "bbox": [
+        1329,
+        1632,
+        1463,
+        1756
+      ],
+      "bbox_width": 134,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0097",
+      "padded_bbox": [
+        1325,
+        1628,
+        1467,
+        1760
+      ],
+      "crop_width": 142,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0097.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0097.png"
+    },
+    {
+      "raw_index": 30,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.860268,
+      "bbox": [
+        2267,
+        1658,
+        2394,
+        1771
+      ],
+      "bbox_width": 127,
+      "bbox_height": 113,
+      "crop_id": "IMG_20151203_152841_cell_0098",
+      "padded_bbox": [
+        2263,
+        1654,
+        2398,
+        1775
+      ],
+      "crop_width": 135,
+      "crop_height": 121,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0098.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0098.png"
+    },
+    {
+      "raw_index": 103,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.774547,
+      "bbox": [
+        2079,
+        1682,
+        2205,
+        1812
+      ],
+      "bbox_width": 126,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0099",
+      "padded_bbox": [
+        2075,
+        1678,
+        2209,
+        1816
+      ],
+      "crop_width": 134,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0099.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0099.png"
+    },
+    {
+      "raw_index": 77,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.809569,
+      "bbox": [
+        3108,
+        1684,
+        3201,
+        1806
+      ],
+      "bbox_width": 93,
+      "bbox_height": 122,
+      "crop_id": "IMG_20151203_152841_cell_0100",
+      "padded_bbox": [
+        3104,
+        1680,
+        3205,
+        1810
+      ],
+      "crop_width": 101,
+      "crop_height": 130,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0100.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0100.png"
+    },
+    {
+      "raw_index": 74,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.81164,
+      "bbox": [
+        3663,
+        1690,
+        3775,
+        1818
+      ],
+      "bbox_width": 112,
+      "bbox_height": 128,
+      "crop_id": "IMG_20151203_152841_cell_0101",
+      "padded_bbox": [
+        3659,
+        1686,
+        3779,
+        1822
+      ],
+      "crop_width": 120,
+      "crop_height": 136,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0101.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0101.png"
+    },
+    {
+      "raw_index": 150,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.676326,
+      "bbox": [
+        4000,
+        1723,
+        4156,
+        1852
+      ],
+      "bbox_width": 156,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0102",
+      "padded_bbox": [
+        3996,
+        1719,
+        4160,
+        1856
+      ],
+      "crop_width": 164,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0102.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0102.png"
+    },
+    {
+      "raw_index": 109,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.770304,
+      "bbox": [
+        2976,
+        1727,
+        3101,
+        1866
+      ],
+      "bbox_width": 125,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151203_152841_cell_0103",
+      "padded_bbox": [
+        2972,
+        1723,
+        3105,
+        1870
+      ],
+      "crop_width": 133,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0103.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0103.png"
+    },
+    {
+      "raw_index": 120,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.756389,
+      "bbox": [
+        4206,
+        1727,
+        4338,
+        1847
+      ],
+      "bbox_width": 132,
+      "bbox_height": 120,
+      "crop_id": "IMG_20151203_152841_cell_0104",
+      "padded_bbox": [
+        4202,
+        1723,
+        4342,
+        1851
+      ],
+      "crop_width": 140,
+      "crop_height": 128,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0104.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0104.png"
+    },
+    {
+      "raw_index": 39,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.854204,
+      "bbox": [
+        2541,
+        1737,
+        2653,
+        1855
+      ],
+      "bbox_width": 112,
+      "bbox_height": 118,
+      "crop_id": "IMG_20151203_152841_cell_0105",
+      "padded_bbox": [
+        2537,
+        1733,
+        2657,
+        1859
+      ],
+      "crop_width": 120,
+      "crop_height": 126,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0105.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0105.png"
+    },
+    {
+      "raw_index": 4,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.900442,
+      "bbox": [
+        2190,
+        1755,
+        2304,
+        1868
+      ],
+      "bbox_width": 114,
+      "bbox_height": 113,
+      "crop_id": "IMG_20151203_152841_cell_0106",
+      "padded_bbox": [
+        2186,
+        1751,
+        2308,
+        1872
+      ],
+      "crop_width": 122,
+      "crop_height": 121,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0106.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0106.png"
+    },
+    {
+      "raw_index": 153,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.639166,
+      "bbox": [
+        1921,
+        1797,
+        2036,
+        1928
+      ],
+      "bbox_width": 115,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151203_152841_cell_0107",
+      "padded_bbox": [
+        1917,
+        1793,
+        2040,
+        1932
+      ],
+      "crop_width": 123,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0107.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0107.png"
+    },
+    {
+      "raw_index": 40,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.853969,
+      "bbox": [
+        2667,
+        1801,
+        2775,
+        1918
+      ],
+      "bbox_width": 108,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0108",
+      "padded_bbox": [
+        2663,
+        1797,
+        2779,
+        1922
+      ],
+      "crop_width": 116,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0108.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0108.png"
+    },
+    {
+      "raw_index": 1,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.911875,
+      "bbox": [
+        3128,
+        1819,
+        3239,
+        1933
+      ],
+      "bbox_width": 111,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0109",
+      "padded_bbox": [
+        3124,
+        1815,
+        3243,
+        1937
+      ],
+      "crop_width": 119,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0109.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0109.png"
+    },
+    {
+      "raw_index": 33,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.857716,
+      "bbox": [
+        2357,
+        1837,
+        2494,
+        1963
+      ],
+      "bbox_width": 137,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0110",
+      "padded_bbox": [
+        2353,
+        1833,
+        2498,
+        1967
+      ],
+      "crop_width": 145,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0110.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0110.png"
+    },
+    {
+      "raw_index": 8,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.893519,
+      "bbox": [
+        1404,
+        1856,
+        1528,
+        1986
+      ],
+      "bbox_width": 124,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0111",
+      "padded_bbox": [
+        1400,
+        1852,
+        1532,
+        1990
+      ],
+      "crop_width": 132,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0111.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0111.png"
+    },
+    {
+      "raw_index": 88,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.791133,
+      "bbox": [
+        2112,
+        1864,
+        2241,
+        1978
+      ],
+      "bbox_width": 129,
+      "bbox_height": 114,
+      "crop_id": "IMG_20151203_152841_cell_0112",
+      "padded_bbox": [
+        2108,
+        1860,
+        2245,
+        1982
+      ],
+      "crop_width": 137,
+      "crop_height": 122,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0112.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0112.png"
+    },
+    {
+      "raw_index": 25,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.865095,
+      "bbox": [
+        4176,
+        1872,
+        4322,
+        1995
+      ],
+      "bbox_width": 146,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0113",
+      "padded_bbox": [
+        4172,
+        1868,
+        4326,
+        1999
+      ],
+      "crop_width": 154,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0113.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0113.png"
+    },
+    {
+      "raw_index": 143,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.712199,
+      "bbox": [
+        3381,
+        1896,
+        3502,
+        2039
+      ],
+      "bbox_width": 121,
+      "bbox_height": 143,
+      "crop_id": "IMG_20151203_152841_cell_0114",
+      "padded_bbox": [
+        3377,
+        1892,
+        3506,
+        2043
+      ],
+      "crop_width": 129,
+      "crop_height": 151,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0114.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0114.png"
+    },
+    {
+      "raw_index": 9,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.888239,
+      "bbox": [
+        1755,
+        1897,
+        1886,
+        2012
+      ],
+      "bbox_width": 131,
+      "bbox_height": 115,
+      "crop_id": "IMG_20151203_152841_cell_0115",
+      "padded_bbox": [
+        1751,
+        1893,
+        1890,
+        2016
+      ],
+      "crop_width": 139,
+      "crop_height": 123,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0115.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0115.png"
+    },
+    {
+      "raw_index": 116,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.765476,
+      "bbox": [
+        1940,
+        1939,
+        2053,
+        2044
+      ],
+      "bbox_width": 113,
+      "bbox_height": 105,
+      "crop_id": "IMG_20151203_152841_cell_0116",
+      "padded_bbox": [
+        1936,
+        1935,
+        2057,
+        2048
+      ],
+      "crop_width": 121,
+      "crop_height": 113,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0116.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0116.png"
+    },
+    {
+      "raw_index": 29,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.861992,
+      "bbox": [
+        2968,
+        1945,
+        3101,
+        2080
+      ],
+      "bbox_width": 133,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151203_152841_cell_0117",
+      "padded_bbox": [
+        2964,
+        1941,
+        3105,
+        2084
+      ],
+      "crop_width": 141,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0117.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0117.png"
+    },
+    {
+      "raw_index": 63,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.822462,
+      "bbox": [
+        1595,
+        1946,
+        1723,
+        2075
+      ],
+      "bbox_width": 128,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0118",
+      "padded_bbox": [
+        1591,
+        1942,
+        1727,
+        2079
+      ],
+      "crop_width": 136,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0118.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0118.png"
+    },
+    {
+      "raw_index": 58,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.826724,
+      "bbox": [
+        2848,
+        1949,
+        2958,
+        2088
+      ],
+      "bbox_width": 110,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151203_152841_cell_0119",
+      "padded_bbox": [
+        2844,
+        1945,
+        2962,
+        2092
+      ],
+      "crop_width": 118,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0119.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0119.png"
+    },
+    {
+      "raw_index": 78,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.807635,
+      "bbox": [
+        2061,
+        1984,
+        2176,
+        2101
+      ],
+      "bbox_width": 115,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0120",
+      "padded_bbox": [
+        2057,
+        1980,
+        2180,
+        2105
+      ],
+      "crop_width": 123,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0120.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0120.png"
+    },
+    {
+      "raw_index": 76,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.8111,
+      "bbox": [
+        2694,
+        1991,
+        2837,
+        2112
+      ],
+      "bbox_width": 143,
+      "bbox_height": 121,
+      "crop_id": "IMG_20151203_152841_cell_0121",
+      "padded_bbox": [
+        2690,
+        1987,
+        2841,
+        2116
+      ],
+      "crop_width": 151,
+      "crop_height": 129,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0121.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0121.png"
+    },
+    {
+      "raw_index": 3,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.908426,
+      "bbox": [
+        1736,
+        2023,
+        1888,
+        2145
+      ],
+      "bbox_width": 152,
+      "bbox_height": 122,
+      "crop_id": "IMG_20151203_152841_cell_0122",
+      "padded_bbox": [
+        1732,
+        2019,
+        1892,
+        2149
+      ],
+      "crop_width": 160,
+      "crop_height": 130,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0122.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0122.png"
+    },
+    {
+      "raw_index": 136,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.728441,
+      "bbox": [
+        2487,
+        2055,
+        2599,
+        2182
+      ],
+      "bbox_width": 112,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0123",
+      "padded_bbox": [
+        2483,
+        2051,
+        2603,
+        2186
+      ],
+      "crop_width": 120,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0123.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0123.png"
+    },
+    {
+      "raw_index": 125,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.749814,
+      "bbox": [
+        4219,
+        2059,
+        4345,
+        2190
+      ],
+      "bbox_width": 126,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151203_152841_cell_0124",
+      "padded_bbox": [
+        4215,
+        2055,
+        4349,
+        2194
+      ],
+      "crop_width": 134,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0124.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0124.png"
+    },
+    {
+      "raw_index": 96,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.783691,
+      "bbox": [
+        3933,
+        2060,
+        4067,
+        2201
+      ],
+      "bbox_width": 134,
+      "bbox_height": 141,
+      "crop_id": "IMG_20151203_152841_cell_0125",
+      "padded_bbox": [
+        3929,
+        2056,
+        4071,
+        2205
+      ],
+      "crop_width": 142,
+      "crop_height": 149,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0125.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0125.png"
+    },
+    {
+      "raw_index": 99,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.782442,
+      "bbox": [
+        2184,
+        2073,
+        2316,
+        2200
+      ],
+      "bbox_width": 132,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0126",
+      "padded_bbox": [
+        2180,
+        2069,
+        2320,
+        2204
+      ],
+      "crop_width": 140,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0126.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0126.png"
+    },
+    {
+      "raw_index": 48,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.839693,
+      "bbox": [
+        1837,
+        2093,
+        1963,
+        2213
+      ],
+      "bbox_width": 126,
+      "bbox_height": 120,
+      "crop_id": "IMG_20151203_152841_cell_0127",
+      "padded_bbox": [
+        1833,
+        2089,
+        1967,
+        2217
+      ],
+      "crop_width": 134,
+      "crop_height": 128,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0127.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0127.png"
+    },
+    {
+      "raw_index": 146,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.707834,
+      "bbox": [
+        3454,
+        2143,
+        3566,
+        2255
+      ],
+      "bbox_width": 112,
+      "bbox_height": 112,
+      "crop_id": "IMG_20151203_152841_cell_0128",
+      "padded_bbox": [
+        3450,
+        2139,
+        3570,
+        2259
+      ],
+      "crop_width": 120,
+      "crop_height": 120,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0128.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0128.png"
+    },
+    {
+      "raw_index": 62,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.823055,
+      "bbox": [
+        2285,
+        2159,
+        2430,
+        2294
+      ],
+      "bbox_width": 145,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151203_152841_cell_0129",
+      "padded_bbox": [
+        2281,
+        2155,
+        2434,
+        2298
+      ],
+      "crop_width": 153,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0129.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0129.png"
+    },
+    {
+      "raw_index": 52,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.83874,
+      "bbox": [
+        2623,
+        2160,
+        2738,
+        2280
+      ],
+      "bbox_width": 115,
+      "bbox_height": 120,
+      "crop_id": "IMG_20151203_152841_cell_0130",
+      "padded_bbox": [
+        2619,
+        2156,
+        2742,
+        2284
+      ],
+      "crop_width": 123,
+      "crop_height": 128,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0130.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0130.png"
+    },
+    {
+      "raw_index": 161,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.464535,
+      "bbox": [
+        1915,
+        2188,
+        2038,
+        2283
+      ],
+      "bbox_width": 123,
+      "bbox_height": 95,
+      "crop_id": "IMG_20151203_152841_cell_0131",
+      "padded_bbox": [
+        1911,
+        2184,
+        2042,
+        2287
+      ],
+      "crop_width": 131,
+      "crop_height": 103,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0131.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0131.png"
+    },
+    {
+      "raw_index": 86,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.792124,
+      "bbox": [
+        2732,
+        2204,
+        2859,
+        2329
+      ],
+      "bbox_width": 127,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151203_152841_cell_0132",
+      "padded_bbox": [
+        2728,
+        2200,
+        2863,
+        2333
+      ],
+      "crop_width": 135,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0132.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0132.png"
+    },
+    {
+      "raw_index": 93,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.785402,
+      "bbox": [
+        4202,
+        2215,
+        4327,
+        2326
+      ],
+      "bbox_width": 125,
+      "bbox_height": 111,
+      "crop_id": "IMG_20151203_152841_cell_0133",
+      "padded_bbox": [
+        4198,
+        2211,
+        4331,
+        2330
+      ],
+      "crop_width": 133,
+      "crop_height": 119,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0133.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0133.png"
+    },
+    {
+      "raw_index": 80,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.799341,
+      "bbox": [
+        1762,
+        2217,
+        1893,
+        2313
+      ],
+      "bbox_width": 131,
+      "bbox_height": 96,
+      "crop_id": "IMG_20151203_152841_cell_0134",
+      "padded_bbox": [
+        1758,
+        2213,
+        1897,
+        2317
+      ],
+      "crop_width": 139,
+      "crop_height": 104,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0134.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0134.png"
+    },
+    {
+      "raw_index": 20,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.870269,
+      "bbox": [
+        3920,
+        2221,
+        4061,
+        2352
+      ],
+      "bbox_width": 141,
+      "bbox_height": 131,
+      "crop_id": "IMG_20151203_152841_cell_0135",
+      "padded_bbox": [
+        3916,
+        2217,
+        4065,
+        2356
+      ],
+      "crop_width": 149,
+      "crop_height": 139,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0135.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0135.png"
+    },
+    {
+      "raw_index": 0,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.917979,
+      "bbox": [
+        2185,
+        2230,
+        2309,
+        2372
+      ],
+      "bbox_width": 124,
+      "bbox_height": 142,
+      "crop_id": "IMG_20151203_152841_cell_0136",
+      "padded_bbox": [
+        2181,
+        2226,
+        2313,
+        2376
+      ],
+      "crop_width": 132,
+      "crop_height": 150,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0136.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0136.png"
+    },
+    {
+      "raw_index": 119,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.756444,
+      "bbox": [
+        3329,
+        2246,
+        3446,
+        2375
+      ],
+      "bbox_width": 117,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0137",
+      "padded_bbox": [
+        3325,
+        2242,
+        3450,
+        2379
+      ],
+      "crop_width": 125,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0137.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0137.png"
+    },
+    {
+      "raw_index": 31,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.859286,
+      "bbox": [
+        2918,
+        2263,
+        3036,
+        2387
+      ],
+      "bbox_width": 118,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0138",
+      "padded_bbox": [
+        2914,
+        2259,
+        3040,
+        2391
+      ],
+      "crop_width": 126,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0138.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0138.png"
+    },
+    {
+      "raw_index": 27,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.862209,
+      "bbox": [
+        2454,
+        2289,
+        2573,
+        2415
+      ],
+      "bbox_width": 119,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0139",
+      "padded_bbox": [
+        2450,
+        2285,
+        2577,
+        2419
+      ],
+      "crop_width": 127,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0139.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0139.png"
+    },
+    {
+      "raw_index": 132,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.734356,
+      "bbox": [
+        1866,
+        2296,
+        1976,
+        2423
+      ],
+      "bbox_width": 110,
+      "bbox_height": 127,
+      "crop_id": "IMG_20151203_152841_cell_0140",
+      "padded_bbox": [
+        1862,
+        2292,
+        1980,
+        2427
+      ],
+      "crop_width": 118,
+      "crop_height": 135,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0140.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0140.png"
+    },
+    {
+      "raw_index": 91,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.78738,
+      "bbox": [
+        2326,
+        2300,
+        2438,
+        2423
+      ],
+      "bbox_width": 112,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0141",
+      "padded_bbox": [
+        2322,
+        2296,
+        2442,
+        2427
+      ],
+      "crop_width": 120,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0141.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0141.png"
+    },
+    {
+      "raw_index": 79,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.803769,
+      "bbox": [
+        3464,
+        2302,
+        3601,
+        2432
+      ],
+      "bbox_width": 137,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0142",
+      "padded_bbox": [
+        3460,
+        2298,
+        3605,
+        2436
+      ],
+      "crop_width": 145,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0142.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0142.png"
+    },
+    {
+      "raw_index": 126,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.748143,
+      "bbox": [
+        4078,
+        2323,
+        4237,
+        2449
+      ],
+      "bbox_width": 159,
+      "bbox_height": 126,
+      "crop_id": "IMG_20151203_152841_cell_0143",
+      "padded_bbox": [
+        4074,
+        2319,
+        4241,
+        2453
+      ],
+      "crop_width": 167,
+      "crop_height": 134,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0143.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0143.png"
+    },
+    {
+      "raw_index": 83,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.793928,
+      "bbox": [
+        3760,
+        2327,
+        3884,
+        2464
+      ],
+      "bbox_width": 124,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151203_152841_cell_0144",
+      "padded_bbox": [
+        3756,
+        2323,
+        3888,
+        2468
+      ],
+      "crop_width": 132,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0144.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0144.png"
+    },
+    {
+      "raw_index": 54,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.834489,
+      "bbox": [
+        1724,
+        2333,
+        1854,
+        2454
+      ],
+      "bbox_width": 130,
+      "bbox_height": 121,
+      "crop_id": "IMG_20151203_152841_cell_0145",
+      "padded_bbox": [
+        1720,
+        2329,
+        1858,
+        2458
+      ],
+      "crop_width": 138,
+      "crop_height": 129,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0145.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0145.png"
+    },
+    {
+      "raw_index": 82,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.796228,
+      "bbox": [
+        2696,
+        2333,
+        2819,
+        2458
+      ],
+      "bbox_width": 123,
+      "bbox_height": 125,
+      "crop_id": "IMG_20151203_152841_cell_0146",
+      "padded_bbox": [
+        2692,
+        2329,
+        2823,
+        2462
+      ],
+      "crop_width": 131,
+      "crop_height": 133,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0146.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0146.png"
+    },
+    {
+      "raw_index": 72,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.814972,
+      "bbox": [
+        3156,
+        2338,
+        3273,
+        2462
+      ],
+      "bbox_width": 117,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0147",
+      "padded_bbox": [
+        3152,
+        2334,
+        3277,
+        2466
+      ],
+      "crop_width": 125,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0147.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0147.png"
+    },
+    {
+      "raw_index": 61,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.824971,
+      "bbox": [
+        2029,
+        2339,
+        2160,
+        2472
+      ],
+      "bbox_width": 131,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151203_152841_cell_0148",
+      "padded_bbox": [
+        2025,
+        2335,
+        2164,
+        2476
+      ],
+      "crop_width": 139,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0148.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0148.png"
+    },
+    {
+      "raw_index": 133,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.733684,
+      "bbox": [
+        2395,
+        2412,
+        2505,
+        2523
+      ],
+      "bbox_width": 110,
+      "bbox_height": 111,
+      "crop_id": "IMG_20151203_152841_cell_0149",
+      "padded_bbox": [
+        2391,
+        2408,
+        2509,
+        2527
+      ],
+      "crop_width": 118,
+      "crop_height": 119,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0149.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0149.png"
+    },
+    {
+      "raw_index": 13,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.881141,
+      "bbox": [
+        2909,
+        2437,
+        3043,
+        2536
+      ],
+      "bbox_width": 134,
+      "bbox_height": 99,
+      "crop_id": "IMG_20151203_152841_cell_0150",
+      "padded_bbox": [
+        2905,
+        2433,
+        3047,
+        2540
+      ],
+      "crop_width": 142,
+      "crop_height": 107,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0150.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0150.png"
+    },
+    {
+      "raw_index": 41,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.852573,
+      "bbox": [
+        1817,
+        2439,
+        1932,
+        2572
+      ],
+      "bbox_width": 115,
+      "bbox_height": 133,
+      "crop_id": "IMG_20151203_152841_cell_0151",
+      "padded_bbox": [
+        1813,
+        2435,
+        1936,
+        2576
+      ],
+      "crop_width": 123,
+      "crop_height": 141,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0151.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0151.png"
+    },
+    {
+      "raw_index": 69,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.819026,
+      "bbox": [
+        4019,
+        2442,
+        4169,
+        2565
+      ],
+      "bbox_width": 150,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0152",
+      "padded_bbox": [
+        4015,
+        2438,
+        4173,
+        2569
+      ],
+      "crop_width": 158,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0152.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0152.png"
+    },
+    {
+      "raw_index": 15,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.875758,
+      "bbox": [
+        1670,
+        2454,
+        1791,
+        2565
+      ],
+      "bbox_width": 121,
+      "bbox_height": 111,
+      "crop_id": "IMG_20151203_152841_cell_0153",
+      "padded_bbox": [
+        1666,
+        2450,
+        1795,
+        2569
+      ],
+      "crop_width": 129,
+      "crop_height": 119,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0153.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0153.png"
+    },
+    {
+      "raw_index": 51,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.838975,
+      "bbox": [
+        2060,
+        2491,
+        2177,
+        2608
+      ],
+      "bbox_width": 117,
+      "bbox_height": 117,
+      "crop_id": "IMG_20151203_152841_cell_0154",
+      "padded_bbox": [
+        2056,
+        2487,
+        2181,
+        2612
+      ],
+      "crop_width": 125,
+      "crop_height": 125,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0154.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0154.png"
+    },
+    {
+      "raw_index": 7,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.894058,
+      "bbox": [
+        2318,
+        2512,
+        2433,
+        2644
+      ],
+      "bbox_width": 115,
+      "bbox_height": 132,
+      "crop_id": "IMG_20151203_152841_cell_0155",
+      "padded_bbox": [
+        2314,
+        2508,
+        2437,
+        2648
+      ],
+      "crop_width": 123,
+      "crop_height": 140,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0155.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0155.png"
+    },
+    {
+      "raw_index": 134,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.731426,
+      "bbox": [
+        2168,
+        2549,
+        2305,
+        2696
+      ],
+      "bbox_width": 137,
+      "bbox_height": 147,
+      "crop_id": "IMG_20151203_152841_cell_0156",
+      "padded_bbox": [
+        2164,
+        2545,
+        2309,
+        2700
+      ],
+      "crop_width": 145,
+      "crop_height": 155,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0156.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0156.png"
+    },
+    {
+      "raw_index": 66,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.820433,
+      "bbox": [
+        3445,
+        2564,
+        3561,
+        2683
+      ],
+      "bbox_width": 116,
+      "bbox_height": 119,
+      "crop_id": "IMG_20151203_152841_cell_0157",
+      "padded_bbox": [
+        3441,
+        2560,
+        3565,
+        2687
+      ],
+      "crop_width": 124,
+      "crop_height": 127,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0157.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0157.png"
+    },
+    {
+      "raw_index": 92,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.785425,
+      "bbox": [
+        2609,
+        2581,
+        2732,
+        2710
+      ],
+      "bbox_width": 123,
+      "bbox_height": 129,
+      "crop_id": "IMG_20151203_152841_cell_0158",
+      "padded_bbox": [
+        2605,
+        2577,
+        2736,
+        2714
+      ],
+      "crop_width": 131,
+      "crop_height": 137,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0158.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0158.png"
+    },
+    {
+      "raw_index": 151,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.676037,
+      "bbox": [
+        2382,
+        2596,
+        2541,
+        2731
+      ],
+      "bbox_width": 159,
+      "bbox_height": 135,
+      "crop_id": "IMG_20151203_152841_cell_0159",
+      "padded_bbox": [
+        2378,
+        2592,
+        2545,
+        2735
+      ],
+      "crop_width": 167,
+      "crop_height": 143,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0159.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0159.png"
+    },
+    {
+      "raw_index": 160,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.54907,
+      "bbox": [
+        1782,
+        2618,
+        1877,
+        2746
+      ],
+      "bbox_width": 95,
+      "bbox_height": 128,
+      "crop_id": "IMG_20151203_152841_cell_0160",
+      "padded_bbox": [
+        1778,
+        2614,
+        1881,
+        2750
+      ],
+      "crop_width": 103,
+      "crop_height": 136,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0160.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0160.png"
+    },
+    {
+      "raw_index": 123,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.754935,
+      "bbox": [
+        2029,
+        2624,
+        2142,
+        2758
+      ],
+      "bbox_width": 113,
+      "bbox_height": 134,
+      "crop_id": "IMG_20151203_152841_cell_0161",
+      "padded_bbox": [
+        2025,
+        2620,
+        2146,
+        2762
+      ],
+      "crop_width": 121,
+      "crop_height": 142,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0161.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0161.png"
+    },
+    {
+      "raw_index": 131,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.736812,
+      "bbox": [
+        3791,
+        2681,
+        3927,
+        2818
+      ],
+      "bbox_width": 136,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151203_152841_cell_0162",
+      "padded_bbox": [
+        3787,
+        2677,
+        3931,
+        2822
+      ],
+      "crop_width": 144,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0162.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0162.png"
+    },
+    {
+      "raw_index": 75,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.811184,
+      "bbox": [
+        1918,
+        2716,
+        2040,
+        2853
+      ],
+      "bbox_width": 122,
+      "bbox_height": 137,
+      "crop_id": "IMG_20151203_152841_cell_0163",
+      "padded_bbox": [
+        1914,
+        2712,
+        2044,
+        2857
+      ],
+      "crop_width": 130,
+      "crop_height": 145,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0163.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0163.png"
+    },
+    {
+      "raw_index": 128,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.743111,
+      "bbox": [
+        2809,
+        2717,
+        2960,
+        2841
+      ],
+      "bbox_width": 151,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0164",
+      "padded_bbox": [
+        2805,
+        2713,
+        2964,
+        2845
+      ],
+      "crop_width": 159,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0164.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0164.png"
+    },
+    {
+      "raw_index": 112,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.769906,
+      "bbox": [
+        2360,
+        2730,
+        2475,
+        2846
+      ],
+      "bbox_width": 115,
+      "bbox_height": 116,
+      "crop_id": "IMG_20151203_152841_cell_0165",
+      "padded_bbox": [
+        2356,
+        2726,
+        2479,
+        2850
+      ],
+      "crop_width": 123,
+      "crop_height": 124,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0165.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0165.png"
+    },
+    {
+      "raw_index": 139,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.724608,
+      "bbox": [
+        2171,
+        2769,
+        2300,
+        2893
+      ],
+      "bbox_width": 129,
+      "bbox_height": 124,
+      "crop_id": "IMG_20151203_152841_cell_0166",
+      "padded_bbox": [
+        2167,
+        2765,
+        2304,
+        2897
+      ],
+      "crop_width": 137,
+      "crop_height": 132,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0166.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0166.png"
+    },
+    {
+      "raw_index": 122,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.755459,
+      "bbox": [
+        3219,
+        2772,
+        3347,
+        2911
+      ],
+      "bbox_width": 128,
+      "bbox_height": 139,
+      "crop_id": "IMG_20151203_152841_cell_0167",
+      "padded_bbox": [
+        3215,
+        2768,
+        3351,
+        2915
+      ],
+      "crop_width": 136,
+      "crop_height": 147,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0167.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0167.png"
+    },
+    {
+      "raw_index": 94,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.784446,
+      "bbox": [
+        3619,
+        2829,
+        3752,
+        2952
+      ],
+      "bbox_width": 133,
+      "bbox_height": 123,
+      "crop_id": "IMG_20151203_152841_cell_0168",
+      "padded_bbox": [
+        3615,
+        2825,
+        3756,
+        2956
+      ],
+      "crop_width": 141,
+      "crop_height": 131,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0168.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0168.png"
+    },
+    {
+      "raw_index": 166,
+      "yolo_class_id": 0,
+      "yolo_class_name": "Uninfected RBC",
+      "yolo_confidence": 0.359627,
+      "bbox": [
+        2296,
+        2842,
+        2432,
+        2972
+      ],
+      "bbox_width": 136,
+      "bbox_height": 130,
+      "crop_id": "IMG_20151203_152841_cell_0169",
+      "padded_bbox": [
+        2292,
+        2838,
+        2436,
+        2976
+      ],
+      "crop_width": 144,
+      "crop_height": 138,
+      "crop_path": "D:\\smartcell\\results\\demo_app_runs\\run_20261011_225230_IMG_20151203_152841_finetuned_raw_raw_e3406e\\crops\\IMG_20151203_152841_cell_0169.png",
+      "crop_rel_path": "crops\\IMG_20151203_152841_cell_0169.png"
+    }
+  ],
+  "excluded_wbcs": [],
+  "rejected_boxes": []
+}
