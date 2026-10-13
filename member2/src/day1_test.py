@@ -4,8 +4,8 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 image_paths = [
-    Path("dataset/malaria/img_001.png"),
-    Path("dataset/all/Im001_1.jpg")
+    Path("member2/dataset/malaria/img_001.png"),
+    Path("member2/dataset/all/Im001_1.jpg")
 ]
 
 for path in image_paths:
