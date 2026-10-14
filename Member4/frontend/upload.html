@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Sample | SmartCELL</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/">Smart<span>CELL</span></a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/upload">Screening</a>
+        </nav>
+    </header>
+
+    <main class="upload-page">
+        <p class="eyebrow">SMARTCELL SCREENING WORKSPACE</p>
+        <h1>Upload your sample</h1>
+        <p class="page-description">
+            Select a screening module and upload a microscopy image
+            to prepare it for analysis.
+        </p>
+
+        <form id="uploadForm" class="upload-card">
+            <label for="screeningType">Screening module</label>
+            <select id="screeningType" name="screeningType" required>
+                <option value="">Select a module</option>
+                <option value="malaria">Malaria screening</option>
+                <option value="all">ALL screening</option>
+            </select>
+
+            <label for="bloodImage">Microscopy image</label>
+
+            <div class="drop-zone" id="dropZone">
+                <div class="upload-symbol">↑</div>
+                <h3>Select an image</h3>
+                <p>Choose a blood-cell microscopy image from your computer.</p>
+
+                <input
+                    type="file"
+                    id="bloodImage"
+                    name="bloodImage"
+                    accept="image/jpeg,image/png,image/webp"
+                    required
+                >
+
+                <p class="file-note">JPG, PNG or WEBP · Maximum 10 MB</p>
+            </div>
+
+           <div id="previewContainer" class="preview-container" hidden>
+    <img id="imagePreview" src="" alt="Selected blood sample">
+    <p id="fileName"></p>
+    <button type="button" id="removeImage">Remove image</button>
+</div>
+                <button type="button" id="removeImage" class="secondary-button">
+                    Remove image
+                </button>
+            </div>
+
+            <p id="uploadMessage" class="form-message" role="status"></p>
+
+            <button type="submit" class="primary-button submit-button">
+                Prepare sample <span>→</span>
+            </button>
+
+            <p class="support-text">
+                This prototype is for academic research, not medical diagnosis.
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <a class="logo" href="/">Smart<span>CELL</span></a>
+        <p>AI-assisted blood cell screening</p>
+    </footer>
+
+   <script src="/static/script.js"></script>
+</body>
+</html>
