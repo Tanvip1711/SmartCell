@@ -3,15 +3,19 @@ import cv2
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-image_paths = [
-    Path("member2/dataset/malaria/img_001.png"),
-    Path("member2/dataset/all/Im001_1.jpg")
-]
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-for path in image_paths:
-    if not path.exists():
-        print(f"Image not found: {path}")
-        continue
+malaria_path = BASE_DIR / "dataset" / "malaria" / "img_001.png"
+all_path = BASE_DIR / "dataset" / "all" / "Im001_1.jpg"
+
+for path in [malaria_path, all_path]:
+    image = cv2.imread(str(path))
+
+    if image is None:
+        print(f"Image not found or could not be read: {path}")
+    else:
+        print(f"Image loaded successfully: {path.name}")
+        print(f"Image dimensions: {image.shape}")
 
     image = cv2.imread(str(path))
 
