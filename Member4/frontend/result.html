@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screening Result | SmartCELL</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/">Smart<span>CELL</span></a>
+        <nav><a href="/">Home</a><a href="/upload">New Sample</a></nav>
+    </header>
+
+    <main class="upload-page">
+        <p class="eyebrow">SCREENING WORKSPACE</p>
+        <h1>Sample received</h1>
+
+        <div class="upload-card">
+            <h2 id="resultTitle">Checking upload...</h2>
+            <p id="resultModule" class="page-description"></p>
+            <p id="resultFilename"></p>
+            <p id="resultMessage" class="form-message"></p>
+
+            <div class="disclaimer">
+                <strong>Research prototype — not a diagnosis</strong>
+                <p>
+                    No AI prediction has been generated. This page only
+                    confirms image receipt and basic validation.
+                </p>
+            </div>
+
+            <a href="/upload" class="primary-button">Upload another image →</a>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
